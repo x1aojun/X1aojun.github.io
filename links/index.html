@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+<title>资源导航-军军Z1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+
+<meta name="keywords" content="web安全，笔记，web，前端，黑客，编程，内网安全，内网渗透，sql注入，xss，文件上传">
+<meta name="description" content="描述">
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+
+<!-- Baidu Analytics -->
+<script defer>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4b5fe1472f22fa";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+	<meta name="generator" content="Hexo 6.1.0"></head>
+
+	<body>
+		
+<link rel="stylesheet" href="/css/links.css">
+
+    
+<link rel="stylesheet" href="/css/header.css">
+
+	<div class="header">
+		<div class="header-top">
+			<div class="h-left">
+				<a href="/">
+					<img src="/image/logo.png" alt="Quiet">
+				</a>
+			</div>
+			<div class="h-right">
+				<ul>
+					
+						
+								<li>
+									<a href="/">
+										主页
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/archives">
+										存档
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/categories">
+										分类
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/tags">
+										标签
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+							<li class="select">
+								<a href="/links">
+									资源导航
+								</a>
+								<span class="dot"></span>
+							</li>
+							
+									
+						
+								<li>
+									<a href="/about">
+										关于
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+				</ul>
+			</div>
+			<div class="h-right-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<path fill="none" d="M0 0h24v24H0z" />
+					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+    <div class="topo">
+        <h2>军军Z1</h2>
+    </div>
+    <ul>
+        
+        <li>
+            <a href="/">主页</a>
+        </li>
+        
+        <li>
+            <a href="/archives">存档</a>
+        </li>
+        
+        <li>
+            <a href="/categories">分类</a>
+        </li>
+        
+        <li>
+            <a href="/tags">标签</a>
+        </li>
+        
+        <li>
+            <a href="/links">资源导航</a>
+        </li>
+        
+        <li>
+            <a href="/about">关于</a>
+        </li>
+        
+    </ul>
+    <div class="my_foot">
+        
+        <a target="_blank" rel="noopener" href="https://github.com/qiaobug">
+            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+        </a>
+        
+    </div>
+</div>
+<div class='shelter'
+    style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'>
+</div>
+<style>
+    .sidebar {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 999;
+        text-align: center;
+        box-shadow: -6px 0 20px rgba(98, 94, 94, .815)
+    }
+
+    .topo {
+        width: 100%;
+        height: 200px;
+        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end
+    }
+
+    .topo h2 {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        margin: 0 0 10px 10px;
+        font-size: 1.2em;
+        box-sizing: border-box
+    }
+
+    .topo:before {
+        content: '';
+        background-image: url(/image/pattern.png);
+        background-repeat: repeat;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1
+    }
+
+    .sidebar ul {
+        width: 100%;
+        margin-top: 50px
+    }
+
+    .sidebar ul li {
+        height: 50px;
+        list-style: none;
+        font-size: 1.2em;
+        text-align: right;
+        margin-right: 10px
+    }
+
+    .sidebar ul li a {
+        display: grid;
+        color: #5d606a;
+        text-overflow: ellipsis;
+        width: 100%;
+        text-decoration: none
+    }
+
+    .my_foot {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 0
+    }
+
+    .my_foot a {
+        text-decoration: none;
+        margin-right: 10px;
+        display: inline-block
+    }
+
+    .my_foot a img {
+        width: 30px;
+        height: 30px
+    }
+</style>
+
+<script>
+    $(function () { $('.h-right-close>svg').click(function () { $('.sidebar').animate({ width: "66%" }, 500); $('.shelter').fadeIn("slow") }); $('.shelter').click(function (e) { $('.sidebar').animate({ width: "0" }, 500); $('.shelter').fadeOut("slow") }) })
+</script>
+		<script>
+			$(function () { $(window).scroll(function () { if ($(document).scrollTop() > 100) { $(".header-top").removeClass("header-move2"); $('.header-top').addClass('header-move1') } else { $(".header-top").removeClass("header-move1"); $('.header-top').addClass('header-move2') } }) });
+		</script>
+        
+<link rel="stylesheet" href="/css/atom-one-dark.css">
+
+
+            <script>hljs.initHighlightingOnLoad();</script>
+            <div class="header-bg">
+                <div class="bg-content">
+                    <span>
+                        <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imga20r7-cftji.svg" alt="Q">
+                    </span>
+                    <h2>
+                        资源导航
+                    </h2>
+                </div>
+            </div>
+            <div class="links-content">
+                <div class="content">
+                    
+                        <div class="oneLink">
+                            <a target="_blank" rel="noopener" href="https://x1aojun.github.io/">
+                                <div class="lcen">
+                                    <div class="UserLinkImg">
+                                        <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgIMG_7327.jpeg" alt="Quiet">
+                                    </div>
+                                    <div class="LinkRight">
+                                        <h1>
+                                            军军子博客
+                                        </h1>
+                                        <span>
+                                            收藏回忆与分享技术的地方
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                            
+<link rel="stylesheet" href="/css/page_cente.css">
+
+                                <div id="article" class="info">
+                                    <html>
+
+<head>
+    <title>网址导航</title>
+</head>
+
+<meta charset="gb2312">
+
+<body background="https://img2.baidu.com/it/u=3467065977,973621102&fm=253&fmt=auto&app=120&f=PNG?w=1363&h=684"
+style=" background-repeat:no-repeat ;
+background-size:100% 100%;
+background-attachment: fixed;"
+>
+
+
+<form>
+  <fieldset>
+    <legend></legend>
+  </fieldset>
+</form>
+
+<center>
+    <legend><font size="6" color="green">网址导航</font>
+
+
+</center>
+
+<form>
+  <fieldset>
+    <legend>英语学习</legend>
+
+<nav>
+    <font size="3">
+        <a target="_blank" rel="noopener" href="http://www.ftchinese.com/channel/ce.html">FT中文网 双语阅读</a>   |
+        <a target="_blank" rel="noopener" href="http://www.ftchinese.com/channel/speedread.html">FT中文网 FT英语速读</a>  |
+        <a target="_blank" rel="noopener" href="http://www.ftchinese.com/channel/ev.html">FT中文网 原声视频</a>   |
+        <a target="_blank" rel="noopener" href="http://www.ftchinese.com/channel/radio.html">FT中文网 FT英语电台</a>  |
+        <a target="_blank" rel="noopener" href="http://www.npr.org/">美国国家公共广播电台</a>    |
+        <a target="_blank" rel="noopener" href="http://edition.cnn.com/">美国有线电视新闻网CNN</a>  |
+        <a target="_blank" rel="noopener" href="http://www.bbc.com/news">BBC新闻</a> |
+        <a target="_blank" rel="noopener" href="https://www.ted.com/">TED</a>  |
+        <a target="_blank" rel="noopener" href="http://www.iciba.com/">金山词霸</a>    |
+        <a target="_blank" rel="noopener" href="http://fanyi.baidu.com/">百度翻译</a>  |
+        <a target="_blank" rel="noopener" href="http://fanyi.youdao.com/">有道翻译</a> |
+        <a target="_blank" rel="noopener" href="https://translate.google.cn/">Google翻译</a> |
+        <a target="_blank" rel="noopener" href="http://dict.cn/">海词词典</a>  |
+    </font>
+</nav>
+
+  </fieldset>
+</form>
+
+<br>
+
+<form>
+  <fieldset>
+    <legend>安全论坛</legend>
+
+<nav>
+    <font size="3">
+        <a target="_blank" rel="noopener" href="https://www.t00ls.cc/">T00ls</a>   |
+        <a target="_blank" rel="noopener" href="http://mirrors.163.com/">网易开源镜像站</a>   |
+        <a target="_blank" rel="noopener" href="http://mirrors.ustc.edu.cn/">中国科学技术大学开源镜像站</a> |
+        <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学开源软件镜像站</a> |
+        <a target="_blank" rel="noopener" href="http://ftp.sjtu.edu.cn/">上海交通大学开源镜像站</a>   |
+        <a target="_blank" rel="noopener" href="http://mirrors.zju.edu.cn/">浙江大学开源镜像站</a>  |
+        <a target="_blank" rel="noopener" href="http://mirror.neu.edu.cn/">东北大学开源镜像站</a>   |
+        <a target="_blank" rel="noopener" href="http://www.debian.org/mirror/list">Debian全球镜像站</a> |
+
+
+</nav>
+
+  </fieldset>
+</form>
+<form>
+  <fieldset>
+    <legend>计算机资源镜像站</legend>
+
+<nav>
+    <font size="3">
+        <a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/">阿里云开源镜像站</a>   |
+        <a target="_blank" rel="noopener" href="http://mirrors.163.com/">网易开源镜像站</a>   |
+        <a target="_blank" rel="noopener" href="http://mirrors.ustc.edu.cn/">中国科学技术大学开源镜像站</a> |
+        <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学开源软件镜像站</a> |
+        <a target="_blank" rel="noopener" href="http://ftp.sjtu.edu.cn/">上海交通大学开源镜像站</a>   |
+        <a target="_blank" rel="noopener" href="http://mirrors.zju.edu.cn/">浙江大学开源镜像站</a>  |
+        <a target="_blank" rel="noopener" href="http://mirror.neu.edu.cn/">东北大学开源镜像站</a>   |
+        <a target="_blank" rel="noopener" href="http://www.debian.org/mirror/list">Debian全球镜像站</a> |
+
+
+</nav>
+
+  </fieldset>
+</form>
+
+
+
+<form>
+  <fieldset>
+    <legend>Linux</legend>
+
+<nav>
+    <font size="3">
+        <a target="_blank" rel="noopener" href="https://www.linux.org/">Linux</a>
+        <a target="_blank" rel="noopener" href="https://www.kali.org/">Kali Linux</a>  |
+        <a target="_blank" rel="noopener" href="http://www.kali.org.cn/">Kali Linux中文网</a> |
+        <a target="_blank" rel="noopener" href="https://www.ubuntu.com/index_kylin">Ubuntu Linux</a>   |
+        <a target="_blank" rel="noopener" href="https://www.centos.org/">CentOS Linux</a>  |
+        <a target="_blank" rel="noopener" href="https://access.redhat.com/">RedHat Linux</a>   |
+        <a target="_blank" rel="noopener" href="http://www.chinaunix.net/">ChinaUnix</a>   |
+        <a target="_blank" rel="noopener" href="http://www.linuxidc.com/">Linux公社</a>  |
+        <a target="_blank" rel="noopener" href="http://linux.vbird.org/">鸟哥的Linux私房菜</a>   |
+        <a target="_blank" rel="noopener" href="https://linux.cn/">Linux中国开源社区</a> |
+        <a target="_blank" rel="noopener" href="http://www.linuxdiyf.com/">红联Linux</a> |
+        <a target="_blank" rel="noopener" href="http://www.linuxeden.com/">Linuxeden开源社区</a>   |
+        <a target="_blank" rel="noopener" href="https://www.linuxfoundation.org/">The Linux Foundation</a> |
+    </font>
+</nav>
+
+  </fieldset>
+</form>
+
+
+
+<form>
+  <fieldset>
+    <legend>计算机程序设计</legend>
+
+<nav>
+    <font size="3">
+        <a target="_blank" rel="noopener" href="https://www.python.org/">Python</a>    |
+        <a target="_blank" rel="noopener" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java SE</a>    |
+        <a target="_blank" rel="noopener" href="http://www.runoob.com/">RUNOOB</a> |
+        <a target="_blank" rel="noopener" href="http://www.w3school.com.cn/">W3school</a>  |
+        <a target="_blank" rel="noopener" href="https://www.eclipse.org/">Eclipse</a>  |
+    </font>
+</nav>
+
+  </fieldset>
+</form>
+
+
+
+<form>
+  <fieldset>
+    <legend>资料查询</legend>
+
+<nav>
+    <font size="3">
+        <a target="_blank" rel="noopener" href="https://www.wikipedia.org/">维基百科</a>   |
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a> |
+        <a target="_blank" rel="noopener" href="https://www.bing.com/?intlF=">Bing</a> |
+        <a target="_blank" rel="noopener" href="https://www.zhihu.com/">知乎</a> |
+        <a target="_blank" rel="noopener" href="https://www.quora.com/">Quora</a>  |
+        <a target="_blank" rel="noopener" href="https://stackoverflow.com/">StackOverflow</a>  |
+        <a target="_blank" rel="noopener" href="http://www.chongbuluo.com/">虫部落</a>    |
+    </font>
+</nav>
+
+  </fieldset>
+</form>
+
+
+
+<form>
+  <fieldset>
+    <legend>技术参考</legend>
+
+<nav>
+    <font size="3">
+        <a target="_blank" rel="noopener" href="http://www.williamlong.info/">月光博客</a> |
+        <a target="_blank" rel="noopener" href="http://www.freebuf.com/">FreeBuf</a>   |
+        <a target="_blank" rel="noopener" href="http://www.iplaysoft.com/">异次元软件</a>   |
+        <a target="_blank" rel="noopener" href="https://bbs.pediy.com/">看雪安全论坛</a> |
+        <a target="_blank" rel="noopener" href="https://www.2cto.com/">红黑联盟</a>    |
+        <a target="_blank" rel="noopener" href="http://bobao.360.cn/index/index">安全客</a>   |
+        <a target="_blank" rel="noopener" href="https://technet.microsoft.com/en-us/">Microsoft TechNet</a>    |
+    </font>
+</nav>
+
+  </fieldset>
+</form>
+
+
+
+<form>
+  <fieldset>
+    <legend>代码维护</legend>
+
+<nav>
+    <font size="3">
+        <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>    |
+        <a target="_blank" rel="noopener" href="https://www.openshift.com/">OpenShift</a>  |
+        <a target="_blank" rel="noopener" href="https://about.gitlab.com/">GitLab</a>  |
+        <a target="_blank" rel="noopener" href="https://gitee.com/">码云</a> |
+    </font>
+</nav>
+
+  </fieldset>
+</form>
+
+
+
+<form>
+  <fieldset>
+    <legend>站长工具</legend>
+
+<nav>
+    <font size="3">
+        <a target="_blank" rel="noopener" href="http://zhanzhang.baidu.com/">百度站长平台</a>    |
+        <a target="_blank" rel="noopener" href="http://tool.chinaz.com/">站长之家 站长工具</a> |
+        <a target="_blank" rel="noopener" href="https://thepaperwall.com/">The Paper Wall</a>  |
+    </font>
+</nav>
+
+  </fieldset>
+</form>
+
+
+
+<form>
+  <fieldset>
+    <legend>放松一下</legend>
+
+<nav>
+    <font size="3">
+        <a target="_blank" rel="noopener" href="https://daily.zhihu.com/">知乎日报</a> |
+        <a target="_blank" rel="noopener" href="http://jandan.net/">煎蛋</a> |
+        <a target="_blank" rel="noopener" href="http://www.guokr.com/">果壳</a>  |
+        <a target="_blank" rel="noopener" href="http://songshuhui.net/">科学松鼠会</a>  |
+        <a target="_blank" rel="noopener" href="http://www.sfw.com.cn/">科幻世界</a>   |
+        <a target="_blank" rel="noopener" href="https://what-if.xkcd.com/">What If</a> |
+        <a target="_blank" rel="noopener" href="https://www.bilibili.com/">哔哩哔哩</a>    |
+    </font>
+</nav>
+
+  </fieldset>
+</form>
+
+<br>
+
+<form>
+  <fieldset>
+    <legend></legend>
+  </fieldset>
+</form>
+
+</body>
+
+</html>
+                                </div>
+                </div>
+            </div>
+            <script>$(function () { $('.links-content').addClass('content-move'); })</script>
+		
+<link rel="stylesheet" href="/css/food.css">
+
+<div class="footer">
+	<div class="Copyright">
+		©2022 By 军军Z1. 主题：<a
+			style="text-decoration: none;display: contents; color: #898F9F;"
+			target="_blank" rel="noopener" href="https://github.com/qiaobug/hexo-theme-quiet">Quiet</a>
+	</div>
+	<div class="contact">
+		
+		<a target="_blank" rel="noopener" href="https://github.com/qiaobug">
+			<img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+		</a>
+		
+	</div>
+</div>
+
+<script src="/js/jquery.min.js"></script>
+
+
+<script src="/js/gotop.js"></script>
+
+
+<style type="text/css">
+    @media screen and (min-width: 600px) {
+        .goTop>span {
+            display: block;
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+            cursor: pointer;
+            opacity: 0.8;
+            background: rgba(18, 24, 58, 0.06);
+            text-align: center;
+            border: 1px solid rgba(18, 24, 58, 0.06);
+
+            transition: border .5s;
+            -moz-transition: border .5s;
+            /* Firefox 4 */
+            -webkit-transition: border .5s;
+            /* Safari 和 Chrome */
+            -o-transition: border .5s;
+            /* Opera */
+        }
+
+        .goTop>span:hover {
+            border: 1px solid #6680B3;
+        }
+
+
+        .goTop {
+            position: fixed;
+            right: 30px;
+            bottom: 80px;
+        }
+
+        .goTop>span>svg {
+            width: 30px;
+            height: 30px;
+            margin-top: 17.5px;
+            opacity: 0.7;
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .goTop {
+            display: none;
+        }
+    }
+</style>
+<div class="goTop" id="js-go_top">
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g>
+                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
+            </g>
+        </svg>
+    </span>
+</div>
+<script>
+    $('#js-go_top').gotoTop({ offset: 500, speed: 300, animationShow: { 'transform': 'translate(0,0)', 'transition': 'transform .5s ease-in-out' }, animationHide: { 'transform': 'translate(100px,0)', 'transition': 'transform .5s ease-in-out' } });
+</script>
+<script>
+	console.log('\n %c Hexo-Quiet 主题 %c https://github.com/QiaoBug/hexo-theme-quiet \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;')
+</script>
+	</body>
+
+</html>
