@@ -341,7 +341,7 @@
 <p><strong>7.构造SQL语句爆字段值</strong>。</p>
 <p>​        爆破的最终目的就是爆表中的字段值，再得到表名、字段名后就需要尝试爆我们想要得到的数据</p>
 <h3 id="判断注入点"><a href="#判断注入点" class="headerlink" title="判断注入点"></a>判断注入点</h3><p><strong>判断注入点</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">and 1=1  页面正常</span><br><span class="line">and 1=2 页面错误</span><br><span class="line"></span><br><span class="line">SELECT * FROM user WHERE id=1 and 1=1 LIMIT 0,1 正常</span><br><span class="line">SELECT * FROM user WHERE id=1 and 1=2 LIMIT 0,1 错误</span><br><span class="line"></span><br><span class="line">(有一个正常，整个语句都为真)</span><br><span class="line">SELECT * FROM user WHERE id=1 or 1=1 LIMIT 0,1 正常</span><br><span class="line">SELECT * FROM user WHERE id=1 or 1=2 LIMIT 0,1 正常</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">and 1=1 页面正常</span><br><span class="line">and 1=2 页面错误</span><br><span class="line"></span><br><span class="line">SELECT * FROM user WHERE id=1 and 1=1 LIMIT 0,1 正常</span><br><span class="line">SELECT * FROM user WHERE id=1 and 1=2 LIMIT 0,1 错误</span><br><span class="line"></span><br><span class="line">(有一个正常，整个语句都为真)</span><br><span class="line">SELECT * FROM user WHERE id=1 or 1=1 LIMIT 0,1 正常</span><br><span class="line">SELECT * FROM user WHERE id=1 or 1=2 LIMIT 0,1 正常</span><br></pre></td></tr></table></figure>
 
 <p><strong>判断字段数</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">order by 1,2,3,4</span><br></pre></td></tr></table></figure>
@@ -418,7 +418,7 @@
 
 
 
-<h1 id="WEB漏洞—类型及提交注入"><a href="#WEB漏洞—类型及提交注入" class="headerlink" title="WEB漏洞—类型及提交注入"></a>WEB漏洞—类型及提交注入</h1><pre><code>     **在真实 SQL 注入安全测试中，我们一定要先明确提交数据及提交方 法后再进行注入，其中提交数据类型和提交方法可以通过抓包分析获取， 后续安全测试中我们也必须满足同等的操作才能进行注入** 
+<h1 id="WEB漏洞—类型及提交注入"><a href="#WEB漏洞—类型及提交注入" class="headerlink" title="WEB漏洞—类型及提交注入"></a>WEB漏洞—类型及提交注入</h1><pre><code>     在真实 SQL 注入安全测试中，我们一定要先明确提交数据及提交方 法后再进行注入，其中提交数据类型和提交方法可以通过抓包分析获取， 后续安全测试中我们也必须满足同等的操作才能进行注入
 </code></pre>
 <h3 id="简要明确参数类型"><a href="#简要明确参数类型" class="headerlink" title="简要明确参数类型"></a><strong>简要明确参数类型</strong></h3><p><strong>根据网站上的参数或者值来判定注入的时候是否需要考虑符号的问题</strong></p>
 <p><strong>数字，字符，搜索，JSON 等</strong></p>
