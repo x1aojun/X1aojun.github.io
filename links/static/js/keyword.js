@@ -193,11 +193,7 @@ $(function () {
   function renderSearchResult(array) {
     var $result = $('#search_result');
     $result.empty().hide();
-    if (!array || array.length <= 0) {
-      return;
-    }
-    for (var i = 0; i < array.length; i++) {
-      var $li = $('<li class=\'result-item\'></li>');
+    if (!array || array.length <= 0) { return; } for (var i="0;" < array.length; i++) var $li="$('<li" class="\'result-item\'">');
       $li.text(array[i]);
       $result.append($li);
     }
@@ -260,4 +256,4 @@ $(function () {
       window.open(baseUrl.url + keyword, keyword);
     }
   }
-});
+});</=>

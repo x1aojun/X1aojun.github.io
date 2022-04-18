@@ -29,6 +29,8 @@
 </script>
 
 
+
+
 	<meta name="generator" content="Hexo 6.1.0"></head>
 
 	<body>
@@ -280,9 +282,9 @@
         <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8">
   <title>IconFont Demo</title>
-  <link rel="shortcut icon" href="https://img.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="https://img.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://g.alicdn.com/thx/cube/1.3.2/cube.min.css">
   <link rel="stylesheet" href="demo.css">
   <link rel="stylesheet" href="iconfont.css">
@@ -294,7 +296,7 @@
 </head>
 <body>
   <div class="main">
-    <h1 class="logo"><a href="https://www.iconfont.cn/" title="iconfont 首页" target="_blank">&#xe86b;</a></h1>
+    <h1 class="logo"><span id="xe86b"></span></h1>
     <div class="nav-tabs">
       <ul id="tabs" class="dib-box">
         <li class="dib active"><span>Unicode</span></li>
@@ -983,7 +985,7 @@
           
           </ul>
           <div class="article markdown">
-          <h2 id="unicode-">Unicode 引用</h2>
+          <h2><span id="unicode-引用">Unicode 引用</span></h2>
           <hr>
 
           <p>Unicode 是字体在网页端最原始的应用方式，特点是：</p>
@@ -996,9 +998,8 @@
             <p>注意：新版 iconfont 支持多色图标，这些多色图标在 Unicode 模式下将不能使用，如果有需求建议使用symbol 的引用方式</p>
           </blockquote>
           <p>Unicode 使用步骤如下：</p>
-          <h3 id="-font-face">第一步：拷贝项目下面生成的 <code>@font-face</code></h3>
-<pre><code class="language-css"
->@font-face &#123;
+          <h3><span id="第一步拷贝项目下面生成的-font-face">第一步：拷贝项目下面生成的 <code>@font-face</code></span></h3>
+<pre><code class="language-css">@font-face &#123;
   font-family: 'iconfont';
   src: url('iconfont.eot');
   src: url('iconfont.eot?#iefix') format('embedded-opentype'),
@@ -1008,9 +1009,8 @@
       url('iconfont.svg#iconfont') format('svg');
 &#125;
 </code></pre>
-          <h3 id="-iconfont-">第二步：定义使用 iconfont 的样式</h3>
-<pre><code class="language-css"
->.iconfont &#123;
+          <h3><span id="第二步定义使用-iconfont-的样式">第二步：定义使用 iconfont 的样式</span></h3>
+<pre><code class="language-css">.iconfont &#123;
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
@@ -1018,10 +1018,9 @@
   -moz-osx-font-smoothing: grayscale;
 &#125;
 </code></pre>
-          <h3 id="-">第三步：挑选相应图标并获取字体编码，应用于页面</h3>
+          <h3><span id="第三步挑选相应图标并获取字体编码应用于页面">第三步：挑选相应图标并获取字体编码，应用于页面</span></h3>
 <pre>
-<code class="language-html"
->&lt;span class="iconfont"&gt;&amp;#x33;&lt;/span&gt;
+<code class="language-html">&lt;span class="iconfont"&gt;&amp;#x33;&lt;/span&gt;
 </code></pre>
           <blockquote>
             <p>"iconfont" 是你项目下的 font-family。可以通过编辑项目查看，默认是 "iconfont"。</p>
@@ -2041,7 +2040,7 @@
           
         </ul>
         <div class="article markdown">
-        <h2 id="font-class-">font-class 引用</h2>
+        <h2><span id="font-class-引用">font-class 引用</span></h2>
         <hr>
 
         <p>font-class 是 Unicode 使用方式的一种变种，主要是解决 Unicode 书写不直观，语意不明确的问题。</p>
@@ -2053,10 +2052,10 @@
           <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
         </ul>
         <p>使用步骤如下：</p>
-        <h3 id="-fontclass-">第一步：引入项目下面生成的 fontclass 代码：</h3>
+        <h3><span id="第一步引入项目下面生成的-fontclass-代码">第一步：引入项目下面生成的 fontclass 代码：</span></h3>
 <pre><code class="language-html">&lt;link rel="stylesheet" href="./iconfont.css"&gt;
 </code></pre>
-        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <h3><span id="第二步挑选相应图标并获取类名应用于页面">第二步：挑选相应图标并获取类名，应用于页面：</span></h3>
 <pre><code class="language-html">&lt;span class="iconfont icon-xxx"&gt;&lt;/span&gt;
 </code></pre>
         <blockquote>
@@ -2070,7 +2069,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-hulianwang-hover"></use>
+                  <use xlink:href="#icon-hulianwang-hover"/>
                 </svg>
                 <div class="name">互联网专场 </div>
                 <div class="code-name">#icon-hulianwang-hover</div>
@@ -2078,7 +2077,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-wangyi1"></use>
+                  <use xlink:href="#icon-wangyi1"/>
                 </svg>
                 <div class="name">网易</div>
                 <div class="code-name">#icon-wangyi1</div>
@@ -2086,7 +2085,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-acrrongqijingxiangfuwu"></use>
+                  <use xlink:href="#icon-acrrongqijingxiangfuwu"/>
                 </svg>
                 <div class="name">acr 容器镜像服务</div>
                 <div class="code-name">#icon-acrrongqijingxiangfuwu</div>
@@ -2094,7 +2093,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-hulianwang1"></use>
+                  <use xlink:href="#icon-hulianwang1"/>
                 </svg>
                 <div class="name">互联网+</div>
                 <div class="code-name">#icon-hulianwang1</div>
@@ -2102,7 +2101,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-PS"></use>
+                  <use xlink:href="#icon-PS"/>
                 </svg>
                 <div class="name">PS</div>
                 <div class="code-name">#icon-PS</div>
@@ -2110,7 +2109,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-huhu"></use>
+                  <use xlink:href="#icon-huhu"/>
                 </svg>
                 <div class="name">虎虎</div>
                 <div class="code-name">#icon-huhu</div>
@@ -2118,7 +2117,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-xitongshezhi"></use>
+                  <use xlink:href="#icon-xitongshezhi"/>
                 </svg>
                 <div class="name">系统设置</div>
                 <div class="code-name">#icon-xitongshezhi</div>
@@ -2126,7 +2125,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-T2"></use>
+                  <use xlink:href="#icon-T2"/>
                 </svg>
                 <div class="name">T</div>
                 <div class="code-name">#icon-T2</div>
@@ -2134,7 +2133,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-linux"></use>
+                  <use xlink:href="#icon-linux"/>
                 </svg>
                 <div class="name">linux</div>
                 <div class="code-name">#icon-linux</div>
@@ -2142,7 +2141,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-yepian"></use>
+                  <use xlink:href="#icon-yepian"/>
                 </svg>
                 <div class="name">鸟</div>
                 <div class="code-name">#icon-yepian</div>
@@ -2150,7 +2149,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-music"></use>
+                  <use xlink:href="#icon-music"/>
                 </svg>
                 <div class="name">music</div>
                 <div class="code-name">#icon-music</div>
@@ -2158,7 +2157,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-tupian"></use>
+                  <use xlink:href="#icon-tupian"/>
                 </svg>
                 <div class="name">图片</div>
                 <div class="code-name">#icon-tupian</div>
@@ -2166,7 +2165,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-ziyuan"></use>
+                  <use xlink:href="#icon-ziyuan"/>
                 </svg>
                 <div class="name">下载</div>
                 <div class="code-name">#icon-ziyuan</div>
@@ -2174,7 +2173,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-COFFEEPOT"></use>
+                  <use xlink:href="#icon-COFFEEPOT"/>
                 </svg>
                 <div class="name">咖啡壶</div>
                 <div class="code-name">#icon-COFFEEPOT</div>
@@ -2182,7 +2181,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-hulianwang"></use>
+                  <use xlink:href="#icon-hulianwang"/>
                 </svg>
                 <div class="name">互联网</div>
                 <div class="code-name">#icon-hulianwang</div>
@@ -2190,7 +2189,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-pin"></use>
+                  <use xlink:href="#icon-pin"/>
                 </svg>
                 <div class="name">品</div>
                 <div class="code-name">#icon-pin</div>
@@ -2198,7 +2197,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-L"></use>
+                  <use xlink:href="#icon-L"/>
                 </svg>
                 <div class="name">L</div>
                 <div class="code-name">#icon-L</div>
@@ -2206,7 +2205,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-p"></use>
+                  <use xlink:href="#icon-p"/>
                 </svg>
                 <div class="name">P</div>
                 <div class="code-name">#icon-p</div>
@@ -2214,7 +2213,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-36kr"></use>
+                  <use xlink:href="#icon-36kr"/>
                 </svg>
                 <div class="name">36kr</div>
                 <div class="code-name">#icon-36kr</div>
@@ -2222,7 +2221,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-T1"></use>
+                  <use xlink:href="#icon-T1"/>
                 </svg>
                 <div class="name">T</div>
                 <div class="code-name">#icon-T1</div>
@@ -2230,7 +2229,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-icon-class-a"></use>
+                  <use xlink:href="#icon-icon-class-a"/>
                 </svg>
                 <div class="name">A</div>
                 <div class="code-name">#icon-icon-class-a</div>
@@ -2238,7 +2237,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-chahu"></use>
+                  <use xlink:href="#icon-chahu"/>
                 </svg>
                 <div class="name">茶壶</div>
                 <div class="code-name">#icon-chahu</div>
@@ -2246,7 +2245,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-Z"></use>
+                  <use xlink:href="#icon-Z"/>
                 </svg>
                 <div class="name">Z</div>
                 <div class="code-name">#icon-Z</div>
@@ -2254,7 +2253,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-wangye"></use>
+                  <use xlink:href="#icon-wangye"/>
                 </svg>
                 <div class="name">网页</div>
                 <div class="code-name">#icon-wangye</div>
@@ -2262,7 +2261,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-H"></use>
+                  <use xlink:href="#icon-H"/>
                 </svg>
                 <div class="name">H</div>
                 <div class="code-name">#icon-H</div>
@@ -2270,7 +2269,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-IT"></use>
+                  <use xlink:href="#icon-IT"/>
                 </svg>
                 <div class="name">IT</div>
                 <div class="code-name">#icon-IT</div>
@@ -2278,7 +2277,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-xiazai1"></use>
+                  <use xlink:href="#icon-xiazai1"/>
                 </svg>
                 <div class="name">下载</div>
                 <div class="code-name">#icon-xiazai1</div>
@@ -2286,7 +2285,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-web"></use>
+                  <use xlink:href="#icon-web"/>
                 </svg>
                 <div class="name">网站</div>
                 <div class="code-name">#icon-web</div>
@@ -2294,7 +2293,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-yun1"></use>
+                  <use xlink:href="#icon-yun1"/>
                 </svg>
                 <div class="name">云</div>
                 <div class="code-name">#icon-yun1</div>
@@ -2302,7 +2301,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-erweima1"></use>
+                  <use xlink:href="#icon-erweima1"/>
                 </svg>
                 <div class="name">二维码</div>
                 <div class="code-name">#icon-erweima1</div>
@@ -2310,7 +2309,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-cesu"></use>
+                  <use xlink:href="#icon-cesu"/>
                 </svg>
                 <div class="name">测速</div>
                 <div class="code-name">#icon-cesu</div>
@@ -2318,7 +2317,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-D"></use>
+                  <use xlink:href="#icon-D"/>
                 </svg>
                 <div class="name">D</div>
                 <div class="code-name">#icon-D</div>
@@ -2326,7 +2325,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-T"></use>
+                  <use xlink:href="#icon-T"/>
                 </svg>
                 <div class="name">T</div>
                 <div class="code-name">#icon-T</div>
@@ -2334,7 +2333,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-youmengtongjicopy"></use>
+                  <use xlink:href="#icon-youmengtongjicopy"/>
                 </svg>
                 <div class="name">友盟统计 copy</div>
                 <div class="code-name">#icon-youmengtongjicopy</div>
@@ -2342,7 +2341,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-gongju1"></use>
+                  <use xlink:href="#icon-gongju1"/>
                 </svg>
                 <div class="name">工具</div>
                 <div class="code-name">#icon-gongju1</div>
@@ -2350,7 +2349,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-yun"></use>
+                  <use xlink:href="#icon-yun"/>
                 </svg>
                 <div class="name">云</div>
                 <div class="code-name">#icon-yun</div>
@@ -2358,7 +2357,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-tongji"></use>
+                  <use xlink:href="#icon-tongji"/>
                 </svg>
                 <div class="name">统计</div>
                 <div class="code-name">#icon-tongji</div>
@@ -2366,7 +2365,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-sheji-yuanwenjian"></use>
+                  <use xlink:href="#icon-sheji-yuanwenjian"/>
                 </svg>
                 <div class="name">设计</div>
                 <div class="code-name">#icon-sheji-yuanwenjian</div>
@@ -2374,7 +2373,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-baidu"></use>
+                  <use xlink:href="#icon-baidu"/>
                 </svg>
                 <div class="name">百度</div>
                 <div class="code-name">#icon-baidu</div>
@@ -2382,7 +2381,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-fanyi"></use>
+                  <use xlink:href="#icon-fanyi"/>
                 </svg>
                 <div class="name">翻译</div>
                 <div class="code-name">#icon-fanyi</div>
@@ -2390,7 +2389,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-CN_acfuntv"></use>
+                  <use xlink:href="#icon-CN_acfuntv"/>
                 </svg>
                 <div class="name">CN_acfun.tv</div>
                 <div class="code-name">#icon-CN_acfuntv</div>
@@ -2398,7 +2397,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-login-amazon"></use>
+                  <use xlink:href="#icon-login-amazon"/>
                 </svg>
                 <div class="name">亚马逊</div>
                 <div class="code-name">#icon-login-amazon</div>
@@ -2406,7 +2405,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-xiazai"></use>
+                  <use xlink:href="#icon-xiazai"/>
                 </svg>
                 <div class="name">下载</div>
                 <div class="code-name">#icon-xiazai</div>
@@ -2414,7 +2413,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-v1"></use>
+                  <use xlink:href="#icon-v1"/>
                 </svg>
                 <div class="name">v</div>
                 <div class="code-name">#icon-v1</div>
@@ -2422,7 +2421,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-bizhishezhi"></use>
+                  <use xlink:href="#icon-bizhishezhi"/>
                 </svg>
                 <div class="name">壁纸设置</div>
                 <div class="code-name">#icon-bizhishezhi</div>
@@ -2430,7 +2429,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-QQ"></use>
+                  <use xlink:href="#icon-QQ"/>
                 </svg>
                 <div class="name">QQ</div>
                 <div class="code-name">#icon-QQ</div>
@@ -2438,7 +2437,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-md"></use>
+                  <use xlink:href="#icon-md"/>
                 </svg>
                 <div class="name">md</div>
                 <div class="code-name">#icon-md</div>
@@ -2446,7 +2445,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-pingtai1"></use>
+                  <use xlink:href="#icon-pingtai1"/>
                 </svg>
                 <div class="name">pingtai</div>
                 <div class="code-name">#icon-pingtai1</div>
@@ -2454,7 +2453,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-sousuo1"></use>
+                  <use xlink:href="#icon-sousuo1"/>
                 </svg>
                 <div class="name">搜索</div>
                 <div class="code-name">#icon-sousuo1</div>
@@ -2462,7 +2461,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-faqisikao"></use>
+                  <use xlink:href="#icon-faqisikao"/>
                 </svg>
                 <div class="name">发起思考</div>
                 <div class="code-name">#icon-faqisikao</div>
@@ -2470,7 +2469,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-AC"></use>
+                  <use xlink:href="#icon-AC"/>
                 </svg>
                 <div class="name">AC</div>
                 <div class="code-name">#icon-AC</div>
@@ -2478,7 +2477,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-huikong-fasongzimu"></use>
+                  <use xlink:href="#icon-huikong-fasongzimu"/>
                 </svg>
                 <div class="name">会控-发送字幕2</div>
                 <div class="code-name">#icon-huikong-fasongzimu</div>
@@ -2486,7 +2485,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-dribbble"></use>
+                  <use xlink:href="#icon-dribbble"/>
                 </svg>
                 <div class="name">dribbble</div>
                 <div class="code-name">#icon-dribbble</div>
@@ -2494,7 +2493,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-kaifazhong"></use>
+                  <use xlink:href="#icon-kaifazhong"/>
                 </svg>
                 <div class="name">开发中</div>
                 <div class="code-name">#icon-kaifazhong</div>
@@ -2502,7 +2501,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-gouwu"></use>
+                  <use xlink:href="#icon-gouwu"/>
                 </svg>
                 <div class="name">购物</div>
                 <div class="code-name">#icon-gouwu</div>
@@ -2510,7 +2509,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-sousuo"></use>
+                  <use xlink:href="#icon-sousuo"/>
                 </svg>
                 <div class="name">搜索--1</div>
                 <div class="code-name">#icon-sousuo</div>
@@ -2518,7 +2517,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-shipin"></use>
+                  <use xlink:href="#icon-shipin"/>
                 </svg>
                 <div class="name">视频</div>
                 <div class="code-name">#icon-shipin</div>
@@ -2526,7 +2525,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-xitongkoulingbaolipojiefanghu"></use>
+                  <use xlink:href="#icon-xitongkoulingbaolipojiefanghu"/>
                 </svg>
                 <div class="name">系统口令暴力破解防护</div>
                 <div class="code-name">#icon-xitongkoulingbaolipojiefanghu</div>
@@ -2534,7 +2533,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-youxiang"></use>
+                  <use xlink:href="#icon-youxiang"/>
                 </svg>
                 <div class="name">邮箱</div>
                 <div class="code-name">#icon-youxiang</div>
@@ -2542,7 +2541,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-shijue"></use>
+                  <use xlink:href="#icon-shijue"/>
                 </svg>
                 <div class="name">视觉</div>
                 <div class="code-name">#icon-shijue</div>
@@ -2550,7 +2549,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-wangzhan"></use>
+                  <use xlink:href="#icon-wangzhan"/>
                 </svg>
                 <div class="name">网站</div>
                 <div class="code-name">#icon-wangzhan</div>
@@ -2558,7 +2557,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-image_"></use>
+                  <use xlink:href="#icon-image_"/>
                 </svg>
                 <div class="name">tool</div>
                 <div class="code-name">#icon-image_</div>
@@ -2566,7 +2565,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-SCDNanquanjiasu"></use>
+                  <use xlink:href="#icon-SCDNanquanjiasu"/>
                 </svg>
                 <div class="name">SCDN 安全加速</div>
                 <div class="code-name">#icon-SCDNanquanjiasu</div>
@@ -2574,7 +2573,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-bianjiqi-"></use>
+                  <use xlink:href="#icon-bianjiqi-"/>
                 </svg>
                 <div class="name">编辑器</div>
                 <div class="code-name">#icon-bianjiqi-</div>
@@ -2582,7 +2581,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-miji"></use>
+                  <use xlink:href="#icon-miji"/>
                 </svg>
                 <div class="name">miji</div>
                 <div class="code-name">#icon-miji</div>
@@ -2590,7 +2589,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-huabanwang"></use>
+                  <use xlink:href="#icon-huabanwang"/>
                 </svg>
                 <div class="name">花瓣网</div>
                 <div class="code-name">#icon-huabanwang</div>
@@ -2598,7 +2597,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-weiruan-"></use>
+                  <use xlink:href="#icon-weiruan-"/>
                 </svg>
                 <div class="name">微软</div>
                 <div class="code-name">#icon-weiruan-</div>
@@ -2606,7 +2605,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-daohang"></use>
+                  <use xlink:href="#icon-daohang"/>
                 </svg>
                 <div class="name">导航</div>
                 <div class="code-name">#icon-daohang</div>
@@ -2614,7 +2613,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-baiduwangpan"></use>
+                  <use xlink:href="#icon-baiduwangpan"/>
                 </svg>
                 <div class="name">百度网盘</div>
                 <div class="code-name">#icon-baiduwangpan</div>
@@ -2622,7 +2621,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-shejimdpi"></use>
+                  <use xlink:href="#icon-shejimdpi"/>
                 </svg>
                 <div class="name">设计</div>
                 <div class="code-name">#icon-shejimdpi</div>
@@ -2630,7 +2629,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-Pinterest"></use>
+                  <use xlink:href="#icon-Pinterest"/>
                 </svg>
                 <div class="name">Pinterest</div>
                 <div class="code-name">#icon-Pinterest</div>
@@ -2638,7 +2637,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-gongju"></use>
+                  <use xlink:href="#icon-gongju"/>
                 </svg>
                 <div class="name">工具</div>
                 <div class="code-name">#icon-gongju</div>
@@ -2646,7 +2645,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-duckduckgo"></use>
+                  <use xlink:href="#icon-duckduckgo"/>
                 </svg>
                 <div class="name">duckduckgo</div>
                 <div class="code-name">#icon-duckduckgo</div>
@@ -2654,7 +2653,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-douban"></use>
+                  <use xlink:href="#icon-douban"/>
                 </svg>
                 <div class="name">豆瓣</div>
                 <div class="code-name">#icon-douban</div>
@@ -2662,7 +2661,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-zhanku"></use>
+                  <use xlink:href="#icon-zhanku"/>
                 </svg>
                 <div class="name">站酷</div>
                 <div class="code-name">#icon-zhanku</div>
@@ -2670,7 +2669,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon--"></use>
+                  <use xlink:href="#icon--"/>
                 </svg>
                 <div class="name">360</div>
                 <div class="code-name">#icon--</div>
@@ -2678,7 +2677,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-gugesousuo"></use>
+                  <use xlink:href="#icon-gugesousuo"/>
                 </svg>
                 <div class="name">谷歌搜索</div>
                 <div class="code-name">#icon-gugesousuo</div>
@@ -2686,7 +2685,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-IP"></use>
+                  <use xlink:href="#icon-IP"/>
                 </svg>
                 <div class="name">IP</div>
                 <div class="code-name">#icon-IP</div>
@@ -2694,7 +2693,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-githair-instagram"></use>
+                  <use xlink:href="#icon-githair-instagram"/>
                 </svg>
                 <div class="name">instagram</div>
                 <div class="code-name">#icon-githair-instagram</div>
@@ -2702,7 +2701,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-iconfont"></use>
+                  <use xlink:href="#icon-iconfont"/>
                 </svg>
                 <div class="name">阿里图标库</div>
                 <div class="code-name">#icon-iconfont</div>
@@ -2710,7 +2709,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-bing"></use>
+                  <use xlink:href="#icon-bing"/>
                 </svg>
                 <div class="name">bing</div>
                 <div class="code-name">#icon-bing</div>
@@ -2718,7 +2717,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-html"></use>
+                  <use xlink:href="#icon-html"/>
                 </svg>
                 <div class="name">html5</div>
                 <div class="code-name">#icon-html</div>
@@ -2726,7 +2725,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-cl-dd"></use>
+                  <use xlink:href="#icon-cl-dd"/>
                 </svg>
                 <div class="name">当当</div>
                 <div class="code-name">#icon-cl-dd</div>
@@ -2734,7 +2733,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-aliyouxiang"></use>
+                  <use xlink:href="#icon-aliyouxiang"/>
                 </svg>
                 <div class="name">阿里邮箱</div>
                 <div class="code-name">#icon-aliyouxiang</div>
@@ -2742,7 +2741,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-suning"></use>
+                  <use xlink:href="#icon-suning"/>
                 </svg>
                 <div class="name">苏宁</div>
                 <div class="code-name">#icon-suning</div>
@@ -2750,7 +2749,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-jingxuan"></use>
+                  <use xlink:href="#icon-jingxuan"/>
                 </svg>
                 <div class="name">精选</div>
                 <div class="code-name">#icon-jingxuan</div>
@@ -2758,7 +2757,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-wangyi"></use>
+                  <use xlink:href="#icon-wangyi"/>
                 </svg>
                 <div class="name">网易</div>
                 <div class="code-name">#icon-wangyi</div>
@@ -2766,7 +2765,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-bilibili"></use>
+                  <use xlink:href="#icon-bilibili"/>
                 </svg>
                 <div class="name">bilibili</div>
                 <div class="code-name">#icon-bilibili</div>
@@ -2774,7 +2773,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-tuite"></use>
+                  <use xlink:href="#icon-tuite"/>
                 </svg>
                 <div class="name">推特</div>
                 <div class="code-name">#icon-tuite</div>
@@ -2782,7 +2781,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-souhu"></use>
+                  <use xlink:href="#icon-souhu"/>
                 </svg>
                 <div class="name">搜狐</div>
                 <div class="code-name">#icon-souhu</div>
@@ -2790,7 +2789,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-zhihu"></use>
+                  <use xlink:href="#icon-zhihu"/>
                 </svg>
                 <div class="name">知乎</div>
                 <div class="code-name">#icon-zhihu</div>
@@ -2798,7 +2797,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-LiveHotmailyouxiang"></use>
+                  <use xlink:href="#icon-LiveHotmailyouxiang"/>
                 </svg>
                 <div class="name">Live Hotmail邮箱</div>
                 <div class="code-name">#icon-LiveHotmailyouxiang</div>
@@ -2806,7 +2805,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-jingdong"></use>
+                  <use xlink:href="#icon-jingdong"/>
                 </svg>
                 <div class="name">京东</div>
                 <div class="code-name">#icon-jingdong</div>
@@ -2814,7 +2813,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon--gmail"></use>
+                  <use xlink:href="#icon--gmail"/>
                 </svg>
                 <div class="name">007-gmail</div>
                 <div class="code-name">#icon--gmail</div>
@@ -2822,7 +2821,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-sougou"></use>
+                  <use xlink:href="#icon-sougou"/>
                 </svg>
                 <div class="name">搜狗 (1)</div>
                 <div class="code-name">#icon-sougou</div>
@@ -2830,7 +2829,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-jianshu"></use>
+                  <use xlink:href="#icon-jianshu"/>
                 </svg>
                 <div class="name">简书</div>
                 <div class="code-name">#icon-jianshu</div>
@@ -2838,7 +2837,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-GitHub"></use>
+                  <use xlink:href="#icon-GitHub"/>
                 </svg>
                 <div class="name">GitHub</div>
                 <div class="code-name">#icon-GitHub</div>
@@ -2846,7 +2845,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-icon_wangyiyanxuan"></use>
+                  <use xlink:href="#icon-icon_wangyiyanxuan"/>
                 </svg>
                 <div class="name">icon_网易严选</div>
                 <div class="code-name">#icon-icon_wangyiyanxuan</div>
@@ -2854,7 +2853,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-Facebook"></use>
+                  <use xlink:href="#icon-Facebook"/>
                 </svg>
                 <div class="name">Facebook</div>
                 <div class="code-name">#icon-Facebook</div>
@@ -2862,7 +2861,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-xinlangwang"></use>
+                  <use xlink:href="#icon-xinlangwang"/>
                 </svg>
                 <div class="name">新浪网</div>
                 <div class="code-name">#icon-xinlangwang</div>
@@ -2870,7 +2869,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-bianzubeifen"></use>
+                  <use xlink:href="#icon-bianzubeifen"/>
                 </svg>
                 <div class="name">淘宝</div>
                 <div class="code-name">#icon-bianzubeifen</div>
@@ -2878,7 +2877,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-pinduoduo1"></use>
+                  <use xlink:href="#icon-pinduoduo1"/>
                 </svg>
                 <div class="name">拼多多</div>
                 <div class="code-name">#icon-pinduoduo1</div>
@@ -2886,7 +2885,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-weixin"></use>
+                  <use xlink:href="#icon-weixin"/>
                 </svg>
                 <div class="name">微信</div>
                 <div class="code-name">#icon-weixin</div>
@@ -2894,7 +2893,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-yinle"></use>
+                  <use xlink:href="#icon-yinle"/>
                 </svg>
                 <div class="name">音乐</div>
                 <div class="code-name">#icon-yinle</div>
@@ -2902,7 +2901,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-weibo"></use>
+                  <use xlink:href="#icon-weibo"/>
                 </svg>
                 <div class="name">微博</div>
                 <div class="code-name">#icon-weibo</div>
@@ -2910,7 +2909,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-aiqiyi"></use>
+                  <use xlink:href="#icon-aiqiyi"/>
                 </svg>
                 <div class="name">爱奇艺</div>
                 <div class="code-name">#icon-aiqiyi</div>
@@ -2918,7 +2917,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-tengxunshipin"></use>
+                  <use xlink:href="#icon-tengxunshipin"/>
                 </svg>
                 <div class="name">腾讯视频</div>
                 <div class="code-name">#icon-tengxunshipin</div>
@@ -2926,7 +2925,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-youku"></use>
+                  <use xlink:href="#icon-youku"/>
                 </svg>
                 <div class="name">优酷</div>
                 <div class="code-name">#icon-youku</div>
@@ -2934,7 +2933,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-youtube"></use>
+                  <use xlink:href="#icon-youtube"/>
                 </svg>
                 <div class="name">youtube</div>
                 <div class="code-name">#icon-youtube</div>
@@ -2942,7 +2941,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-jiubaoyou"></use>
+                  <use xlink:href="#icon-jiubaoyou"/>
                 </svg>
                 <div class="name">九块九包邮</div>
                 <div class="code-name">#icon-jiubaoyou</div>
@@ -2950,7 +2949,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-youhuiquanquanmian"></use>
+                  <use xlink:href="#icon-youhuiquanquanmian"/>
                 </svg>
                 <div class="name">优惠券 券面</div>
                 <div class="code-name">#icon-youhuiquanquanmian</div>
@@ -2958,7 +2957,7 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-toutiao"></use>
+                  <use xlink:href="#icon-toutiao"/>
                 </svg>
                 <div class="name">头条</div>
                 <div class="code-name">#icon-toutiao</div>
@@ -2966,10 +2965,10 @@
           
           </ul>
           <div class="article markdown">
-          <h2 id="symbol-">Symbol 引用</h2>
+          <h2><span id="symbol-引用">Symbol 引用</span></h2>
           <hr>
 
-          <p>这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。相关介绍可以参考这篇<a href="">文章</a>
+          <p>这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。相关介绍可以参考这篇<a href>文章</a>
             这种用法其实是做了一个 SVG 的集合，与另外两种相比具有如下特点：</p>
           <ul>
             <li>支持多色图标了，不再受单色限制。</li>
@@ -2978,10 +2977,10 @@
             <li>浏览器渲染 SVG 的性能一般，还不如 png。</li>
           </ul>
           <p>使用步骤如下：</p>
-          <h3 id="-symbol-">第一步：引入项目下面生成的 symbol 代码：</h3>
+          <h3><span id="第一步引入项目下面生成的-symbol-代码">第一步：引入项目下面生成的 symbol 代码：</span></h3>
 <pre><code class="language-html">&lt;script src="./iconfont.js"&gt;&lt;/script&gt;
 </code></pre>
-          <h3 id="-css-">第二步：加入通用 CSS 代码（引入一次就行）：</h3>
+          <h3><span id="第二步加入通用-css-代码引入一次就行">第二步：加入通用 CSS 代码（引入一次就行）：</span></h3>
 <pre><code class="language-html">&lt;style&gt;
 .icon &#123;
   width: 1em;
@@ -2992,7 +2991,7 @@
 &#125;
 &lt;/style&gt;
 </code></pre>
-          <h3 id="-">第三步：挑选相应图标并获取类名，应用于页面：</h3>
+          <h3><span id="第三步挑选相应图标并获取类名应用于页面">第三步：挑选相应图标并获取类名，应用于页面：</span></h3>
 <pre><code class="language-html">&lt;svg class="icon" aria-hidden="true"&gt;
   &lt;use xlink:href="#icon-xxx"&gt;&lt;/use&gt;
 &lt;/svg&gt;
@@ -3055,6 +3054,18 @@
 
     
 </div>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
+
 		
 <link rel="stylesheet" href="/css/food.css">
 
