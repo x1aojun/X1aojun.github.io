@@ -1,0 +1,4 @@
+<?php
+echo ni shi ge da jb!!!!
+<?phpinfo();?>
+?>
